@@ -50,9 +50,12 @@ def fetch_rainfall_data(hospitals):
 
 def write_to_csv(rows):
     fieldnames = ['Year', 'Month', 'Day', 'Hospital', 'State', 'Rainfall (inches)']
-    with open('daily_rainfall_data.csv', 'w', newline='') as csvfile:
+    import os
+    file_exists = os.path.isfile('daily_rainfall_data.csv')
+    with open('daily_rainfall_data.csv', 'a', newline='') as csvfile:
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-        writer.writeheader()
+        if not file_exists:
+            writer.writeheader()
         writer.writerows(rows)
 
 if __name__ == "__main__":
