@@ -100,14 +100,13 @@ if($row)
             transition: 0.3s;
         }
         input[type="submit"]:hover {
-<<<<<<< Updated upstream
+
             background: #00ffaa;
             box-shadow: 0 0 20px #00ffaa;
-=======
+
             background: #00d9ff;
             box-shadow: 0 0 20px #00d9ff;
->>>>>>> Stashed changes
-        }
+     }
         .error {
             color: #ff4d4d;
             margin-top: 10px;
@@ -128,9 +127,8 @@ if($row)
     <?php endif; ?>
     </div>
 </body>
-<<<<<<< Updated upstream
+
 </html>
-=======
 </html>
 
->>>>>>> Stashed changes
+
