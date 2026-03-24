@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* LOGO */
+.logo a {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    color: #0b4f8a;
+}
+
+/* LINKS */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #123b63;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: #0b7dda;
+}
+
+/* LOGIN BUTTON */
+.login-btn {
+    background-color: #0b4f8a;
+    color: white !important;
+    padding: 8px 14px;
+    border-radius: 6px;
+}
+
+.login-btn:hover {
+    background-color: #08375f;
+}
+
+/* PAGE CONTENT */
+.page-content {
+    padding: 30px;
+}
+
+/* BOX ROW */
+.box-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-top: 140px;
+}
+
+/* BOX STYLE */
+.box {
+    width: 220px;
+    height: 220px;
+    border: 2px solid #333;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 18px;
+    font-weight: bold;
+}
