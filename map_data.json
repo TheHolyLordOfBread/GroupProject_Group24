@@ -1,0 +1,762 @@
+[
+    {
+        "NAME": "Sultanah Bahiyah Hospital",
+        "ADDRESS": "Km 6, Jln Langgar, Bandar, 05460 Alor Setar, Kedah, Malaysia",
+        "STATE": "KEDAH",
+        "LONGITUDE": 100.41509,
+        "LATITUDE": 6.134279,
+        "TYPE_OF_HOSPITAL": "Public",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "Sultan Abdul Halim Hospital",
+        "ADDRESS": "225, Bandar Amanjaya, 08000 Sungai Petani, Kedah, Malaysia",
+        "STATE": "KEDAH",
+        "LONGITUDE": 100.5136,
+        "LATITUDE": 5.6669,
+        "TYPE_OF_HOSPITAL": "Public",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "Pendang Hospital",
+        "ADDRESS": "Kampung Manggol Pauh, 06700 Pendang, Kedah, Malaysia",
+        "STATE": "KEDAH",
+        "LONGITUDE": 100.4839675,
+        "LATITUDE": 5.9770837,
+        "TYPE_OF_HOSPITAL": "Public",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "Kulim Hospital",
+        "ADDRESS": "Lebuh Taman Perindustrian, Taman Kulim Hi-tech, 09090 Kulim, Kedah, Malaysia",
+        "STATE": "KEDAH",
+        "LONGITUDE": 100.573688,
+        "LATITUDE": 5.390833,
+        "TYPE_OF_HOSPITAL": "Public",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "Baling Hospital",
+        "ADDRESS": "MWGG+PF, Jalan Hospital, Baling, 09100 Baling, Kedah, Malaysia",
+        "STATE": "KEDAH",
+        "LONGITUDE": 100.9266299,
+        "LATITUDE": 5.6783677,
+        "TYPE_OF_HOSPITAL": "Public",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "Sik Hospital",
+        "ADDRESS": "Pekan Sik, 08220 Sik, Kedah, Malaysia",
+        "STATE": "KEDAH",
+        "LONGITUDE": 100.7271215,
+        "LATITUDE": 5.811816,
+        "TYPE_OF_HOSPITAL": "Public",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "Hospital Sultanah Maliha",
+        "ADDRESS": "Jalan Padang Matsirat, Bukit Tekuh, 07000 Langkawi, Kedah, Malaysia",
+        "STATE": "KEDAH",
+        "LONGITUDE": 99.7968897,
+        "LATITUDE": 6.3251837,
+        "TYPE_OF_HOSPITAL": "Public",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "Hospital Yan",
+        "ADDRESS": "Batu 25, Jalan Yan, Kampung Sungai Udang, 06900 Yan, Kedah, Malaysia",
+        "STATE": "KEDAH",
+        "LONGITUDE": 100.3848697,
+        "LATITUDE": 5.8197935,
+        "TYPE_OF_HOSPITAL": "Public",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "Hospital Jitra",
+        "ADDRESS": "Pekan Jitra, 06000 Jitra, Kedah, Malaysia",
+        "STATE": "KEDAH",
+        "LONGITUDE": 100.4179074,
+        "LATITUDE": 6.2788378,
+        "TYPE_OF_HOSPITAL": "Public",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "Hospital Kuala Nerang",
+        "ADDRESS": " Kuala Nerang, 06300 Kuala Nerang, Kedah, Malaysia",
+        "STATE": "KEDAH",
+        "LONGITUDE": 100.6099783,
+        "LATITUDE": 6.2507418,
+        "TYPE_OF_HOSPITAL": "Public",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "Putra Medical Centre",
+        "ADDRESS": "Putra Medical Centre, Jalan Mahdali, 05676 Alor Setar, Kedah, Malaysia",
+        "STATE": "KEDAH",
+        "LONGITUDE": 100.3656896,
+        "LATITUDE": 6.1236656,
+        "TYPE_OF_HOSPITAL": "Private",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "Kedah Medical Centre",
+        "ADDRESS": "Kampung Pumpong, 05250 Alor Setar, Kedah, Malaysia",
+        "STATE": "KEDAH",
+        "LONGITUDE": 100.3693877,
+        "LATITUDE": 6.148906,
+        "TYPE_OF_HOSPITAL": "Private",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "Metro Specialist Hospital",
+        "ADDRESS": "1, K609 Jalan Hospital Pakar Metro, Taman Berangan, 08000 Sungai Petani, Kedah, Malaysia",
+        "STATE": "KEDAH",
+        "LONGITUDE": 100.50893,
+        "LATITUDE": 5.652726,
+        "TYPE_OF_HOSPITAL": "Private",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "Pantai Hospital Sungai Petani",
+        "ADDRESS": "1, Persiaran Cempaka, Bandar Amanjaya, 08000 Sungai Petani, Kedah, Malaysia",
+        "STATE": "KEDAH",
+        "LONGITUDE": 100.5134184,
+        "LATITUDE": 5.672525,
+        "TYPE_OF_HOSPITAL": "Private",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "Pantai Hospital Laguna Merbok",
+        "ADDRESS": "1, Lorong BLM 1/10, Bandar Laguna Merbok, 08000 Sungai Petani, Kedah, Malaysia",
+        "STATE": "KEDAH",
+        "LONGITUDE": 100.4949801,
+        "LATITUDE": 5.6830211,
+        "TYPE_OF_HOSPITAL": "Private",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "Hospital Shah Alam",
+        "ADDRESS": "Persiaran Kayangan, Seksyen 7, 40000 Shah Alam, Selangor, Malaysia",
+        "STATE": "SELANGOR",
+        "LONGITUDE": 101.4898519,
+        "LATITUDE": 3.0709323,
+        "TYPE_OF_HOSPITAL": "Public",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "Hospital Ampang",
+        "ADDRESS": "Jalan Mewah Utara, Pandan Indah, 68000 Ampang, Selangor, Malaysia",
+        "STATE": "SELANGOR",
+        "LONGITUDE": 101.7639498,
+        "LATITUDE": 3.12811,
+        "TYPE_OF_HOSPITAL": "Public",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "Hospital Banting",
+        "ADDRESS": "Jalan, Jalan Sultan Alam Shah, Taman Baiduri, 42700 Banting, Selangor, Malaysia",
+        "STATE": "SELANGOR",
+        "LONGITUDE": 101.4924677,
+        "LATITUDE": 2.8033665,
+        "TYPE_OF_HOSPITAL": "Public",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "Tengku Permaisuri Norashikin Hospital",
+        "ADDRESS": "Lengkok Jalan Semenyih, 43000 Kajang, Selangor Darul Ehsan, Malaysia",
+        "STATE": "SELANGOR",
+        "LONGITUDE": 101.7984351,
+        "LATITUDE": 2.9931997,
+        "TYPE_OF_HOSPITAL": "Public",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "Hospital Kuala Kubu Bharu",
+        "ADDRESS": "Jalan Hospital, Pekan Kuala Kubu Bharu, 44000 Kuala Kubu Bharu, Selangor, Malaysia",
+        "STATE": "SELANGOR",
+        "LONGITUDE": 101.652704,
+        "LATITUDE": 3.565131,
+        "TYPE_OF_HOSPITAL": "Public",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "Hospital Selayang",
+        "ADDRESS": "Hospital Selayang, Lebuhraya Selayang - Kepong, 68100 Batu Caves, Selangor, Malaysia",
+        "STATE": "SELANGOR",
+        "LONGITUDE": 101.6469679,
+        "LATITUDE": 3.2434232,
+        "TYPE_OF_HOSPITAL": "Public",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "Sultan Idris Shah Serdang Hospital",
+        "ADDRESS": "Jalan Puchong, 43000 Kajang, Selangor, Malaysia",
+        "STATE": "SELANGOR",
+        "LONGITUDE": 101.7207653,
+        "LATITUDE": 2.9768538,
+        "TYPE_OF_HOSPITAL": "Public",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "Sungai Buloh Hospital",
+        "ADDRESS": "Jalan Hospital, 47000 Sungai Buloh, Selangor, Malaysia",
+        "STATE": "SELANGOR",
+        "LONGITUDE": 101.5853037,
+        "LATITUDE": 3.2189944,
+        "TYPE_OF_HOSPITAL": "Public",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "Hospital Tanjung Karang",
+        "ADDRESS": "KM8, Jalan Sungai Terap 5, 45500 Tanjong Karang, Selangor, Malaysia",
+        "STATE": "SELANGOR",
+        "LONGITUDE": 101.217602,
+        "LATITUDE": 3.39578,
+        "TYPE_OF_HOSPITAL": "Public",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "Hospital Tengku Ampuan Jemaah",
+        "ADDRESS": "Jalan Hospital, 45200 Sabak, Selangor, Malaysia",
+        "STATE": "SELANGOR",
+        "LONGITUDE": 100.989554,
+        "LATITUDE": 3.759306,
+        "TYPE_OF_HOSPITAL": "Public",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "Tengku Ampuan Rahimah Hospital",
+        "ADDRESS": "Jalan Langat, 41200 Klang, Selangor, Malaysia",
+        "STATE": "SELANGOR",
+        "LONGITUDE": 101.4394637,
+        "LATITUDE": 3.0210892,
+        "TYPE_OF_HOSPITAL": "Public",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "Sultan Abdul Aziz Shah Hospital",
+        "ADDRESS": "Persiaran Mardi - Upm, 43400 Serdang, Selangor, Malaysia",
+        "STATE": "SELANGOR",
+        "LONGITUDE": 101.7179603,
+        "LATITUDE": 2.9800853,
+        "TYPE_OF_HOSPITAL": "Public",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "Al-Sultan Abdullah Hospital",
+        "ADDRESS": "Hospital Al-Sultan Abdullah Universiti Teknologi MARA, 42300 Puncak Alam, Selangor, Malaysia",
+        "STATE": "SELANGOR",
+        "LONGITUDE": 101.4509521,
+        "LATITUDE": 3.2096393,
+        "TYPE_OF_HOSPITAL": "Public",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "Cyberjaya Hospital",
+        "ADDRESS": "Persiaran Multimedia, Cyber 11, 63000 Cyberjaya, Selangor, Malaysia",
+        "STATE": "SELANGOR",
+        "LONGITUDE": 101.6310859,
+        "LATITUDE": 2.9201263,
+        "TYPE_OF_HOSPITAL": "Public",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "Andalas Medical Centre",
+        "ADDRESS": "77, Persiaran Tengku Ampuan Rahimah, Taman Sri Andalas, 41200 Klang, Selangor, Malaysia",
+        "STATE": "SELANGOR",
+        "LONGITUDE": 101.44093,
+        "LATITUDE": 3.015415,
+        "TYPE_OF_HOSPITAL": "Private",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "ANDORRA Women and Children Hospital",
+        "ADDRESS": "19, Jalan Utama Suria Tropika 1, Taman Suria Tropika, 43300 Seri Kembangan, Selangor, Malaysia",
+        "STATE": "SELANGOR",
+        "LONGITUDE": 101.6780977,
+        "LATITUDE": 2.974408,
+        "TYPE_OF_HOSPITAL": "Private",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "AXON Medical Ambulatory Centre",
+        "ADDRESS": "25-31 Jalan PJU 5/6 Dataran Sunway, Kota Damansara, 47810 Petaling Jaya, Selangor, Malaysia",
+        "STATE": "SELANGOR",
+        "LONGITUDE": 101.5954388,
+        "LATITUDE": 3.1532289,
+        "TYPE_OF_HOSPITAL": "Private",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "Ara Damansara Medical Centre (ADMC)",
+        "ADDRESS": "2, Jalan Lapangan Terbang Subang, Seksyen U2, 40150 Shah Alam, Selangor, Malaysia",
+        "STATE": "SELANGOR",
+        "LONGITUDE": 101.5649901,
+        "LATITUDE": 3.1146633,
+        "TYPE_OF_HOSPITAL": "Private",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "Assunta Hospital",
+        "ADDRESS": "Jalan Templer, Pjs 4, 46990 Petaling Jaya, Selangor, Malaysia",
+        "STATE": "SELANGOR",
+        "LONGITUDE": 101.6452651,
+        "LATITUDE": 3.093455,
+        "TYPE_OF_HOSPITAL": "Private",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "Avisena Specialist Hospital",
+        "ADDRESS": "4, Jalan Ikhtisas, Seksyen 14, 40000 Shah Alam, Selangor, Malaysia",
+        "STATE": "SELANGOR",
+        "LONGITUDE": 101.5236927,
+        "LATITUDE": 3.0714143,
+        "TYPE_OF_HOSPITAL": "Private",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "Avisena Women's & Children's Specialist Hospital",
+        "ADDRESS": "3, Jalan 14/4, Seksyen 14, 40000 Shah Alam, Selangor, Malaysia",
+        "STATE": "SELANGOR",
+        "LONGITUDE": 101.521029,
+        "LATITUDE": 3.071697,
+        "TYPE_OF_HOSPITAL": "Private",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "Beacon Hospital",
+        "ADDRESS": "1 Jalan 215, Off, Jalan Templer, Seksyen 51, 46050 Petaling Jaya, Selangor, Malaysia",
+        "STATE": "SELANGOR",
+        "LONGITUDE": 101.638014,
+        "LATITUDE": 3.091461,
+        "TYPE_OF_HOSPITAL": "Private",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "BP Healthcare Taman Megah",
+        "ADDRESS": "79, Jalan SS 23/15, Taman Sea, 47400 Petaling Jaya, Selangor, Malaysia",
+        "STATE": "SELANGOR",
+        "LONGITUDE": 101.613772,
+        "LATITUDE": 3.115553,
+        "TYPE_OF_HOSPITAL": "Private",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "Bukit Tinggi Medical Centre (BTMC)",
+        "ADDRESS": "Lot 83211, Persiaran Batu Nilam, Bandar Bukit Tinggi 1, 41200 Klang, Selangor, Malaysia",
+        "STATE": "SELANGOR",
+        "LONGITUDE": 101.4316994,
+        "LATITUDE": 3.0101193,
+        "TYPE_OF_HOSPITAL": "Private",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "Columbia Asia Hospital (Klang)",
+        "ADDRESS": "Jalan Mahkota 1 / KU 2, Mutiara Bukit Raja 2, KM2 off Jalan Meru, Batu Dua Belas, 41050 Klang, Selangor, Malaysia",
+        "STATE": "SELANGOR",
+        "LONGITUDE": 101.4465895,
+        "LATITUDE": 3.085915,
+        "TYPE_OF_HOSPITAL": "Private",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "Columbia Asia Hospital (Cheras)",
+        "ADDRESS": "Lot 33107, Jalan Suakasih, 43200 Cheras, Selangor, Malaysia",
+        "STATE": "SELANGOR",
+        "LONGITUDE": 101.7628799,
+        "LATITUDE": 3.0317887,
+        "TYPE_OF_HOSPITAL": "Private",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "Columbia Asia Hospital (Puchong)",
+        "ADDRESS": "Lebuh Puteri, Bandar Puteri, 47100 Puchong, Selangor, Malaysia",
+        "STATE": "SELANGOR",
+        "LONGITUDE": 101.6225105,
+        "LATITUDE": 3.0240782,
+        "TYPE_OF_HOSPITAL": "Private",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "Columbia Asia Hospital (Bukit Rimau)",
+        "ADDRESS": "3, Persiaran Anggerik Eria Bukit Rimau, Seksyen 32, 40460 Shah Alam, Selangor, Malaysia",
+        "STATE": "SELANGOR",
+        "LONGITUDE": 101.5289035,
+        "LATITUDE": 2.9970999,
+        "TYPE_OF_HOSPITAL": "Private",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "Columbia Asia Hospital (Petaling Jaya)",
+        "ADDRESS": "Lot 69, Jln 13/6, Seksyen 13, 46200 Petaling Jaya, Selangor, Malaysia",
+        "STATE": "SELANGOR",
+        "LONGITUDE": 101.6378698,
+        "LATITUDE": 3.1180471,
+        "TYPE_OF_HOSPITAL": "Private",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "Columbia Asia Extended Care Hospital (Shah Alam)",
+        "ADDRESS": "Lot 2, Jalan Baung 17/22, Seksyen 17, 40200 Shah Alam, Selangor, Malaysia",
+        "STATE": "SELANGOR",
+        "LONGITUDE": 101.5051051,
+        "LATITUDE": 3.0471435,
+        "TYPE_OF_HOSPITAL": "Private",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "JMC Specialist Medical Centre",
+        "ADDRESS": "80, Persiaran Raja Muda Musa, Kawasan 6, 41100 Klang, Selangor, Malaysia",
+        "STATE": "SELANGOR",
+        "LONGITUDE": 101.4382055,
+        "LATITUDE": 3.0340783,
+        "TYPE_OF_HOSPITAL": "Private",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "Hospital UMRA",
+        "ADDRESS": "No. 12, 18, Jalan Bola Tampar 13/14, Seksyen 13, 40100 Shah Alam, Selangor, Malaysia",
+        "STATE": "SELANGOR",
+        "LONGITUDE": 101.5398981,
+        "LATITUDE": 3.0829651,
+        "TYPE_OF_HOSPITAL": "Private",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "Hospital Wanita Metro (Banting)",
+        "ADDRESS": "22, Jalan Emas 1, Bandar Sungai Emas, 42700 Banting, Selangor, Malaysia",
+        "STATE": "SELANGOR",
+        "LONGITUDE": 101.5313989,
+        "LATITUDE": 2.822678,
+        "TYPE_OF_HOSPITAL": "Private",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "Hospital Wanita Metro (Klang)",
+        "ADDRESS": "36, Jalan Pasar, Kawasan 18, 41400 Klang, Selangor, Malaysia",
+        "STATE": "SELANGOR",
+        "LONGITUDE": 101.444863,
+        "LATITUDE": 3.049288,
+        "TYPE_OF_HOSPITAL": "Private",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "Hospital Wanita Metro (Kuala Selangor)",
+        "ADDRESS": "33, 35, 37 & 39, Jalan Rhu 1, Taman Rhu, 45000 Kuala Selangor, Selangor, Malaysia",
+        "STATE": "SELANGOR",
+        "LONGITUDE": 101.276202,
+        "LATITUDE": 3.315345,
+        "TYPE_OF_HOSPITAL": "Private",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "Kajang Specialist Maternity & Surgery",
+        "ADDRESS": "119, Jalan Bukit, Kajang, Kajang, Hulu Langat, 43000, Malaysia",
+        "STATE": "SELANGOR",
+        "LONGITUDE": 101.788256,
+        "LATITUDE": 2.995727,
+        "TYPE_OF_HOSPITAL": "Private",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "KMI Kelana Jaya Medical Centre",
+        "ADDRESS": "No. 1 FAS Business Avenue, Jalan, SS7, 47301 Petaling Jaya, Selangor, Malaysia",
+        "STATE": "SELANGOR",
+        "LONGITUDE": 101.5953209,
+        "LATITUDE": 3.1084355,
+        "TYPE_OF_HOSPITAL": "Private",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "KPJ Ampang Puteri Specialist Hospital",
+        "ADDRESS": "1, Jln Memanda 9, Taman Dato Ahmad Razali, 68000 Ampang, Selangor, Malaysia",
+        "STATE": "SELANGOR",
+        "LONGITUDE": 101.7515376,
+        "LATITUDE": 3.1600366,
+        "TYPE_OF_HOSPITAL": "Private",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "KPJ Damansara Specialist Hospital",
+        "ADDRESS": "119, Jalan SS 20/10, Damansara Utama, 47400 Petaling Jaya, Selangor, Malaysia",
+        "STATE": "SELANGOR",
+        "LONGITUDE": 101.62754,
+        "LATITUDE": 3.1373862,
+        "TYPE_OF_HOSPITAL": "Private",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "KPJ Damansara Specialist Hospital 2",
+        "ADDRESS": "1, Jalan Bukit Lanjan 3, Bukit Lanjan, 60000 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur, Malaysia",
+        "STATE": "SELANGOR",
+        "LONGITUDE": 101.6184986,
+        "LATITUDE": 3.1710937,
+        "TYPE_OF_HOSPITAL": "Private",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "KPJ Kajang Specialist Hospital",
+        "ADDRESS": "Jalan Cheras, Kampung Sungai Kantan, 43000 Kajang, Selangor, Malaysia",
+        "STATE": "SELANGOR",
+        "LONGITUDE": 101.7858949,
+        "LATITUDE": 2.9998953,
+        "TYPE_OF_HOSPITAL": "Private",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "KPJ Rawang Specialist Hospital",
+        "ADDRESS": "Jalan Rawang, Bandar Baru, 48000 Rawang, Selangor, Malaysia",
+        "STATE": "SELANGOR",
+        "LONGITUDE": 101.5789405,
+        "LATITUDE": 3.3206983,
+        "TYPE_OF_HOSPITAL": "Private",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "KPJ Selangor Specialist Hospital",
+        "ADDRESS": "Lot 1, Jalan Singa 20/1, Seksyen 20, 40300 Shah Alam, Selangor, Malaysia",
+        "STATE": "SELANGOR",
+        "LONGITUDE": 101.5409949,
+        "LATITUDE": 3.0574921,
+        "TYPE_OF_HOSPITAL": "Private",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "Kajang Plaza Medical Centre",
+        "ADDRESS": "36, Jalan Dato Seri P. Alagendra 2, Bandar Kajang, 43000 Kajang, Selangor, Malaysia",
+        "STATE": "SELANGOR",
+        "LONGITUDE": 101.788263,
+        "LATITUDE": 2.995729,
+        "TYPE_OF_HOSPITAL": "Private",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "KPMC Puchong Specialist Centre",
+        "ADDRESS": "1 & 3, Jalan Puteri 2/1, Bandar Puteri, 47100 Puchong, Selangor, Malaysia",
+        "STATE": "SELANGOR",
+        "LONGITUDE": 101.616661,
+        "LATITUDE": 3.023692,
+        "TYPE_OF_HOSPITAL": "Private",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "MSU Medical Centre",
+        "ADDRESS": "MSU Medical Centre, 1, Jln Boling Padang 13/64, Seksyen 13, 40100 Shah Alam, Selangor, Malaysia",
+        "STATE": "SELANGOR",
+        "LONGITUDE": 101.5527679,
+        "LATITUDE": 3.0767228,
+        "TYPE_OF_HOSPITAL": "Private",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "Putra Medical Centre",
+        "ADDRESS": "47, Jalan BRP 1/3, Bukit Rahman Putra, 47000 Sungai Buloh, Selangor, Malaysia",
+        "STATE": "SELANGOR",
+        "LONGITUDE": 101.562054,
+        "LATITUDE": 3.2094,
+        "TYPE_OF_HOSPITAL": "Private",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "Pantai Hospital Klang",
+        "ADDRESS": "Lot 5921, Persiaran Raja Muda Musa, Taman Radzi, 41200 Klang, Selangor, Malaysia",
+        "STATE": "SELANGOR",
+        "LONGITUDE": 101.4263106,
+        "LATITUDE": 3.0263859,
+        "TYPE_OF_HOSPITAL": "Private",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "Pantai Hospital Cheras",
+        "ADDRESS": "1, Jalan 1/96a, Taman Cheras Makmur, 56100 Cheras, Wilayah Persekutuan Kuala Lumpur, Malaysia",
+        "STATE": "SELANGOR",
+        "LONGITUDE": 101.7408736,
+        "LATITUDE": 3.1026904,
+        "TYPE_OF_HOSPITAL": "Private",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "Sungai Long Specialist Hospital",
+        "ADDRESS": "Pt 21147, Persiaran SL 1, Bandar Sungai Long, 43000 Kajang, Selangor, Malaysia",
+        "STATE": "SELANGOR",
+        "LONGITUDE": 101.7951177,
+        "LATITUDE": 3.0396483,
+        "TYPE_OF_HOSPITAL": "Private",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "Subang Jaya Medical Centre (SJMC)",
+        "ADDRESS": "No. 1, Jalan SS 12/1A, Ss 12, 47500 Subang Jaya, Selangor, Malaysia",
+        "STATE": "SELANGOR",
+        "LONGITUDE": 101.5936654,
+        "LATITUDE": 3.0790791,
+        "TYPE_OF_HOSPITAL": "Private",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "Sunway Specialist Centre",
+        "ADDRESS": "No. 2, PJU 5, Jalan PJU 5/1a, Kota Damansara, 47810 Petaling Jaya, Selangor, Malaysia",
+        "STATE": "SELANGOR",
+        "LONGITUDE": 101.596413,
+        "LATITUDE": 3.150126,
+        "TYPE_OF_HOSPITAL": "Private",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "Salam Specialist Hospital",
+        "ADDRESS": "Jalan Nelayan 19/B, Seksyen 19, 40300 Shah Alam, Selangor, Malaysia",
+        "STATE": "SELANGOR",
+        "LONGITUDE": 101.535179,
+        "LATITUDE": 3.049106,
+        "TYPE_OF_HOSPITAL": "Private",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "Sentosa Specialist Hospital",
+        "ADDRESS": "Dan No 2, 4, 6, 8 & 10, No 19, 21, 23, 25, 27 & 29, Lorong Temenggung 15A, Lorong Temenggung 15d, Taman Sentosa Perdana, 41200 Klang, Selangor, Malaysia",
+        "STATE": "SELANGOR",
+        "LONGITUDE": 101.483051,
+        "LATITUDE": 3.005582,
+        "TYPE_OF_HOSPITAL": "Private",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "Sheela Women Specialist Centre",
+        "ADDRESS": "36, 38 & 40, Jalan Batai Laut 3, Kawasan 16, Taman Indah, Klang, 41300, Klang, Selangor, 41300, Malaysia",
+        "STATE": "SELANGOR",
+        "LONGITUDE": 101.473371,
+        "LATITUDE": 3.05676,
+        "TYPE_OF_HOSPITAL": "Private",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "Sri Kota Specialist Medical Centre",
+        "ADDRESS": "Jalan Mohet, Kawasan 1, 41000 Klang, Selangor, Malaysia",
+        "STATE": "SELANGOR",
+        "LONGITUDE": 101.4455479,
+        "LATITUDE": 3.0404357,
+        "TYPE_OF_HOSPITAL": "Private",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "Sunway Medical Centre",
+        "ADDRESS": "5, Jalan Lagoon Selatan, Bandar Sunway, 47500 Subang Jaya, Selangor, Malaysia",
+        "STATE": "SELANGOR",
+        "LONGITUDE": 101.608493,
+        "LATITUDE": 3.066127,
+        "TYPE_OF_HOSPITAL": "Private",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "Thomson Hospital",
+        "ADDRESS": "11, Jalan Teknologi, Taman Sains Selangor, 1, PJU 5, Kota Damansara, 47810 Petaling Jaya, Selangor, Malaysia",
+        "STATE": "SELANGOR",
+        "LONGITUDE": 101.5785858,
+        "LATITUDE": 3.1488124,
+        "TYPE_OF_HOSPITAL": "Private",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "UiTM Private Specialist Centre",
+        "ADDRESS": "UiTM Sg Buloh Campus, Jalan Hospital, 47000 Sungai Buloh, Selangor, Malaysia",
+        "STATE": "SELANGOR",
+        "LONGITUDE": 101.593396,
+        "LATITUDE": 3.220823,
+        "TYPE_OF_HOSPITAL": "Private",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "Universiti Malaya Medical Centre",
+        "ADDRESS": "Jln Profesor Diraja Ungku Aziz, Seksyen 13, 50603 Petaling Jaya, Wilayah Persekutuan Kuala Lumpur, Malaysia",
+        "STATE": "SELANGOR",
+        "LONGITUDE": 101.65308,
+        "LATITUDE": 3.112398,
+        "TYPE_OF_HOSPITAL": "Private",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    },
+    {
+        "NAME": "QHC Medical Centre",
+        "ADDRESS": "2, Jalan USJ 9/5r, Subang Business Centre, 47620 Subang Jaya, Selangor, Malaysia",
+        "STATE": "SELANGOR",
+        "LONGITUDE": 101.58739,
+        "LATITUDE": 3.047531,
+        "TYPE_OF_HOSPITAL": "Private",
+        "rainfall_in": 0.0,
+        "condition_code": null
+    }
+]
