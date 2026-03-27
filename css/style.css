@@ -10,20 +10,34 @@ body {
 
 /* NAVBAR */
 .navbar {
-    background-color: #ffffff;
+    background-color: #14448E;
     border-bottom: 1px solid #ddd;
     padding: 15px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 60px;
 }
+
+.BottomNavbar {
+    background-color: #14448E;
+    border-top: 1px solid #ddd;
+    padding: 15px 30px;
+    bottom: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    height: 60px;
+}
+
 
 /* LOGO */
 .logo a {
     text-decoration: none;
     font-size: 22px;
     font-weight: bold;
-    color: #0b4f8a;
+    color: #ffffff;
 }
 
 /* LINKS */
@@ -36,25 +50,14 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: #123b63;
+    color: #ffffff;
     font-weight: 600;
 }
 
-.nav-links a:hover {
-    color: #0b7dda;
-}
+    .nav-links a:hover {
+        color: #ffffff;
+    }
 
-/* LOGIN BUTTON */
-.login-btn {
-    background-color: #0b4f8a;
-    color: white !important;
-    padding: 8px 14px;
-    border-radius: 6px;
-}
-
-.login-btn:hover {
-    background-color: #08375f;
-}
 
 /* PAGE CONTENT */
 .page-content {
@@ -64,16 +67,20 @@ body {
 /* BOX ROW */
 .box-row {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 60px;
-    margin-top: 140px;
+    gap: 25px;
+    margin-top: 0px;
+    position: fixed;
+    right: 40px;
+
 }
 
 /* BOX STYLE */
 .box {
-    width: 220px;
-    height: 220px;
+    width: 640px;
+    height: 330px;
     border: 2px solid #333;
     border-radius: 8px;
 
@@ -83,4 +90,54 @@ body {
 
     font-size: 18px;
     font-weight: bold;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-areas:
+        "NAHRIM Sources"
+        "Map Map"
+        "Map Map"
+        "Map Map";
+    grid-template-columns: 2fr 1fr;
+    justify-content: center;
+    background-color: dodgerblue;
+    padding: 10px;
+    width: 72.5%;
+    height: 1040PX;
+    text-align: center;
+}
+
+    .grid div {
+        background-color: #f1f1f1;
+        border: 1px solid black;
+        padding: 5px;
+        font-size: 30px;
+        height: 100%;
+        text-align: center;
+        justify-content: center;
+        place-content: center;
+    }
+
+        .grid div.NAHRIM {
+            grid-area: NAHRIM;
+
+            text-align: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .grid div.Sources {
+            grid-area: Sources;
+            text-align: center;
+        }
+
+        .grid div.Map {
+            grid-area: Map;
+            text-align: center;
+        }
+
+.page-content {
+    display: flex;
 }

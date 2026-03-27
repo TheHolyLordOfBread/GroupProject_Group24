@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+
 
     <link rel="stylesheet" href="css/style.css?v=1">
 </head>
@@ -12,14 +12,26 @@
 <?php include 'navbar.php'; ?>
 
 <div class="page-content">
-    <h1>Index</h1>
+    <div class="grid">
+        <div class="NAHRIM">
+            <div style="overflow: hidden;"><img style= "flex-shrink: 0; min-width: 0%; min-height: 100%"src="nahrim-banner.png"></img></div>
+        </div>    
+        <div class="Sources">Sources</div>  
+        <div class="Map">Map</div>  
+    </div>
 
+
+
+
+
+<!-- data for graphs go here -->
     <div class="box-row">
-        <div class="box">Hospitals</div>
-        <div class="box">Rainfall</div>
-        <div class="box">Map</div>
+        <div class="box">NAHRIM DATA </div>
+        <div class="box">OPEN METEO DATA</div>
+        <div class="box">SOMETHING DATA</div>
     </div>
 </div>
 
+<?php include 'BottomBar.php'; ?>
 </body>
 </html>
