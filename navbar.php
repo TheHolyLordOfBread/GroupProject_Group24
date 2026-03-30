@@ -1,6 +1,16 @@
 <nav class="navbar">
     <div class="logo">
-        <a href="Index.php">NAHRIM SYSTEM</a>
+        <a href="Index.php">LAST UPDATED: XXXXXXXXXXXXXXXX</a>
+
+        <form action="Index.php" method="POST">
+            <label for="Source">Source:</label>
+            <select name="Source" id="Source">
+                <option value="Combined">Combined</option>
+                <option value="NAHRIM">NAHRIM</option>
+                <option value="OpenMeteo">OpenMeteo</option>
+                <option value="Google">Google</option>
+            </select>
+        </form>
     </div>
 
     <ul class="nav-links">

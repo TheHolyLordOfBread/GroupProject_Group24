@@ -5,54 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
 
-    <link rel="stylesheet" href="css/style.css?v=8">
+    <link rel="stylesheet" href="css/style.css?v=9">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script defer src="js/index.js"></script>
 </head>
 <body>
 
 <?php include 'navbar.php'; ?>
 
-<div class="page-content">
-
-    <!-- NAHRIM BANNER -->
-    <div class="nahrim-banner">
-        <img src="images/nahrim-banner.png" alt="NAHRIM Banner">
-        <div class="banner-line"></div>
+<div class="actionbar">
+    <div class="imageBox" style="display: inline-flex;">
+        <img src="nahrim-banner.png" alt="NAHRIM Banner">
     </div>
 
-    <!-- BOX SECTION -->
+    <h1>
+        <form action="Index.php" method="POST">
+            <label for="Range">Select Range:</label>
+            <select name="Range" id="Range">
+                <option value="Range1">&lt;1 day</option>
+                <option value="Range2">&lt;1 week</option>
+                <option value="Range3">&lt;2 weeks</option>
+                <option value="Range4">&lt;4 weeks</option>
+            </select>
+        </form>
+    </h1>
+</div>
+
+<div class="page-content">
+
+    <div class="grid">
+        <div class="NAHRIM"></div>
+
+        <div class="Sources">
+            <form action="/action_page.php">
+                <div>
+                    <input type="checkbox" id="NAHRIM" name="Source" value="NAHRIM" checked>
+                    <label for="NAHRIM">NAHRIM</label><br>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="OpenMeteo" name="Source" value="OpenMeteo" checked>
+                    <label for="OpenMeteo">OpenMeteo</label><br>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="Google" name="Source" value="Google" checked>
+                    <label for="Google">Google</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="Map">Map</div>
+    </div>
+
     <div class="box-row">
-
-        <div class="box-group">
-            <select>
-                <option>Select Hospital</option>
-                <option>Hospital A</option>
-                <option>Hospital B</option>
-            </select>
-            <div class="box"></div>
+        <div class="box" id="NAHRIMBox">
+            <h1>NAHRIM DATA</h1>
         </div>
 
-        <div class="box-group">
-            <select>
-                <option>Select Rainfall</option>
-                <option>Low</option>
-                <option>Medium</option>
-                <option>High</option>
-            </select>
-            <div class="box"></div>
+        <div class="box" id="OpenMeteoBox">
+            <h1>OPEN METEO DATA</h1>
         </div>
 
-        <div class="box-group">
-            <select>
-                <option>Select State</option>
-                <option>Kedah</option>
-                <option>Selangor</option>
-            </select>
-            <div class="box"></div>
+        <div class="box" id="GoogleBox">
+            <h1>GOOGLE DATA</h1>
         </div>
-
     </div>
 
 </div>
 
+<?php include 'BottomBar.php'; ?>
 </body>
 </html>
