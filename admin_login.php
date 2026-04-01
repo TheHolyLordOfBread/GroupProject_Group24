@@ -39,8 +39,6 @@ if($row)
 
 ?>
 
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -54,7 +52,6 @@ if($row)
             justify-content: center;
             align-items: center;
             height: 100vh;
-
             background: url('https://images.alphacoders.com/104/1049857.jpg') no-repeat center center fixed;
             background-size: cover;
         }
@@ -100,13 +97,9 @@ if($row)
             transition: 0.3s;
         }
         input[type="submit"]:hover {
-
-            background: #00ffaa;
-            box-shadow: 0 0 20px #00ffaa;
-
             background: #00d9ff;
             box-shadow: 0 0 20px #00d9ff;
-     }
+        }
         .error {
             color: #ff4d4d;
             margin-top: 10px;
@@ -123,12 +116,8 @@ if($row)
             <input type="submit" value="Login">
         </form>
         <?php if (isset($error)): ?>
-    <div class="error"><?= htmlspecialchars($error) ?></div>
-    <?php endif; ?>
+            <div class="error"><?= htmlspecialchars($error) ?></div>
+        <?php endif; ?>
     </div>
 </body>
-
 </html>
-</html>
-
-
