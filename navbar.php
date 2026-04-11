@@ -1,11 +1,26 @@
 <nav class="navbar">
     <div class="logo">
-        <a href="Index.php">NAHRIM SYSTEM</a>
-    </div>
+        <a href="Index.php">LAST UPDATED: XXXXXXXXXXXXXXXX</a>
 
-    <ul class="nav-links">
-        <li><a href="Index.php">Home</a></li>
-        <li><a href="windy.php">Windy</a></li>
-        <li><a href="admin_login.php" class="login-btn">Login</a></li>
-    </ul>
+
+
+
+
+          <!--Form for choosing the Source-->
+        <form action="Index.php" method="POST">
+            <label for="Source">Source:</label>
+                <select name="Range" id="Range">
+                  <option value="Range1">Combined</option>
+                  <option value="Range2">NAHRIM</option>
+                  <option value="Range3">OpenMeteo</option>
+                  <option value="Range4">Google</option>
+                </select>
+        </form>
+        
+
+
+
+
+        
+    </div>
 </nav>

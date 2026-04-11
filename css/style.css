@@ -10,22 +10,80 @@ body {
 
 /* NAVBAR */
 .navbar {
-    background-color: #ffffff;
+    background-color: #14448E;
     border-bottom: 1px solid #ddd;
     padding: 15px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 60px;
 }
+.actionbar {
+    background-color: #d1d1d1;
+    border-bottom: 1px solid #ddd;
+    padding: 0px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 140px;
+}
+
+    .actionbar select {
+        margin-left: 10px;
+        padding: 5px;
+        font-size: 24px;
+        border: 5px;
+        border-radius: 5px;
+        height: 50px;
+        background-color: #156d64;
+        color: #ffffff;
+        font-weight: bold;
+    }
+
+.BottomNavbar {
+    background-color: #14448E;
+    border-top: 1px solid #ddd;
+    padding: 15px 30px;
+    bottom: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    height: 60px;
+}
+
 
 /* LOGO */
 .logo a {
     text-decoration: none;
     font-size: 22px;
     font-weight: bold;
-    color: #0b4f8a;
+    color: #ffffff;
 }
 
+.logo label {
+    color: #ffffff;
+    font-size: 22px;
+    margin-left: 150px;
+    font-weight: bold;
+}
+
+    .logo select {
+        margin-left: 10px;
+        padding: 5px;
+        font-size: 24px;
+        border: 5px;
+        border-radius: 5px;
+        height: 50px;
+        background-color: #156d64;
+        color: #ffffff;
+        font-weight: bold;
+        display: inline;
+    }
+
+.logo form {
+    display: inline-block;
+}
 /* LINKS */
 .nav-links {
     list-style: none;
@@ -36,25 +94,14 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: #123b63;
+    color: #ffffff;
     font-weight: 600;
 }
 
-.nav-links a:hover {
-    color: #0b7dda;
-}
+    .nav-links a:hover {
+        color: #ffffff;
+    }
 
-/* LOGIN BUTTON */
-.login-btn {
-    background-color: #0b4f8a;
-    color: white !important;
-    padding: 8px 14px;
-    border-radius: 6px;
-}
-
-.login-btn:hover {
-    background-color: #08375f;
-}
 
 /* PAGE CONTENT */
 .page-content {
@@ -63,24 +110,112 @@ body {
 
 /* BOX ROW */
 .box-row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 60px;
-    margin-top: 140px;
+    display: inline-grid;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 25px;
+    position: fixed;
+    right: 40px;
+
 }
 
 /* BOX STYLE */
 .box {
-    width: 220px;
-    height: 220px;
-    border: 2px solid #333;
+
+    width: 640px;
+    height: 280px;
+    border: inset #D1D1D1;
     border-radius: 8px;
 
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 
     font-size: 18px;
     font-weight: bold;
+}
+
+    .box h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+.grid {
+    display: grid;
+    grid-template-areas:
+        "NAHRIM Sources"
+        "Map Map"
+        "Map Map"
+        "Map Map"
+        "Map Map"
+        "Map Map";
+    grid-template-columns: 2fr 1fr;
+    justify-content: center;
+    background-color: dodgerblue;
+    padding: 10px;
+    width: 72.5%;
+    height: 890PX;
+    text-align: center;
+}
+
+    .grid div {
+        background-color: #f1f1f1;
+        border: 1px solid black;
+        padding: 5px;
+        font-size: 30px;
+        height: 100%;
+        text-align: center;
+
+        place-content: center;
+    }
+
+        .grid div.NAHRIM {
+            grid-area: NAHRIM;
+
+            text-align: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .grid div.Sources {
+            background-color: #d1d1d1;
+        }
+
+            .grid div.Sources div {
+                background-color: #156d64;
+                color: #ffffff;
+                font-weight: bold;
+                margin-bottom: 5px;
+                border-radius: 8px;
+                grid-area: Sources;
+                text-align: left;
+            }
+
+            .grid div.Sources input[type=checkbox] {
+                border: 0px;
+                width: 30px;
+                height: 30px;
+
+            }
+
+            .grid div.Sources label {
+                font-size: 48px;
+            }
+
+        .grid div.Map {
+            grid-area: Map;
+            text-align: center;
+        }
+
+.page-content {
+    display: flex;
+}
+
+.imageBox img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
 }
