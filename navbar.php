@@ -1,27 +1,36 @@
-<nav class="navbar">
-    <div class="logo">
-        <a href="Index.php">LAST UPDATED: XXXXXXXXXXXXXXXX</a>
 
-        <form action="Index.php" method="POST">
-            <label for="Source">Source:</label>
-            <select name="Source" id="Source">
-                <option value="Combined">Combined</option>
-                <option value="NAHRIM">NAHRIM</option>
-                <option value="OpenMeteo">OpenMeteo</option>
-                <option value="Google">Google</option>
-            </select>
-        </form>
+<nav class="navbar">
+
+    <div class="logo">
+      <select id="redirectDropdown" value="Select A Page" onChange="selectRedirect()">
+        <option value="http://localhost/GROUPPROJECT_GROUP24/Index.php">Combined Graphs</option>
+        <option value="http://localhost/GROUPPROJECT_GROUP24/nahrim-map.php">Nahrim Map</option>
+        <option value="http://localhost/GROUPPROJECT_GROUP24/open_meteo.php">Open Meteo Map</option>
+        <option value="">Google</option>
+      </select>
+
+      <script>
+        function selectRedirect() {
+          const select = document.getElementById("redirectDropdown");
+          const selectedValue = select.value;
+          if (selectedValue) {
+          window.location = selectedValue; // Redirects the page
+          }
+          
+        }
+      </script>
+
+
+
+
+        
     </div>
 
     <ul class="nav-links">
         <li><a href="Index.php">Home</a></li>
         <li><a href="windy.php">Windy</a></li>
         <li><a href="openmeteo.php">Open-Meteo</a></li>
-<<<<<<< Updated upstream
-        <li><a href="admin_login.php">Login</a></li>
-=======
         <li><a href="graphs.php">Graphs</a></li>
         <li><a href="admin_login.php" class="login-btn">Login</a></li>
->>>>>>> Stashed changes
     </ul>
 </nav>
