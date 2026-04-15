@@ -6,11 +6,11 @@
 
 body {
     font-family: Arial, sans-serif;
-<<<<<<< Updated upstream
+
     background-color: #f2f2f2;
-=======
+
     background-color: #f8f9fb;
->>>>>>> Stashed changes
+
 }
 
 /* NAVBAR */
@@ -74,15 +74,17 @@ body {
     font-weight: 600;
 }
 
-<<<<<<< Updated upstream
 /* ACTION BAR */
 .actionbar {
     background-color: #d1d1d1;
     border-bottom: 1px solid #ddd;
-    padding: 0 30px;
+    padding: 0 0px;
     display: flex;
     justify-content: space-between;
-=======
+
+    height: 190px;
+
+}
 .nav-links a:hover {
     color: #0b7dda;
 }
@@ -134,14 +136,15 @@ body {
 .box-group {
     display: flex;
     flex-direction: column;
->>>>>>> Stashed changes
+
     align-items: center;
     height: 140px;
 }
 
-<<<<<<< Updated upstream
+
 .actionbar form {
     display: flex;
+    margin: 40px;
     align-items: center;
     gap: 15px;
 }
@@ -155,6 +158,7 @@ body {
 .actionbar select {
     padding: 8px 14px;
     font-size: 20px;
+    border: 5px;
     border-radius: 5px;
     height: 55px;
     background-color: #156d64;
@@ -163,13 +167,8 @@ body {
     border: none;
 }
 
-.imageBox img {
-    width: auto;
-    height: auto;
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-}
+
+
 
 /* PAGE CONTENT */
 .page-content {
@@ -191,7 +190,7 @@ body {
     padding: 10px;
     width: 62%;
     min-width: 680px;
-=======
+}
 .box-group select {
     padding: 8px 12px;
     border-radius: 6px;
@@ -202,14 +201,14 @@ body {
 
 .box {
     width: 280px;
-    height: 280px;
+    height: 380px;
     border: 2px solid #333;
->>>>>>> Stashed changes
+
     border-radius: 8px;
     background-color: #ffffff;
 }
 
-<<<<<<< Updated upstream
+
 .grid > div {
     background-color: #e9e9e9;
     border: 1px solid black;
@@ -336,7 +335,7 @@ body {
     font-size: 20px;
     font-weight: bold;
     z-index: 1000;
-=======
+}
 /* GRAPHS PAGE */
 .graphs-title {
     margin: 20px 0;
@@ -394,5 +393,12 @@ body {
 .graph-card:hover {
     transform: translateY(-3px);
     transition: 0.2s;
->>>>>>> Stashed changes
+
+}
+.imageBox img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
 }
