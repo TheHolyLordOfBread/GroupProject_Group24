@@ -17,6 +17,11 @@
         <li><a href="Index.php">Home</a></li>
         <li><a href="windy.php">Windy</a></li>
         <li><a href="openmeteo.php">Open-Meteo</a></li>
+<<<<<<< Updated upstream
         <li><a href="admin_login.php">Login</a></li>
+=======
+        <li><a href="graphs.php">Graphs</a></li>
+        <li><a href="admin_login.php" class="login-btn">Login</a></li>
+>>>>>>> Stashed changes
     </ul>
 </nav>
