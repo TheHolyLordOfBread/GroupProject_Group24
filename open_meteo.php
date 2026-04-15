@@ -11,10 +11,19 @@
     #legend { position: absolute; top: 10px; right: 10px; background-color: #fff; padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
   </style>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.css" />
+  <link rel="stylesheet" href="css/style.css?v=1" />
 </head>
 <body>
-  <h1>Live Rainfall Heatmap - Malaysia</h1>
-  <h2>Data: Open-Meteo | Grid: NAHRIM</h2>
+  <?php include 'navbar.php'; ?>
+  <h1>Hospital Weather Map</h1>
+  <h2>Rainfall Data for Malaysia</h2>
+  <select id="rpc-select" style="margin: 0 auto; display: block;">
+    <option value="Ave_RCP2.6">RCP 2.6</option>
+    <option value="Ave_RCP4.5">RCP 4.5</option>
+    <option value="Ave_RCP6.0">RCP 6.0</option>
+    <option value="Ave_RCP8.5">RCP 8.5</option>
+  </select>
   <div style="margin: 0 auto; display: block; text-align: center;">
     <label><input type="checkbox" id="show-pins" checked> Show Hospital Pins</label>
     <button id="refresh" style="margin-left:10px;">Refresh Data</button>

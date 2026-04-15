@@ -4,15 +4,18 @@ import sqlite3
 def generate_nahrim_json():
     conn = sqlite3.connect("DatabaseForGroupProject.db")
     cursor = conn.cursor()
+    import datetime
+
+    x = datetime.datetime.now()
 
     nahrim_data = []
-
+    
     for state_name in ['SELANGOR', 'KEDAH']:
         table_name = f"RF_{state_name}_AveRCP_Nahrim_Data"
         cursor.execute(f"""
-            SELECT LATITUDE, LONGITUDE, AVG([Ave_RCP2.6]), AVG([Ave_RCP4.5]), AVG([Ave_RCP6.0]), AVG([Ave_RCP8.5])
+            SELECT LATITUDE, LONGITUDE, Ave_RCP2.6, Ave_RCP4.5, Ave_RCP6.0, Ave_RCP8.5
             FROM {table_name}
-            WHERE YEAR = 2026 AND MONTH IN (3, 4, 5)
+            WHERE YEAR = x.strftime(%Y) AND MONTH = x.strftime(%m) AND DAY = x.strftime(%d)
             GROUP BY LATITUDE, LONGITUDE
         """)
         rows = cursor.fetchall()
