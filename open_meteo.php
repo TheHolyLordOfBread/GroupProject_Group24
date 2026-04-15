@@ -11,8 +11,10 @@
   </style>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.css" />
+  <link rel="stylesheet" href="css/style.css?v=1" />
 </head>
 <body>
+  <?php include 'navbar.php'; ?>
   <h1>Hospital Weather Map</h1>
   <h2>Rainfall Data for Malaysia</h2>
   <select id="rpc-select" style="margin: 0 auto; display: block;">
@@ -25,7 +27,7 @@
     <label><input type="checkbox" id="show-pins" checked> Show Hospital Pins</label>
   </div>
   <div id="map"></div>
-  <div id="legend" style="position: absolute; top: 10px; right: 10px; background-color: #fff; padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-family: Arial, sans-serif;">
+  <div id="legend" style="position: absolute; top: 100px; right: 20px; background-color: #fff; padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-family: Arial, sans-serif;">
     <h4>Rainfall (mm) Legend</h4>
     <div style="display: flex; flex-direction: column;">
       <div style="display: flex; align-items: center; margin-bottom: 5px;">
