@@ -1,10 +1,9 @@
-
 <nav class="navbar">
 
         <link rel="stylesheet" href="css/style.css?">
 
     <div class="logo">
-        <a>LAST UPDATED: XXXXXXXXXXXXXXXX</a>
+
           <select id="redirectDropdown" value="Select A Page" onChange="selectRedirect()">
             <option value="http://localhost/GROUPPROJECT_GROUP24/Index.php">Combined Graphs</option>
             <option value="http://localhost/GROUPPROJECT_GROUP24/nahrim-map.php">Nahrim Map</option>

@@ -1,104 +1,140 @@
-let kedahChart;
-let selangorChart;
+let combinedChart = null;
+let kedahRows = [];
+let selangorRows = [];
 
-function parseCSV(text) {
-    const lines = text.trim().split("\n");
-    const headers = lines[0].split(",");
-
-    return lines.slice(1).map(line => {
-        const values = line.split(",");
-        const row = {};
-
-        headers.forEach((header, index) => {
-            row[header.trim()] = values[index].trim();
-        });
-
-        return row;
-    });
+function formatDate(year, month, day) {
+    return `${year}-${String(month).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
 }
 
-function groupByLocation(data) {
-    const grouped = {};
+function getUniqueLocations(rows) {
+    const map = new Map();
 
-    data.forEach(row => {
-        const key = `${row.Latitude}, ${row.Longitude}`;
+    rows.forEach(row => {
+        const lat = row.Latitude;
+        const lon = row.Longitude;
+        const key = `${lat},${lon}`;
 
-        if (!grouped[key]) {
-            grouped[key] = [];
+        if (!map.has(key)) {
+            map.set(key, { lat, lon });
         }
-
-        grouped[key].push({
-            date: `${row.Year}-${String(row.Month).padStart(2, "0")}-${String(row.Day).padStart(2, "0")}`,
-            rcp26: parseFloat(row["Ave_RCP2.6"]),
-            rcp45: parseFloat(row["Ave_RCP4.5"]),
-            rcp60: parseFloat(row["Ave_RCP6.0"]),
-            rcp85: parseFloat(row["Ave_RCP8.5"])
-        });
     });
 
-    return grouped;
+    return Array.from(map.values());
 }
 
-function fillLocationDropdown(selectElement, groupedData) {
-    selectElement.innerHTML = "";
+function populateLocationDropdown(selectId, locations) {
+    const select = document.getElementById(selectId);
+    select.innerHTML = "";
 
-    Object.keys(groupedData).forEach(locationKey => {
+    locations.forEach(loc => {
         const option = document.createElement("option");
-        option.value = locationKey;
-        option.textContent = locationKey;
-        selectElement.appendChild(option);
+        option.value = `${loc.lat},${loc.lon}`;
+        option.textContent = `${loc.lat}, ${loc.lon}`;
+        select.appendChild(option);
     });
 }
 
-function createOrUpdateChart(chartRef, canvasId, locationKey, groupedData, chartTitle) {
-    const canvas = document.getElementById(canvasId);
-    if (!canvas) return chartRef;
+function getLocationSeries(rows, lat, lon, rcpColumn) {
+    const filtered = rows.filter(row =>
+        String(row.Latitude) === String(lat) &&
+        String(row.Longitude) === String(lon)
+    );
 
+    const labels = [];
+    const values = [];
+
+    filtered.forEach(row => {
+        const value = parseFloat(row[rcpColumn]);
+
+        if (!isNaN(value)) {
+            labels.push(formatDate(row.Year, row.Month, row.Day));
+            values.push(value);
+        }
+    });
+
+    return { labels, values };
+}
+
+function updateSourcePanel(sourceValue) {
+    const panelTitle = document.getElementById("sourcePanelTitle");
+
+    if (!panelTitle) return;
+
+    if (sourceValue === "NAHRIM") {
+        panelTitle.textContent = "NAHRIM PANEL";
+    } else if (sourceValue === "OpenMeteo") {
+        panelTitle.textContent = "OPENMETEO PANEL";
+    } else if (sourceValue === "Google") {
+        panelTitle.textContent = "GOOGLE PANEL";
+    } else {
+        panelTitle.textContent = "COMBINED PANEL";
+    }
+}
+
+function updateSourceCheckboxes(sourceValue) {
+    const nahrim = document.getElementById("NAHRIM");
+    const openMeteo = document.getElementById("OpenMeteo");
+    const google = document.getElementById("Google");
+
+    if (!nahrim || !openMeteo || !google) return;
+
+    nahrim.checked = false;
+    openMeteo.checked = false;
+    google.checked = false;
+
+    if (sourceValue === "NAHRIM") {
+        nahrim.checked = true;
+    } else if (sourceValue === "OpenMeteo") {
+        openMeteo.checked = true;
+    } else if (sourceValue === "Google") {
+        google.checked = true;
+    } else {
+        nahrim.checked = true;
+        openMeteo.checked = true;
+        google.checked = true;
+    }
+}
+
+function renderCombinedChart() {
+    const sourceValue = document.getElementById("Source").value;
+    const kedahValue = document.getElementById("kedahLocation").value;
+    const selangorValue = document.getElementById("selangorLocation").value;
+
+    if (!kedahValue || !selangorValue) return;
+
+    const [kedahLat, kedahLon] = kedahValue.split(",");
+    const [selangorLat, selangorLon] = selangorValue.split(",");
+
+    const kedahSeries = getLocationSeries(kedahRows, kedahLat, kedahLon, "Ave_RCP4.5");
+    const selangorSeries = getLocationSeries(selangorRows, selangorLat, selangorLon, "Ave_RCP4.5");
+
+    const canvas = document.getElementById("combinedRainfallChart");
     const ctx = canvas.getContext("2d");
-    const rows = groupedData[locationKey];
 
-    const labels = rows.map(item => item.date);
-    const rcp26 = rows.map(item => item.rcp26);
-    const rcp45 = rows.map(item => item.rcp45);
-    const rcp60 = rows.map(item => item.rcp60);
-    const rcp85 = rows.map(item => item.rcp85);
-
-    if (chartRef) {
-        chartRef.destroy();
+    if (combinedChart) {
+        combinedChart.destroy();
     }
 
-    return new Chart(ctx, {
+    combinedChart = new Chart(ctx, {
         type: "line",
         data: {
-            labels: labels,
+            labels: kedahSeries.labels,
             datasets: [
                 {
-                    label: "Ave_RCP2.6",
-                    data: rcp26,
+                    label: `${sourceValue} Kedah - Ave_RCP4.5`,
+                    data: kedahSeries.values,
                     borderWidth: 2,
                     tension: 0.2,
-                    fill: false
+                    fill: false,
+                    pointRadius: 3
                 },
                 {
-                    label: "Ave_RCP4.5",
-                    data: rcp45,
+                    label: `${sourceValue} Selangor - Ave_RCP4.5`,
+                    data: selangorSeries.values,
                     borderWidth: 2,
                     tension: 0.2,
-                    fill: false
-                },
-                {
-                    label: "Ave_RCP6.0",
-                    data: rcp60,
-                    borderWidth: 2,
-                    tension: 0.2,
-                    fill: false
-                },
-                {
-                    label: "Ave_RCP8.5",
-                    data: rcp85,
-                    borderWidth: 2,
-                    tension: 0.2,
-                    fill: false
+                    fill: false,
+                    pointRadius: 3
                 }
             ]
         },
@@ -108,7 +144,7 @@ function createOrUpdateChart(chartRef, canvasId, locationKey, groupedData, chart
             plugins: {
                 title: {
                     display: true,
-                    text: chartTitle
+                    text: "Combined Rainfall Comparison"
                 },
                 legend: {
                     display: true
@@ -130,79 +166,43 @@ function createOrUpdateChart(chartRef, canvasId, locationKey, groupedData, chart
             }
         }
     });
+
+    updateSourcePanel(sourceValue);
+    updateSourceCheckboxes(sourceValue);
 }
 
-async function loadStateChart(csvPath, selectId, canvasId, stateName) {
-    const selectElement = document.getElementById(selectId);
-
-    try {
-        const response = await fetch(csvPath);
-        const csvText = await response.text();
-
-        const data = parseCSV(csvText);
-        const groupedData = groupByLocation(data);
-
-        fillLocationDropdown(selectElement, groupedData);
-
-        const firstLocation = selectElement.value;
-
-        if (stateName === "Kedah") {
-            kedahChart = createOrUpdateChart(
-                kedahChart,
-                canvasId,
-                firstLocation,
-                groupedData,
-                `Kedah Rainfall - ${firstLocation}`
-            );
-        } else if (stateName === "Selangor") {
-            selangorChart = createOrUpdateChart(
-                selangorChart,
-                canvasId,
-                firstLocation,
-                groupedData,
-                `Selangor Rainfall - ${firstLocation}`
-            );
+function loadCsv(filePath, callback) {
+    Papa.parse(filePath, {
+        download: true,
+        header: true,
+        skipEmptyLines: true,
+        complete: function(results) {
+            callback(results.data);
+        },
+        error: function(error) {
+            console.error("Papa Parse error:", error);
         }
-
-        selectElement.addEventListener("change", function () {
-            if (stateName === "Kedah") {
-                kedahChart = createOrUpdateChart(
-                    kedahChart,
-                    canvasId,
-                    this.value,
-                    groupedData,
-                    `Kedah Rainfall - ${this.value}`
-                );
-            } else if (stateName === "Selangor") {
-                selangorChart = createOrUpdateChart(
-                    selangorChart,
-                    canvasId,
-                    this.value,
-                    groupedData,
-                    `Selangor Rainfall - ${this.value}`
-                );
-            }
-        });
-    } catch (error) {
-        console.error(`Error loading ${stateName} CSV:`, error);
-        if (selectElement) {
-            selectElement.innerHTML = `<option>Failed to load ${stateName} data</option>`;
-        }
-    }
+    });
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    loadStateChart(
-        "data/RF_Kedah_Mac_May_2026_AveRCP.csv",
-        "kedahLocation",
-        "kedahChart",
-        "Kedah"
-    );
+    loadCsv("data/RF_Kedah_Mac_May_2026_AveRCP.csv", function(kedahData) {
+        kedahRows = kedahData;
 
-    loadStateChart(
-        "data/RF_Slgr_Wlyh_Mac_May_2026_AveRCP.csv",
-        "selangorLocation",
-        "selangorChart",
-        "Selangor"
-    );
+        loadCsv("data/RF_Slgr_Wlyh_Mac_May_2026_AveRCP.csv", function(selangorData) {
+            selangorRows = selangorData;
+
+            const kedahLocations = getUniqueLocations(kedahRows);
+            const selangorLocations = getUniqueLocations(selangorRows);
+
+            populateLocationDropdown("kedahLocation", kedahLocations);
+            populateLocationDropdown("selangorLocation", selangorLocations);
+
+            renderCombinedChart();
+
+            document.getElementById("kedahLocation").addEventListener("change", renderCombinedChart);
+            document.getElementById("selangorLocation").addEventListener("change", renderCombinedChart);
+            document.getElementById("Source").addEventListener("change", renderCombinedChart);
+        });
+    });
 });

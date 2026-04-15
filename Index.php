@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NAHRIM Dashboard</title>
-
-    <link rel="stylesheet" href="css/style.css?v=11">
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
     <script defer src="js/index.js"></script>
-    <title>Index</title>
 
 </head>
 <body>
@@ -16,10 +15,10 @@
 <?php include 'navbar.php'; ?>
 
 <div class="actionbar">
-    <div class="imageBox">
-    
-
-
+    <div class="imageBox" style="display: inline-flex;">
+        <img src="images/nahrim-banner.png" alt="NAHRIM Banner">
+    </div>
+   
         <div class="page-content">
             <div class="nahrim-banner">
                 <img src="images/nahrim-banner.png" alt="NAHRIM Banner">
@@ -40,16 +39,15 @@
 </div>
 
 <div class="page-content">
-
     <div class="grid">
-        <div class="NAHRIM">
-            <h2>NAHRIM PANEL</h2>
+        <div class="NAHRIM" id="sourcePanel">
+            <h2 id="sourcePanelTitle">COMBINED PANEL</h2>
         </div>
 
         <div class="Sources">
             <form action="#" method="POST">
                 <div class="source-item">
-                    <input type="checkbox" id="NAHRIM" name="Source[]" value="NAHRIM" checked>
+                    <input type="checkbox" id="NAHRIM" name="Source[]" value="NAHRIM">
                     <label for="NAHRIM">NAHRIM</label>
                 </div>
 
@@ -73,39 +71,22 @@
 
 
     <div class="box-row">
-
         <div class="box">
-            <h2>KEDAH DATA</h2>
+            <h2>NAHRIM</h2>
 
             <div class="chart-controls">
-                <label for="kedahLocation">Select Latitude / Longitude:</label>
-                <select id="kedahLocation">
-                    <option>Loading Kedah data...</option>
-                </select>
+                <label for="kedahLocation">Kedah:</label>
+                <select id="kedahLocation"></select>
+
+                <label for="selangorLocation">Selangor:</label>
+                <select id="selangorLocation"></select>
             </div>
 
             <div class="chart-container">
-                <canvas id="kedahChart"></canvas>
+                <canvas id="combinedRainfallChart"></canvas>
             </div>
         </div>
     </div>
-    <div class="box-row">
-
-        <div class="box">
-            <h2>SELANGOR DATA</h2>
-            <div class="chart-controls">
-                <label for="selangorLocation">Select Latitude / Longitude:</label>
-                <select id="selangorLocation">
-                    <option>Loading Selangor data...</option>
-                </select>
-            </div>
-
-            <div class="chart-container">
-                <canvas id="selangorChart"></canvas>
-            </div>
-        </div>
-    </div>
-
 </div>
 
 <?php include 'BottomBar.php'; ?>
