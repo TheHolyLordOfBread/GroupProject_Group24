@@ -1,0 +1,2992 @@
+[
+    {
+        "LATITUDE": 3.12802,
+        "LONGITUDE": 101.7901,
+        "rainfall_mm": 3.5
+    },
+    {
+        "LATITUDE": 3.39811,
+        "LONGITUDE": 101.1408,
+        "rainfall_mm": 0.6
+    },
+    {
+        "LATITUDE": 6.0401,
+        "LONGITUDE": 100.5457,
+        "rainfall_mm": 10.6
+    },
+    {
+        "LATITUDE": 5.82483,
+        "LONGITUDE": 100.4915,
+        "rainfall_mm": 3.4
+    },
+    {
+        "LATITUDE": 5.87865,
+        "LONGITUDE": 100.4915,
+        "rainfall_mm": 3.4
+    },
+    {
+        "LATITUDE": 3.01997,
+        "LONGITUDE": 101.3572,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 3.66813,
+        "LONGITUDE": 101.249,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 3.074,
+        "LONGITUDE": 101.5196,
+        "rainfall_mm": 0.3
+    },
+    {
+        "LATITUDE": 6.25527,
+        "LONGITUDE": 100.708,
+        "rainfall_mm": 11.1
+    },
+    {
+        "LATITUDE": 3.50613,
+        "LONGITUDE": 101.3572,
+        "rainfall_mm": 0.6
+    },
+    {
+        "LATITUDE": 3.72213,
+        "LONGITUDE": 101.3572,
+        "rainfall_mm": 0.2
+    },
+    {
+        "LATITUDE": 6.0939,
+        "LONGITUDE": 100.708,
+        "rainfall_mm": 6.8
+    },
+    {
+        "LATITUDE": 3.39811,
+        "LONGITUDE": 101.6819,
+        "rainfall_mm": 1.1
+    },
+    {
+        "LATITUDE": 5.93247,
+        "LONGITUDE": 100.5998,
+        "rainfall_mm": 4.7
+    },
+    {
+        "LATITUDE": 5.55563,
+        "LONGITUDE": 100.4915,
+        "rainfall_mm": 1.9
+    },
+    {
+        "LATITUDE": 5.98629,
+        "LONGITUDE": 100.5998,
+        "rainfall_mm": 4.7
+    },
+    {
+        "LATITUDE": 5.44791,
+        "LONGITUDE": 100.8703,
+        "rainfall_mm": 6.3
+    },
+    {
+        "LATITUDE": 3.01997,
+        "LONGITUDE": 101.8983,
+        "rainfall_mm": 4.9
+    },
+    {
+        "LATITUDE": 3.66813,
+        "LONGITUDE": 101.7901,
+        "rainfall_mm": 0.4
+    },
+    {
+        "LATITUDE": 6.36283,
+        "LONGITUDE": 100.4915,
+        "rainfall_mm": 1.6
+    },
+    {
+        "LATITUDE": 6.4166,
+        "LONGITUDE": 100.6539,
+        "rainfall_mm": 5.8
+    },
+    {
+        "LATITUDE": 6.47037,
+        "LONGITUDE": 100.708,
+        "rainfall_mm": 7.2
+    },
+    {
+        "LATITUDE": 2.74978,
+        "LONGITUDE": 101.6819,
+        "rainfall_mm": 0.3
+    },
+    {
+        "LATITUDE": 5.34019,
+        "LONGITUDE": 100.6539,
+        "rainfall_mm": 3.9
+    },
+    {
+        "LATITUDE": 3.61413,
+        "LONGITUDE": 101.1408,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 3.23607,
+        "LONGITUDE": 101.5737,
+        "rainfall_mm": 0.4
+    },
+    {
+        "LATITUDE": 2.64169,
+        "LONGITUDE": 101.736,
+        "rainfall_mm": 1.0
+    },
+    {
+        "LATITUDE": 2.96594,
+        "LONGITUDE": 101.9524,
+        "rainfall_mm": 6.3
+    },
+    {
+        "LATITUDE": 3.29009,
+        "LONGITUDE": 101.6819,
+        "rainfall_mm": 0.4
+    },
+    {
+        "LATITUDE": 3.77612,
+        "LONGITUDE": 101.1408,
+        "rainfall_mm": 0.6
+    },
+    {
+        "LATITUDE": 5.50178,
+        "LONGITUDE": 100.7621,
+        "rainfall_mm": 5.5
+    },
+    {
+        "LATITUDE": 3.12802,
+        "LONGITUDE": 101.3031,
+        "rainfall_mm": 3.9
+    },
+    {
+        "LATITUDE": 2.96594,
+        "LONGITUDE": 101.4114,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 2.58764,
+        "LONGITUDE": 101.736,
+        "rainfall_mm": 0.4
+    },
+    {
+        "LATITUDE": 5.87865,
+        "LONGITUDE": 100.6539,
+        "rainfall_mm": 4.7
+    },
+    {
+        "LATITUDE": 3.01997,
+        "LONGITUDE": 101.5196,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 6.25527,
+        "LONGITUDE": 100.221,
+        "rainfall_mm": 14.4
+    },
+    {
+        "LATITUDE": 3.3441,
+        "LONGITUDE": 101.3572,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 3.61413,
+        "LONGITUDE": 101.6819,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 3.50613,
+        "LONGITUDE": 101.5196,
+        "rainfall_mm": 0.2
+    },
+    {
+        "LATITUDE": 3.72213,
+        "LONGITUDE": 101.5196,
+        "rainfall_mm": 0.1
+    },
+    {
+        "LATITUDE": 3.12802,
+        "LONGITUDE": 101.8442,
+        "rainfall_mm": 7.4
+    },
+    {
+        "LATITUDE": 3.39811,
+        "LONGITUDE": 101.1949,
+        "rainfall_mm": 0.6
+    },
+    {
+        "LATITUDE": 5.71716,
+        "LONGITUDE": 100.5998,
+        "rainfall_mm": 4.9
+    },
+    {
+        "LATITUDE": 5.93247,
+        "LONGITUDE": 101.0326,
+        "rainfall_mm": 7.9
+    },
+    {
+        "LATITUDE": 5.55563,
+        "LONGITUDE": 100.6539,
+        "rainfall_mm": 3.1
+    },
+    {
+        "LATITUDE": 3.66813,
+        "LONGITUDE": 101.3031,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 3.074,
+        "LONGITUDE": 101.5737,
+        "rainfall_mm": 3.5
+    },
+    {
+        "LATITUDE": 6.25527,
+        "LONGITUDE": 100.7621,
+        "rainfall_mm": 11.1
+    },
+    {
+        "LATITUDE": 6.14769,
+        "LONGITUDE": 100.5998,
+        "rainfall_mm": 6.3
+    },
+    {
+        "LATITUDE": 5.39405,
+        "LONGITUDE": 100.8703,
+        "rainfall_mm": 3.0
+    },
+    {
+        "LATITUDE": 2.85786,
+        "LONGITUDE": 101.4114,
+        "rainfall_mm": 0.5
+    },
+    {
+        "LATITUDE": 6.30906,
+        "LONGITUDE": 100.4374,
+        "rainfall_mm": 6.9
+    },
+    {
+        "LATITUDE": 3.39811,
+        "LONGITUDE": 101.736,
+        "rainfall_mm": 1.1
+    },
+    {
+        "LATITUDE": 5.66332,
+        "LONGITUDE": 100.5998,
+        "rainfall_mm": 5.1
+    },
+    {
+        "LATITUDE": 3.45213,
+        "LONGITUDE": 101.0867,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 6.4166,
+        "LONGITUDE": 100.708,
+        "rainfall_mm": 8.0
+    },
+    {
+        "LATITUDE": 2.74978,
+        "LONGITUDE": 101.736,
+        "rainfall_mm": 1.0
+    },
+    {
+        "LATITUDE": 5.34019,
+        "LONGITUDE": 100.708,
+        "rainfall_mm": 3.0
+    },
+    {
+        "LATITUDE": 3.23607,
+        "LONGITUDE": 101.249,
+        "rainfall_mm": 0.1
+    },
+    {
+        "LATITUDE": 3.3441,
+        "LONGITUDE": 101.5196,
+        "rainfall_mm": 0.2
+    },
+    {
+        "LATITUDE": 5.771,
+        "LONGITUDE": 100.5998,
+        "rainfall_mm": 4.9
+    },
+    {
+        "LATITUDE": 5.93247,
+        "LONGITUDE": 100.8162,
+        "rainfall_mm": 9.1
+    },
+    {
+        "LATITUDE": 5.98629,
+        "LONGITUDE": 100.8162,
+        "rainfall_mm": 9.8
+    },
+    {
+        "LATITUDE": 6.20149,
+        "LONGITUDE": 101.0326,
+        "rainfall_mm": 11.4
+    },
+    {
+        "LATITUDE": 3.72213,
+        "LONGITUDE": 101.0326,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 3.12802,
+        "LONGITUDE": 101.3572,
+        "rainfall_mm": 3.9
+    },
+    {
+        "LATITUDE": 6.0401,
+        "LONGITUDE": 101.0326,
+        "rainfall_mm": 9.1
+    },
+    {
+        "LATITUDE": 5.87865,
+        "LONGITUDE": 100.708,
+        "rainfall_mm": 5.3
+    },
+    {
+        "LATITUDE": 5.60948,
+        "LONGITUDE": 100.5998,
+        "rainfall_mm": 5.1
+    },
+    {
+        "LATITUDE": 3.23607,
+        "LONGITUDE": 101.7901,
+        "rainfall_mm": 8.2
+    },
+    {
+        "LATITUDE": 3.50613,
+        "LONGITUDE": 101.5737,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 3.72213,
+        "LONGITUDE": 101.5737,
+        "rainfall_mm": 0.1
+    },
+    {
+        "LATITUDE": 2.96594,
+        "LONGITUDE": 101.6278,
+        "rainfall_mm": 0.7
+    },
+    {
+        "LATITUDE": 3.18205,
+        "LONGITUDE": 101.3572,
+        "rainfall_mm": 3.9
+    },
+    {
+        "LATITUDE": 3.56013,
+        "LONGITUDE": 101.3031,
+        "rainfall_mm": 0.6
+    },
+    {
+        "LATITUDE": 3.074,
+        "LONGITUDE": 101.249,
+        "rainfall_mm": 1.5
+    },
+    {
+        "LATITUDE": 6.25527,
+        "LONGITUDE": 100.4374,
+        "rainfall_mm": 6.9
+    },
+    {
+        "LATITUDE": 3.88409,
+        "LONGITUDE": 100.8703,
+        "rainfall_mm": 1.6
+    },
+    {
+        "LATITUDE": 2.85786,
+        "LONGITUDE": 101.4655,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 6.0939,
+        "LONGITUDE": 100.4374,
+        "rainfall_mm": 14.0
+    },
+    {
+        "LATITUDE": 6.52412,
+        "LONGITUDE": 100.4915,
+        "rainfall_mm": 3.2
+    },
+    {
+        "LATITUDE": 5.93247,
+        "LONGITUDE": 100.3292,
+        "rainfall_mm": 8.7
+    },
+    {
+        "LATITUDE": 5.98629,
+        "LONGITUDE": 100.3292,
+        "rainfall_mm": 8.7
+    },
+    {
+        "LATITUDE": 5.71716,
+        "LONGITUDE": 100.8162,
+        "rainfall_mm": 10.8
+    },
+    {
+        "LATITUDE": 3.18205,
+        "LONGITUDE": 101.8983,
+        "rainfall_mm": 7.4
+    },
+    {
+        "LATITUDE": 3.074,
+        "LONGITUDE": 101.7901,
+        "rainfall_mm": 3.5
+    },
+    {
+        "LATITUDE": 6.25527,
+        "LONGITUDE": 100.9785,
+        "rainfall_mm": 11.4
+    },
+    {
+        "LATITUDE": 6.14769,
+        "LONGITUDE": 100.8162,
+        "rainfall_mm": 15.4
+    },
+    {
+        "LATITUDE": 5.82483,
+        "LONGITUDE": 100.9244,
+        "rainfall_mm": 9.1
+    },
+    {
+        "LATITUDE": 2.85786,
+        "LONGITUDE": 101.6278,
+        "rainfall_mm": 1.0
+    },
+    {
+        "LATITUDE": 6.47037,
+        "LONGITUDE": 100.4374,
+        "rainfall_mm": 1.5
+    },
+    {
+        "LATITUDE": 3.23607,
+        "LONGITUDE": 101.3031,
+        "rainfall_mm": 0.1
+    },
+    {
+        "LATITUDE": 6.0939,
+        "LONGITUDE": 100.9785,
+        "rainfall_mm": 9.1
+    },
+    {
+        "LATITUDE": 5.66332,
+        "LONGITUDE": 100.8162,
+        "rainfall_mm": 6.0
+    },
+    {
+        "LATITUDE": 5.98629,
+        "LONGITUDE": 100.8703,
+        "rainfall_mm": 9.8
+    },
+    {
+        "LATITUDE": 5.39405,
+        "LONGITUDE": 100.5457,
+        "rainfall_mm": 0.4
+    },
+    {
+        "LATITUDE": 5.98629,
+        "LONGITUDE": 101.0867,
+        "rainfall_mm": 7.7
+    },
+    {
+        "LATITUDE": 2.69573,
+        "LONGITUDE": 101.5196,
+        "rainfall_mm": 0.3
+    },
+    {
+        "LATITUDE": 3.18205,
+        "LONGITUDE": 101.5196,
+        "rainfall_mm": 0.3
+    },
+    {
+        "LATITUDE": 3.01997,
+        "LONGITUDE": 101.249,
+        "rainfall_mm": 1.5
+    },
+    {
+        "LATITUDE": 3.23607,
+        "LONGITUDE": 101.8442,
+        "rainfall_mm": 3.7
+    },
+    {
+        "LATITUDE": 5.771,
+        "LONGITUDE": 100.8162,
+        "rainfall_mm": 10.8
+    },
+    {
+        "LATITUDE": 5.82483,
+        "LONGITUDE": 100.5457,
+        "rainfall_mm": 3.4
+    },
+    {
+        "LATITUDE": 3.50613,
+        "LONGITUDE": 101.249,
+        "rainfall_mm": 0.6
+    },
+    {
+        "LATITUDE": 2.9119,
+        "LONGITUDE": 101.5737,
+        "rainfall_mm": 1.0
+    },
+    {
+        "LATITUDE": 2.80382,
+        "LONGITUDE": 101.3572,
+        "rainfall_mm": 0.5
+    },
+    {
+        "LATITUDE": 2.74978,
+        "LONGITUDE": 101.4114,
+        "rainfall_mm": 0.5
+    },
+    {
+        "LATITUDE": 3.72213,
+        "LONGITUDE": 101.249,
+        "rainfall_mm": 1.2
+    },
+    {
+        "LATITUDE": 3.45213,
+        "LONGITUDE": 101.3572,
+        "rainfall_mm": 0.6
+    },
+    {
+        "LATITUDE": 5.71716,
+        "LONGITUDE": 100.3292,
+        "rainfall_mm": 6.9
+    },
+    {
+        "LATITUDE": 5.07077,
+        "LONGITUDE": 100.4915,
+        "rainfall_mm": 1.2
+    },
+    {
+        "LATITUDE": 3.56013,
+        "LONGITUDE": 101.3572,
+        "rainfall_mm": 0.6
+    },
+    {
+        "LATITUDE": 3.074,
+        "LONGITUDE": 101.3031,
+        "rainfall_mm": 1.5
+    },
+    {
+        "LATITUDE": 6.25527,
+        "LONGITUDE": 100.4915,
+        "rainfall_mm": 7.7
+    },
+    {
+        "LATITUDE": 6.14769,
+        "LONGITUDE": 100.3292,
+        "rainfall_mm": 14.0
+    },
+    {
+        "LATITUDE": 5.60948,
+        "LONGITUDE": 100.8162,
+        "rainfall_mm": 6.0
+    },
+    {
+        "LATITUDE": 3.50613,
+        "LONGITUDE": 101.7901,
+        "rainfall_mm": 0.7
+    },
+    {
+        "LATITUDE": 3.8301,
+        "LONGITUDE": 100.7621,
+        "rainfall_mm": 1.6
+    },
+    {
+        "LATITUDE": 3.77612,
+        "LONGITUDE": 100.8162,
+        "rainfall_mm": 1.6
+    },
+    {
+        "LATITUDE": 6.36283,
+        "LONGITUDE": 100.5457,
+        "rainfall_mm": 1.6
+    },
+    {
+        "LATITUDE": 2.64169,
+        "LONGITUDE": 101.6278,
+        "rainfall_mm": 0.3
+    },
+    {
+        "LATITUDE": 5.66332,
+        "LONGITUDE": 100.3292,
+        "rainfall_mm": 6.9
+    },
+    {
+        "LATITUDE": 5.98629,
+        "LONGITUDE": 100.3833,
+        "rainfall_mm": 8.7
+    },
+    {
+        "LATITUDE": 5.71716,
+        "LONGITUDE": 100.8703,
+        "rainfall_mm": 10.8
+    },
+    {
+        "LATITUDE": 3.074,
+        "LONGITUDE": 101.8442,
+        "rainfall_mm": 7.4
+    },
+    {
+        "LATITUDE": 5.50178,
+        "LONGITUDE": 100.6539,
+        "rainfall_mm": 3.1
+    },
+    {
+        "LATITUDE": 6.14769,
+        "LONGITUDE": 100.8703,
+        "rainfall_mm": 15.4
+    },
+    {
+        "LATITUDE": 6.14769,
+        "LONGITUDE": 101.0867,
+        "rainfall_mm": 4.4
+    },
+    {
+        "LATITUDE": 2.85786,
+        "LONGITUDE": 101.6819,
+        "rainfall_mm": 1.0
+    },
+    {
+        "LATITUDE": 3.23607,
+        "LONGITUDE": 101.3572,
+        "rainfall_mm": 0.1
+    },
+    {
+        "LATITUDE": 5.66332,
+        "LONGITUDE": 100.8703,
+        "rainfall_mm": 6.0
+    },
+    {
+        "LATITUDE": 5.98629,
+        "LONGITUDE": 100.9244,
+        "rainfall_mm": 9.8
+    },
+    {
+        "LATITUDE": 6.30906,
+        "LONGITUDE": 100.8703,
+        "rainfall_mm": 16.1
+    },
+    {
+        "LATITUDE": 5.39405,
+        "LONGITUDE": 100.5998,
+        "rainfall_mm": 3.9
+    },
+    {
+        "LATITUDE": 2.80382,
+        "LONGITUDE": 101.5196,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 5.28631,
+        "LONGITUDE": 100.5457,
+        "rainfall_mm": 0.4
+    },
+    {
+        "LATITUDE": 2.69573,
+        "LONGITUDE": 101.5737,
+        "rainfall_mm": 0.3
+    },
+    {
+        "LATITUDE": 3.45213,
+        "LONGITUDE": 101.5196,
+        "rainfall_mm": 0.2
+    },
+    {
+        "LATITUDE": 3.66813,
+        "LONGITUDE": 100.9785,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 3.18205,
+        "LONGITUDE": 101.5737,
+        "rainfall_mm": 3.5
+    },
+    {
+        "LATITUDE": 5.87865,
+        "LONGITUDE": 100.4374,
+        "rainfall_mm": 8.7
+    },
+    {
+        "LATITUDE": 3.56013,
+        "LONGITUDE": 101.5196,
+        "rainfall_mm": 0.2
+    },
+    {
+        "LATITUDE": 5.60948,
+        "LONGITUDE": 100.3292,
+        "rainfall_mm": 6.9
+    },
+    {
+        "LATITUDE": 6.25527,
+        "LONGITUDE": 100.6539,
+        "rainfall_mm": 7.1
+    },
+    {
+        "LATITUDE": 5.771,
+        "LONGITUDE": 100.8703,
+        "rainfall_mm": 10.8
+    },
+    {
+        "LATITUDE": 5.82483,
+        "LONGITUDE": 100.5998,
+        "rainfall_mm": 4.7
+    },
+    {
+        "LATITUDE": 3.01997,
+        "LONGITUDE": 101.4655,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 3.72213,
+        "LONGITUDE": 101.3031,
+        "rainfall_mm": 1.2
+    },
+    {
+        "LATITUDE": 6.52412,
+        "LONGITUDE": 100.708,
+        "rainfall_mm": 7.2
+    },
+    {
+        "LATITUDE": 5.71716,
+        "LONGITUDE": 100.3833,
+        "rainfall_mm": 6.9
+    },
+    {
+        "LATITUDE": 5.98629,
+        "LONGITUDE": 100.5457,
+        "rainfall_mm": 10.6
+    },
+    {
+        "LATITUDE": 3.074,
+        "LONGITUDE": 101.3572,
+        "rainfall_mm": 3.9
+    },
+    {
+        "LATITUDE": 6.14769,
+        "LONGITUDE": 100.3833,
+        "rainfall_mm": 14.0
+    },
+    {
+        "LATITUDE": 5.60948,
+        "LONGITUDE": 100.8703,
+        "rainfall_mm": 6.0
+    },
+    {
+        "LATITUDE": 5.55563,
+        "LONGITUDE": 100.5998,
+        "rainfall_mm": 3.1
+    },
+    {
+        "LATITUDE": 2.9119,
+        "LONGITUDE": 101.7901,
+        "rainfall_mm": 1.6
+    },
+    {
+        "LATITUDE": 2.74978,
+        "LONGITUDE": 101.6278,
+        "rainfall_mm": 0.3
+    },
+    {
+        "LATITUDE": 5.17855,
+        "LONGITUDE": 100.5457,
+        "rainfall_mm": 1.2
+    },
+    {
+        "LATITUDE": 3.77612,
+        "LONGITUDE": 100.8703,
+        "rainfall_mm": 1.6
+    },
+    {
+        "LATITUDE": 6.36283,
+        "LONGITUDE": 100.5998,
+        "rainfall_mm": 5.8
+    },
+    {
+        "LATITUDE": 3.23607,
+        "LONGITUDE": 101.5196,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 2.64169,
+        "LONGITUDE": 101.6819,
+        "rainfall_mm": 0.3
+    },
+    {
+        "LATITUDE": 5.66332,
+        "LONGITUDE": 100.3833,
+        "rainfall_mm": 6.9
+    },
+    {
+        "LATITUDE": 6.20149,
+        "LONGITUDE": 100.708,
+        "rainfall_mm": 11.1
+    },
+    {
+        "LATITUDE": 5.71716,
+        "LONGITUDE": 100.9244,
+        "rainfall_mm": 10.8
+    },
+    {
+        "LATITUDE": 6.30906,
+        "LONGITUDE": 100.3833,
+        "rainfall_mm": 6.9
+    },
+    {
+        "LATITUDE": 6.0401,
+        "LONGITUDE": 100.708,
+        "rainfall_mm": 9.8
+    },
+    {
+        "LATITUDE": 6.14769,
+        "LONGITUDE": 100.9244,
+        "rainfall_mm": 15.4
+    },
+    {
+        "LATITUDE": 2.85786,
+        "LONGITUDE": 101.736,
+        "rainfall_mm": 1.6
+    },
+    {
+        "LATITUDE": 3.56013,
+        "LONGITUDE": 101.0326,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 2.58764,
+        "LONGITUDE": 101.6819,
+        "rainfall_mm": 0.3
+    },
+    {
+        "LATITUDE": 3.8301,
+        "LONGITUDE": 100.9785,
+        "rainfall_mm": 0.4
+    },
+    {
+        "LATITUDE": 3.12802,
+        "LONGITUDE": 101.4114,
+        "rainfall_mm": 3.9
+    },
+    {
+        "LATITUDE": 6.25527,
+        "LONGITUDE": 100.1669,
+        "rainfall_mm": 14.4
+    },
+    {
+        "LATITUDE": 5.771,
+        "LONGITUDE": 100.3833,
+        "rainfall_mm": 8.7
+    },
+    {
+        "LATITUDE": 2.80382,
+        "LONGITUDE": 101.5737,
+        "rainfall_mm": 0.3
+    },
+    {
+        "LATITUDE": 6.0939,
+        "LONGITUDE": 100.8703,
+        "rainfall_mm": 15.4
+    },
+    {
+        "LATITUDE": 3.3441,
+        "LONGITUDE": 101.4655,
+        "rainfall_mm": 0.2
+    },
+    {
+        "LATITUDE": 5.93247,
+        "LONGITUDE": 100.7621,
+        "rainfall_mm": 5.3
+    },
+    {
+        "LATITUDE": 3.45213,
+        "LONGITUDE": 101.5737,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 6.0939,
+        "LONGITUDE": 101.0867,
+        "rainfall_mm": 4.4
+    },
+    {
+        "LATITUDE": 3.18205,
+        "LONGITUDE": 101.249,
+        "rainfall_mm": 0.1
+    },
+    {
+        "LATITUDE": 5.71716,
+        "LONGITUDE": 100.5457,
+        "rainfall_mm": 3.5
+    },
+    {
+        "LATITUDE": 3.56013,
+        "LONGITUDE": 101.5737,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 5.60948,
+        "LONGITUDE": 100.3833,
+        "rainfall_mm": 6.9
+    },
+    {
+        "LATITUDE": 6.14769,
+        "LONGITUDE": 100.5457,
+        "rainfall_mm": 5.8
+    },
+    {
+        "LATITUDE": 5.771,
+        "LONGITUDE": 100.9244,
+        "rainfall_mm": 10.8
+    },
+    {
+        "LATITUDE": 2.9119,
+        "LONGITUDE": 101.3031,
+        "rainfall_mm": 0.5
+    },
+    {
+        "LATITUDE": 5.39405,
+        "LONGITUDE": 100.8162,
+        "rainfall_mm": 3.0
+    },
+    {
+        "LATITUDE": 3.66813,
+        "LONGITUDE": 101.4114,
+        "rainfall_mm": 1.6
+    },
+    {
+        "LATITUDE": 3.61413,
+        "LONGITUDE": 101.3031,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 3.29009,
+        "LONGITUDE": 101.8442,
+        "rainfall_mm": 3.7
+    },
+    {
+        "LATITUDE": 2.69573,
+        "LONGITUDE": 101.7901,
+        "rainfall_mm": 1.0
+    },
+    {
+        "LATITUDE": 6.20149,
+        "LONGITUDE": 100.221,
+        "rainfall_mm": 14.4
+    },
+    {
+        "LATITUDE": 6.52412,
+        "LONGITUDE": 100.7621,
+        "rainfall_mm": 7.2
+    },
+    {
+        "LATITUDE": 5.66332,
+        "LONGITUDE": 100.5457,
+        "rainfall_mm": 3.0
+    },
+    {
+        "LATITUDE": 3.18205,
+        "LONGITUDE": 101.7901,
+        "rainfall_mm": 3.5
+    },
+    {
+        "LATITUDE": 5.50178,
+        "LONGITUDE": 100.9244,
+        "rainfall_mm": 6.3
+    },
+    {
+        "LATITUDE": 6.30906,
+        "LONGITUDE": 100.5457,
+        "rainfall_mm": 7.7
+    },
+    {
+        "LATITUDE": 2.96594,
+        "LONGITUDE": 101.5737,
+        "rainfall_mm": 0.7
+    },
+    {
+        "LATITUDE": 5.60948,
+        "LONGITUDE": 100.9244,
+        "rainfall_mm": 6.3
+    },
+    {
+        "LATITUDE": 5.82483,
+        "LONGITUDE": 100.8162,
+        "rainfall_mm": 9.1
+    },
+    {
+        "LATITUDE": 5.44791,
+        "LONGITUDE": 100.6539,
+        "rainfall_mm": 3.1
+    },
+    {
+        "LATITUDE": 2.9119,
+        "LONGITUDE": 101.8442,
+        "rainfall_mm": 2.2
+    },
+    {
+        "LATITUDE": 3.01997,
+        "LONGITUDE": 101.6819,
+        "rainfall_mm": 0.7
+    },
+    {
+        "LATITUDE": 5.17855,
+        "LONGITUDE": 100.5998,
+        "rainfall_mm": 0.1
+    },
+    {
+        "LATITUDE": 3.77612,
+        "LONGITUDE": 100.9244,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 6.36283,
+        "LONGITUDE": 100.2751,
+        "rainfall_mm": 14.0
+    },
+    {
+        "LATITUDE": 5.771,
+        "LONGITUDE": 100.5457,
+        "rainfall_mm": 3.5
+    },
+    {
+        "LATITUDE": 6.20149,
+        "LONGITUDE": 100.7621,
+        "rainfall_mm": 11.1
+    },
+    {
+        "LATITUDE": 6.0939,
+        "LONGITUDE": 100.3833,
+        "rainfall_mm": 14.0
+    },
+    {
+        "LATITUDE": 3.39811,
+        "LONGITUDE": 101.3572,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 6.0401,
+        "LONGITUDE": 100.7621,
+        "rainfall_mm": 9.8
+    },
+    {
+        "LATITUDE": 5.55563,
+        "LONGITUDE": 100.8162,
+        "rainfall_mm": 6.7
+    },
+    {
+        "LATITUDE": 5.23244,
+        "LONGITUDE": 100.5457,
+        "rainfall_mm": 0.6
+    },
+    {
+        "LATITUDE": 3.12802,
+        "LONGITUDE": 101.4655,
+        "rainfall_mm": 0.3
+    },
+    {
+        "LATITUDE": 6.4166,
+        "LONGITUDE": 100.3292,
+        "rainfall_mm": 4.6
+    },
+    {
+        "LATITUDE": 5.60948,
+        "LONGITUDE": 100.5457,
+        "rainfall_mm": 3.0
+    },
+    {
+        "LATITUDE": 6.36283,
+        "LONGITUDE": 100.8162,
+        "rainfall_mm": 12.3
+    },
+    {
+        "LATITUDE": 6.47037,
+        "LONGITUDE": 100.3833,
+        "rainfall_mm": 1.5
+    },
+    {
+        "LATITUDE": 6.0939,
+        "LONGITUDE": 100.9244,
+        "rainfall_mm": 15.4
+    },
+    {
+        "LATITUDE": 3.29009,
+        "LONGITUDE": 101.3572,
+        "rainfall_mm": 0.1
+    },
+    {
+        "LATITUDE": 3.45213,
+        "LONGITUDE": 101.249,
+        "rainfall_mm": 0.6
+    },
+    {
+        "LATITUDE": 6.0939,
+        "LONGITUDE": 101.1408,
+        "rainfall_mm": 4.4
+    },
+    {
+        "LATITUDE": 3.18205,
+        "LONGITUDE": 101.3031,
+        "rainfall_mm": 0.1
+    },
+    {
+        "LATITUDE": 3.56013,
+        "LONGITUDE": 101.249,
+        "rainfall_mm": 0.6
+    },
+    {
+        "LATITUDE": 5.98629,
+        "LONGITUDE": 101.0326,
+        "rainfall_mm": 9.1
+    },
+    {
+        "LATITUDE": 3.12802,
+        "LONGITUDE": 101.6278,
+        "rainfall_mm": 3.5
+    },
+    {
+        "LATITUDE": 2.9119,
+        "LONGITUDE": 101.3572,
+        "rainfall_mm": 0.5
+    },
+    {
+        "LATITUDE": 3.01997,
+        "LONGITUDE": 101.1949,
+        "rainfall_mm": 1.5
+    },
+    {
+        "LATITUDE": 3.66813,
+        "LONGITUDE": 101.4655,
+        "rainfall_mm": 0.1
+    },
+    {
+        "LATITUDE": 5.34019,
+        "LONGITUDE": 100.8703,
+        "rainfall_mm": 3.0
+    },
+    {
+        "LATITUDE": 2.80382,
+        "LONGITUDE": 101.7901,
+        "rainfall_mm": 1.0
+    },
+    {
+        "LATITUDE": 3.3441,
+        "LONGITUDE": 101.6819,
+        "rainfall_mm": 1.1
+    },
+    {
+        "LATITUDE": 3.61413,
+        "LONGITUDE": 101.3572,
+        "rainfall_mm": 1.6
+    },
+    {
+        "LATITUDE": 3.77612,
+        "LONGITUDE": 101.3572,
+        "rainfall_mm": 0.2
+    },
+    {
+        "LATITUDE": 3.29009,
+        "LONGITUDE": 101.8983,
+        "rainfall_mm": 3.7
+    },
+    {
+        "LATITUDE": 5.93247,
+        "LONGITUDE": 100.9785,
+        "rainfall_mm": 7.9
+    },
+    {
+        "LATITUDE": 3.50613,
+        "LONGITUDE": 101.1949,
+        "rainfall_mm": 0.6
+    },
+    {
+        "LATITUDE": 3.45213,
+        "LONGITUDE": 101.7901,
+        "rainfall_mm": 0.7
+    },
+    {
+        "LATITUDE": 6.52412,
+        "LONGITUDE": 100.4374,
+        "rainfall_mm": 1.5
+    },
+    {
+        "LATITUDE": 3.18205,
+        "LONGITUDE": 101.8442,
+        "rainfall_mm": 7.4
+    },
+    {
+        "LATITUDE": 6.30906,
+        "LONGITUDE": 100.5998,
+        "rainfall_mm": 7.1
+    },
+    {
+        "LATITUDE": 3.56013,
+        "LONGITUDE": 101.7901,
+        "rainfall_mm": 0.7
+    },
+    {
+        "LATITUDE": 6.0939,
+        "LONGITUDE": 100.5457,
+        "rainfall_mm": 5.8
+    },
+    {
+        "LATITUDE": 5.12466,
+        "LONGITUDE": 100.6539,
+        "rainfall_mm": 0.1
+    },
+    {
+        "LATITUDE": 3.39811,
+        "LONGITUDE": 101.5196,
+        "rainfall_mm": 0.2
+    },
+    {
+        "LATITUDE": 5.55563,
+        "LONGITUDE": 100.3292,
+        "rainfall_mm": 2.7
+    },
+    {
+        "LATITUDE": 5.82483,
+        "LONGITUDE": 100.8703,
+        "rainfall_mm": 9.1
+    },
+    {
+        "LATITUDE": 5.44791,
+        "LONGITUDE": 100.708,
+        "rainfall_mm": 3.1
+    },
+    {
+        "LATITUDE": 2.9119,
+        "LONGITUDE": 101.8983,
+        "rainfall_mm": 2.2
+    },
+    {
+        "LATITUDE": 3.01997,
+        "LONGITUDE": 101.736,
+        "rainfall_mm": 1.7
+    },
+    {
+        "LATITUDE": 3.66813,
+        "LONGITUDE": 101.6278,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 5.87865,
+        "LONGITUDE": 100.8703,
+        "rainfall_mm": 9.1
+    },
+    {
+        "LATITUDE": 6.36283,
+        "LONGITUDE": 100.3292,
+        "rainfall_mm": 4.6
+    },
+    {
+        "LATITUDE": 6.20149,
+        "LONGITUDE": 100.4374,
+        "rainfall_mm": 6.9
+    },
+    {
+        "LATITUDE": 3.50613,
+        "LONGITUDE": 101.736,
+        "rainfall_mm": 0.7
+    },
+    {
+        "LATITUDE": 6.47037,
+        "LONGITUDE": 100.5457,
+        "rainfall_mm": 3.2
+    },
+    {
+        "LATITUDE": 6.0401,
+        "LONGITUDE": 100.4374,
+        "rainfall_mm": 10.6
+    },
+    {
+        "LATITUDE": 3.29009,
+        "LONGITUDE": 101.5196,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 5.55563,
+        "LONGITUDE": 100.8703,
+        "rainfall_mm": 6.0
+    },
+    {
+        "LATITUDE": 5.50178,
+        "LONGITUDE": 100.5998,
+        "rainfall_mm": 3.1
+    },
+    {
+        "LATITUDE": 5.23244,
+        "LONGITUDE": 100.5998,
+        "rainfall_mm": 0.6
+    },
+    {
+        "LATITUDE": 6.4166,
+        "LONGITUDE": 100.3833,
+        "rainfall_mm": 4.6
+    },
+    {
+        "LATITUDE": 6.14769,
+        "LONGITUDE": 101.0326,
+        "rainfall_mm": 9.1
+    },
+    {
+        "LATITUDE": 6.20149,
+        "LONGITUDE": 100.9785,
+        "rainfall_mm": 11.4
+    },
+    {
+        "LATITUDE": 3.72213,
+        "LONGITUDE": 100.9785,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 2.9119,
+        "LONGITUDE": 101.5196,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 2.80382,
+        "LONGITUDE": 101.3031,
+        "rainfall_mm": 0.5
+    },
+    {
+        "LATITUDE": 3.3441,
+        "LONGITUDE": 101.1949,
+        "rainfall_mm": 0.6
+    },
+    {
+        "LATITUDE": 6.0401,
+        "LONGITUDE": 100.9785,
+        "rainfall_mm": 9.1
+    },
+    {
+        "LATITUDE": 5.93247,
+        "LONGITUDE": 100.4915,
+        "rainfall_mm": 3.4
+    },
+    {
+        "LATITUDE": 3.61413,
+        "LONGITUDE": 101.5196,
+        "rainfall_mm": 0.1
+    },
+    {
+        "LATITUDE": 3.45213,
+        "LONGITUDE": 101.3031,
+        "rainfall_mm": 0.6
+    },
+    {
+        "LATITUDE": 3.12802,
+        "LONGITUDE": 101.6819,
+        "rainfall_mm": 3.5
+    },
+    {
+        "LATITUDE": 6.14769,
+        "LONGITUDE": 100.2751,
+        "rainfall_mm": 14.0
+    },
+    {
+        "LATITUDE": 5.82483,
+        "LONGITUDE": 100.3833,
+        "rainfall_mm": 8.7
+    },
+    {
+        "LATITUDE": 5.87865,
+        "LONGITUDE": 100.3833,
+        "rainfall_mm": 8.7
+    },
+    {
+        "LATITUDE": 3.66813,
+        "LONGITUDE": 101.1408,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 3.074,
+        "LONGITUDE": 101.4114,
+        "rainfall_mm": 3.9
+    },
+    {
+        "LATITUDE": 6.25527,
+        "LONGITUDE": 100.5998,
+        "rainfall_mm": 7.1
+    },
+    {
+        "LATITUDE": 3.3441,
+        "LONGITUDE": 101.736,
+        "rainfall_mm": 1.1
+    },
+    {
+        "LATITUDE": 6.30906,
+        "LONGITUDE": 100.2751,
+        "rainfall_mm": 14.4
+    },
+    {
+        "LATITUDE": 6.0939,
+        "LONGITUDE": 100.5998,
+        "rainfall_mm": 6.3
+    },
+    {
+        "LATITUDE": 2.96594,
+        "LONGITUDE": 101.3031,
+        "rainfall_mm": 1.5
+    },
+    {
+        "LATITUDE": 3.39811,
+        "LONGITUDE": 101.5737,
+        "rainfall_mm": 1.1
+    },
+    {
+        "LATITUDE": 5.55563,
+        "LONGITUDE": 100.3833,
+        "rainfall_mm": 2.7
+    },
+    {
+        "LATITUDE": 5.44791,
+        "LONGITUDE": 100.7621,
+        "rainfall_mm": 5.5
+    },
+    {
+        "LATITUDE": 5.87865,
+        "LONGITUDE": 100.9244,
+        "rainfall_mm": 9.1
+    },
+    {
+        "LATITUDE": 3.66813,
+        "LONGITUDE": 101.6819,
+        "rainfall_mm": 0.4
+    },
+    {
+        "LATITUDE": 6.36283,
+        "LONGITUDE": 100.3833,
+        "rainfall_mm": 4.6
+    },
+    {
+        "LATITUDE": 6.20149,
+        "LONGITUDE": 100.4915,
+        "rainfall_mm": 7.7
+    },
+    {
+        "LATITUDE": 6.4166,
+        "LONGITUDE": 100.5457,
+        "rainfall_mm": 1.6
+    },
+    {
+        "LATITUDE": 6.47037,
+        "LONGITUDE": 100.5998,
+        "rainfall_mm": 4.0
+    },
+    {
+        "LATITUDE": 2.74978,
+        "LONGITUDE": 101.5737,
+        "rainfall_mm": 0.3
+    },
+    {
+        "LATITUDE": 6.30906,
+        "LONGITUDE": 100.8162,
+        "rainfall_mm": 16.1
+    },
+    {
+        "LATITUDE": 5.34019,
+        "LONGITUDE": 100.5457,
+        "rainfall_mm": 0.4
+    },
+    {
+        "LATITUDE": 6.0401,
+        "LONGITUDE": 100.4915,
+        "rainfall_mm": 10.6
+    },
+    {
+        "LATITUDE": 3.61413,
+        "LONGITUDE": 101.0326,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 3.23607,
+        "LONGITUDE": 101.4655,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 2.96594,
+        "LONGITUDE": 101.8442,
+        "rainfall_mm": 4.9
+    },
+    {
+        "LATITUDE": 3.77612,
+        "LONGITUDE": 101.0326,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 3.29009,
+        "LONGITUDE": 101.5737,
+        "rainfall_mm": 0.4
+    },
+    {
+        "LATITUDE": 5.93247,
+        "LONGITUDE": 100.6539,
+        "rainfall_mm": 4.7
+    },
+    {
+        "LATITUDE": 5.55563,
+        "LONGITUDE": 100.9244,
+        "rainfall_mm": 4.7
+    },
+    {
+        "LATITUDE": 3.01997,
+        "LONGITUDE": 101.9524,
+        "rainfall_mm": 6.3
+    },
+    {
+        "LATITUDE": 3.8301,
+        "LONGITUDE": 100.9244,
+        "rainfall_mm": 1.6
+    },
+    {
+        "LATITUDE": 5.87865,
+        "LONGITUDE": 100.5457,
+        "rainfall_mm": 3.4
+    },
+    {
+        "LATITUDE": 3.01997,
+        "LONGITUDE": 101.4114,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 3.61413,
+        "LONGITUDE": 101.5737,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 3.77612,
+        "LONGITUDE": 101.5737,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 3.50613,
+        "LONGITUDE": 101.4114,
+        "rainfall_mm": 0.6
+    },
+    {
+        "LATITUDE": 5.50178,
+        "LONGITUDE": 100.8162,
+        "rainfall_mm": 6.3
+    },
+    {
+        "LATITUDE": 3.72213,
+        "LONGITUDE": 101.4114,
+        "rainfall_mm": 0.2
+    },
+    {
+        "LATITUDE": 3.12802,
+        "LONGITUDE": 101.736,
+        "rainfall_mm": 3.5
+    },
+    {
+        "LATITUDE": 5.55563,
+        "LONGITUDE": 100.5457,
+        "rainfall_mm": 1.9
+    },
+    {
+        "LATITUDE": 3.66813,
+        "LONGITUDE": 101.1949,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 3.074,
+        "LONGITUDE": 101.4655,
+        "rainfall_mm": 0.3
+    },
+    {
+        "LATITUDE": 5.39405,
+        "LONGITUDE": 100.7621,
+        "rainfall_mm": 3.0
+    },
+    {
+        "LATITUDE": 6.20149,
+        "LONGITUDE": 100.6539,
+        "rainfall_mm": 7.1
+    },
+    {
+        "LATITUDE": 6.30906,
+        "LONGITUDE": 100.3292,
+        "rainfall_mm": 6.9
+    },
+    {
+        "LATITUDE": 5.28631,
+        "LONGITUDE": 100.708,
+        "rainfall_mm": 2.6
+    },
+    {
+        "LATITUDE": 6.0939,
+        "LONGITUDE": 100.2751,
+        "rainfall_mm": 14.0
+    },
+    {
+        "LATITUDE": 3.39811,
+        "LONGITUDE": 101.249,
+        "rainfall_mm": 0.6
+    },
+    {
+        "LATITUDE": 2.96594,
+        "LONGITUDE": 101.3572,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 6.0401,
+        "LONGITUDE": 100.6539,
+        "rainfall_mm": 4.7
+    },
+    {
+        "LATITUDE": 3.074,
+        "LONGITUDE": 101.6278,
+        "rainfall_mm": 3.5
+    },
+    {
+        "LATITUDE": 3.66813,
+        "LONGITUDE": 101.736,
+        "rainfall_mm": 0.4
+    },
+    {
+        "LATITUDE": 6.25527,
+        "LONGITUDE": 100.8162,
+        "rainfall_mm": 16.1
+    },
+    {
+        "LATITUDE": 6.4166,
+        "LONGITUDE": 100.5998,
+        "rainfall_mm": 5.8
+    },
+    {
+        "LATITUDE": 5.34019,
+        "LONGITUDE": 100.5998,
+        "rainfall_mm": 3.9
+    },
+    {
+        "LATITUDE": 6.0939,
+        "LONGITUDE": 100.8162,
+        "rainfall_mm": 15.4
+    },
+    {
+        "LATITUDE": 3.3441,
+        "LONGITUDE": 101.4114,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 3.39811,
+        "LONGITUDE": 101.7901,
+        "rainfall_mm": 1.1
+    },
+    {
+        "LATITUDE": 2.96594,
+        "LONGITUDE": 101.8983,
+        "rainfall_mm": 4.9
+    },
+    {
+        "LATITUDE": 3.29009,
+        "LONGITUDE": 101.249,
+        "rainfall_mm": 0.1
+    },
+    {
+        "LATITUDE": 5.93247,
+        "LONGITUDE": 100.708,
+        "rainfall_mm": 5.3
+    },
+    {
+        "LATITUDE": 5.98629,
+        "LONGITUDE": 100.708,
+        "rainfall_mm": 9.8
+    },
+    {
+        "LATITUDE": 2.9119,
+        "LONGITUDE": 101.249,
+        "rainfall_mm": 1.5
+    },
+    {
+        "LATITUDE": 2.74978,
+        "LONGITUDE": 101.7901,
+        "rainfall_mm": 1.0
+    },
+    {
+        "LATITUDE": 5.87865,
+        "LONGITUDE": 100.5998,
+        "rainfall_mm": 4.7
+    },
+    {
+        "LATITUDE": 6.47037,
+        "LONGITUDE": 100.8162,
+        "rainfall_mm": 16.2
+    },
+    {
+        "LATITUDE": 3.61413,
+        "LONGITUDE": 101.249,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 3.23607,
+        "LONGITUDE": 101.6819,
+        "rainfall_mm": 0.4
+    },
+    {
+        "LATITUDE": 3.29009,
+        "LONGITUDE": 101.7901,
+        "rainfall_mm": 8.2
+    },
+    {
+        "LATITUDE": 3.50613,
+        "LONGITUDE": 101.0867,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 3.50613,
+        "LONGITUDE": 101.4655,
+        "rainfall_mm": 0.2
+    },
+    {
+        "LATITUDE": 6.20149,
+        "LONGITUDE": 101.0867,
+        "rainfall_mm": 4.8
+    },
+    {
+        "LATITUDE": 5.50178,
+        "LONGITUDE": 100.8703,
+        "rainfall_mm": 6.3
+    },
+    {
+        "LATITUDE": 3.72213,
+        "LONGITUDE": 101.4655,
+        "rainfall_mm": 0.2
+    },
+    {
+        "LATITUDE": 2.96594,
+        "LONGITUDE": 101.5196,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 2.85786,
+        "LONGITUDE": 101.8983,
+        "rainfall_mm": 2.2
+    },
+    {
+        "LATITUDE": 3.56013,
+        "LONGITUDE": 101.1949,
+        "rainfall_mm": 0.6
+    },
+    {
+        "LATITUDE": 3.01997,
+        "LONGITUDE": 101.6278,
+        "rainfall_mm": 0.7
+    },
+    {
+        "LATITUDE": 6.25527,
+        "LONGITUDE": 100.3292,
+        "rainfall_mm": 6.9
+    },
+    {
+        "LATITUDE": 3.61413,
+        "LONGITUDE": 101.7901,
+        "rainfall_mm": 0.4
+    },
+    {
+        "LATITUDE": 3.50613,
+        "LONGITUDE": 101.6278,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 2.80382,
+        "LONGITUDE": 101.736,
+        "rainfall_mm": 1.0
+    },
+    {
+        "LATITUDE": 5.28631,
+        "LONGITUDE": 100.7621,
+        "rainfall_mm": 2.6
+    },
+    {
+        "LATITUDE": 6.0939,
+        "LONGITUDE": 100.3292,
+        "rainfall_mm": 14.0
+    },
+    {
+        "LATITUDE": 3.72213,
+        "LONGITUDE": 101.6278,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 3.12802,
+        "LONGITUDE": 101.9524,
+        "rainfall_mm": 7.7
+    },
+    {
+        "LATITUDE": 3.39811,
+        "LONGITUDE": 101.3031,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 6.52412,
+        "LONGITUDE": 100.3833,
+        "rainfall_mm": 1.5
+    },
+    {
+        "LATITUDE": 5.71716,
+        "LONGITUDE": 100.708,
+        "rainfall_mm": 7.3
+    },
+    {
+        "LATITUDE": 3.56013,
+        "LONGITUDE": 101.736,
+        "rainfall_mm": 0.7
+    },
+    {
+        "LATITUDE": 3.074,
+        "LONGITUDE": 101.6819,
+        "rainfall_mm": 3.5
+    },
+    {
+        "LATITUDE": 6.25527,
+        "LONGITUDE": 100.8703,
+        "rainfall_mm": 16.1
+    },
+    {
+        "LATITUDE": 6.14769,
+        "LONGITUDE": 100.708,
+        "rainfall_mm": 6.8
+    },
+    {
+        "LATITUDE": 6.4166,
+        "LONGITUDE": 100.2751,
+        "rainfall_mm": 14.0
+    },
+    {
+        "LATITUDE": 6.25527,
+        "LONGITUDE": 101.0867,
+        "rainfall_mm": 4.8
+    },
+    {
+        "LATITUDE": 2.85786,
+        "LONGITUDE": 101.5196,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 6.47037,
+        "LONGITUDE": 100.3292,
+        "rainfall_mm": 1.5
+    },
+    {
+        "LATITUDE": 5.82483,
+        "LONGITUDE": 101.0326,
+        "rainfall_mm": 7.9
+    },
+    {
+        "LATITUDE": 3.29009,
+        "LONGITUDE": 101.3031,
+        "rainfall_mm": 0.1
+    },
+    {
+        "LATITUDE": 5.66332,
+        "LONGITUDE": 100.708,
+        "rainfall_mm": 6.7
+    },
+    {
+        "LATITUDE": 5.98629,
+        "LONGITUDE": 100.7621,
+        "rainfall_mm": 9.8
+    },
+    {
+        "LATITUDE": 6.4166,
+        "LONGITUDE": 100.8162,
+        "rainfall_mm": 12.3
+    },
+    {
+        "LATITUDE": 3.18205,
+        "LONGITUDE": 101.4114,
+        "rainfall_mm": 3.9
+    },
+    {
+        "LATITUDE": 5.34019,
+        "LONGITUDE": 100.8162,
+        "rainfall_mm": 3.0
+    },
+    {
+        "LATITUDE": 3.3441,
+        "LONGITUDE": 101.6278,
+        "rainfall_mm": 1.1
+    },
+    {
+        "LATITUDE": 3.23607,
+        "LONGITUDE": 101.736,
+        "rainfall_mm": 8.2
+    },
+    {
+        "LATITUDE": 5.771,
+        "LONGITUDE": 100.708,
+        "rainfall_mm": 7.3
+    },
+    {
+        "LATITUDE": 6.20149,
+        "LONGITUDE": 100.9244,
+        "rainfall_mm": 16.1
+    },
+    {
+        "LATITUDE": 3.77612,
+        "LONGITUDE": 101.3031,
+        "rainfall_mm": 1.2
+    },
+    {
+        "LATITUDE": 3.50613,
+        "LONGITUDE": 101.1408,
+        "rainfall_mm": 0.6
+    },
+    {
+        "LATITUDE": 2.9119,
+        "LONGITUDE": 101.4655,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 6.20149,
+        "LONGITUDE": 101.1408,
+        "rainfall_mm": 4.8
+    },
+    {
+        "LATITUDE": 3.72213,
+        "LONGITUDE": 101.1408,
+        "rainfall_mm": 0.6
+    },
+    {
+        "LATITUDE": 6.0401,
+        "LONGITUDE": 101.1408,
+        "rainfall_mm": 7.7
+    },
+    {
+        "LATITUDE": 5.87865,
+        "LONGITUDE": 100.8162,
+        "rainfall_mm": 9.1
+    },
+    {
+        "LATITUDE": 6.25527,
+        "LONGITUDE": 100.3833,
+        "rainfall_mm": 6.9
+    },
+    {
+        "LATITUDE": 5.60948,
+        "LONGITUDE": 100.708,
+        "rainfall_mm": 6.7
+    },
+    {
+        "LATITUDE": 3.50613,
+        "LONGITUDE": 101.6819,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 3.72213,
+        "LONGITUDE": 101.6819,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 5.12466,
+        "LONGITUDE": 100.4915,
+        "rainfall_mm": 1.2
+    },
+    {
+        "LATITUDE": 2.64169,
+        "LONGITUDE": 101.5196,
+        "rainfall_mm": 0.3
+    },
+    {
+        "LATITUDE": 5.71716,
+        "LONGITUDE": 100.7621,
+        "rainfall_mm": 7.3
+    },
+    {
+        "LATITUDE": 3.074,
+        "LONGITUDE": 101.736,
+        "rainfall_mm": 3.5
+    },
+    {
+        "LATITUDE": 5.50178,
+        "LONGITUDE": 100.5457,
+        "rainfall_mm": 1.9
+    },
+    {
+        "LATITUDE": 6.25527,
+        "LONGITUDE": 100.9244,
+        "rainfall_mm": 16.1
+    },
+    {
+        "LATITUDE": 6.14769,
+        "LONGITUDE": 100.7621,
+        "rainfall_mm": 6.8
+    },
+    {
+        "LATITUDE": 2.85786,
+        "LONGITUDE": 101.5737,
+        "rainfall_mm": 1.0
+    },
+    {
+        "LATITUDE": 3.8301,
+        "LONGITUDE": 100.8162,
+        "rainfall_mm": 1.6
+    },
+    {
+        "LATITUDE": 5.93247,
+        "LONGITUDE": 100.4374,
+        "rainfall_mm": 8.7
+    },
+    {
+        "LATITUDE": 5.66332,
+        "LONGITUDE": 100.7621,
+        "rainfall_mm": 6.7
+    },
+    {
+        "LATITUDE": 5.98629,
+        "LONGITUDE": 100.4374,
+        "rainfall_mm": 10.6
+    },
+    {
+        "LATITUDE": 6.30906,
+        "LONGITUDE": 100.7621,
+        "rainfall_mm": 11.1
+    },
+    {
+        "LATITUDE": 2.80382,
+        "LONGITUDE": 101.4114,
+        "rainfall_mm": 0.5
+    },
+    {
+        "LATITUDE": 2.69573,
+        "LONGITUDE": 101.4655,
+        "rainfall_mm": 0.3
+    },
+    {
+        "LATITUDE": 3.45213,
+        "LONGITUDE": 101.4114,
+        "rainfall_mm": 0.6
+    },
+    {
+        "LATITUDE": 3.18205,
+        "LONGITUDE": 101.4655,
+        "rainfall_mm": 0.3
+    },
+    {
+        "LATITUDE": 5.07077,
+        "LONGITUDE": 100.5457,
+        "rainfall_mm": 1.2
+    },
+    {
+        "LATITUDE": 5.87865,
+        "LONGITUDE": 100.3292,
+        "rainfall_mm": 8.7
+    },
+    {
+        "LATITUDE": 3.66813,
+        "LONGITUDE": 101.0867,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 3.56013,
+        "LONGITUDE": 101.4114,
+        "rainfall_mm": 0.6
+    },
+    {
+        "LATITUDE": 6.25527,
+        "LONGITUDE": 100.5457,
+        "rainfall_mm": 7.7
+    },
+    {
+        "LATITUDE": 5.771,
+        "LONGITUDE": 100.7621,
+        "rainfall_mm": 7.3
+    },
+    {
+        "LATITUDE": 5.98629,
+        "LONGITUDE": 100.9785,
+        "rainfall_mm": 9.1
+    },
+    {
+        "LATITUDE": 5.39405,
+        "LONGITUDE": 100.6539,
+        "rainfall_mm": 3.9
+    },
+    {
+        "LATITUDE": 3.72213,
+        "LONGITUDE": 101.1949,
+        "rainfall_mm": 1.2
+    },
+    {
+        "LATITUDE": 2.96594,
+        "LONGITUDE": 101.249,
+        "rainfall_mm": 1.5
+    },
+    {
+        "LATITUDE": 2.69573,
+        "LONGITUDE": 101.6278,
+        "rainfall_mm": 0.3
+    },
+    {
+        "LATITUDE": 3.18205,
+        "LONGITUDE": 101.6278,
+        "rainfall_mm": 3.5
+    },
+    {
+        "LATITUDE": 5.60948,
+        "LONGITUDE": 100.7621,
+        "rainfall_mm": 6.7
+    },
+    {
+        "LATITUDE": 3.23607,
+        "LONGITUDE": 101.9524,
+        "rainfall_mm": 3.4
+    },
+    {
+        "LATITUDE": 5.82483,
+        "LONGITUDE": 100.6539,
+        "rainfall_mm": 4.7
+    },
+    {
+        "LATITUDE": 2.9119,
+        "LONGITUDE": 101.6819,
+        "rainfall_mm": 1.0
+    },
+    {
+        "LATITUDE": 2.74978,
+        "LONGITUDE": 101.5196,
+        "rainfall_mm": 0.3
+    },
+    {
+        "LATITUDE": 3.72213,
+        "LONGITUDE": 101.736,
+        "rainfall_mm": 5.1
+    },
+    {
+        "LATITUDE": 3.23607,
+        "LONGITUDE": 101.4114,
+        "rainfall_mm": 0.1
+    },
+    {
+        "LATITUDE": 2.96594,
+        "LONGITUDE": 101.7901,
+        "rainfall_mm": 1.7
+    },
+    {
+        "LATITUDE": 2.64169,
+        "LONGITUDE": 101.5737,
+        "rainfall_mm": 0.3
+    },
+    {
+        "LATITUDE": 5.71716,
+        "LONGITUDE": 100.4374,
+        "rainfall_mm": 3.5
+    },
+    {
+        "LATITUDE": 6.20149,
+        "LONGITUDE": 100.5998,
+        "rainfall_mm": 7.1
+    },
+    {
+        "LATITUDE": 6.0401,
+        "LONGITUDE": 100.5998,
+        "rainfall_mm": 4.7
+    },
+    {
+        "LATITUDE": 6.14769,
+        "LONGITUDE": 100.4374,
+        "rainfall_mm": 14.0
+    },
+    {
+        "LATITUDE": 3.8301,
+        "LONGITUDE": 100.8703,
+        "rainfall_mm": 1.6
+    },
+    {
+        "LATITUDE": 6.36283,
+        "LONGITUDE": 100.6539,
+        "rainfall_mm": 5.8
+    },
+    {
+        "LATITUDE": 5.66332,
+        "LONGITUDE": 100.4374,
+        "rainfall_mm": 6.9
+    },
+    {
+        "LATITUDE": 5.98629,
+        "LONGITUDE": 100.4915,
+        "rainfall_mm": 10.6
+    },
+    {
+        "LATITUDE": 5.71716,
+        "LONGITUDE": 100.9785,
+        "rainfall_mm": 5.9
+    },
+    {
+        "LATITUDE": 2.80382,
+        "LONGITUDE": 101.4655,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 3.074,
+        "LONGITUDE": 101.9524,
+        "rainfall_mm": 7.7
+    },
+    {
+        "LATITUDE": 6.0939,
+        "LONGITUDE": 100.7621,
+        "rainfall_mm": 6.8
+    },
+    {
+        "LATITUDE": 6.14769,
+        "LONGITUDE": 100.9785,
+        "rainfall_mm": 9.1
+    },
+    {
+        "LATITUDE": 3.45213,
+        "LONGITUDE": 101.4655,
+        "rainfall_mm": 0.2
+    },
+    {
+        "LATITUDE": 3.66813,
+        "LONGITUDE": 100.9244,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 2.85786,
+        "LONGITUDE": 101.7901,
+        "rainfall_mm": 1.6
+    },
+    {
+        "LATITUDE": 5.07077,
+        "LONGITUDE": 100.5998,
+        "rainfall_mm": 0.1
+    },
+    {
+        "LATITUDE": 3.56013,
+        "LONGITUDE": 101.0867,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 3.56013,
+        "LONGITUDE": 101.4655,
+        "rainfall_mm": 0.2
+    },
+    {
+        "LATITUDE": 5.771,
+        "LONGITUDE": 100.4374,
+        "rainfall_mm": 3.5
+    },
+    {
+        "LATITUDE": 5.66332,
+        "LONGITUDE": 100.9785,
+        "rainfall_mm": 4.7
+    },
+    {
+        "LATITUDE": 6.47037,
+        "LONGITUDE": 100.7621,
+        "rainfall_mm": 7.2
+    },
+    {
+        "LATITUDE": 6.30906,
+        "LONGITUDE": 100.9785,
+        "rainfall_mm": 11.4
+    },
+    {
+        "LATITUDE": 5.39405,
+        "LONGITUDE": 100.708,
+        "rainfall_mm": 3.0
+    },
+    {
+        "LATITUDE": 2.80382,
+        "LONGITUDE": 101.6278,
+        "rainfall_mm": 0.3
+    },
+    {
+        "LATITUDE": 3.61413,
+        "LONGITUDE": 101.1949,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 5.28631,
+        "LONGITUDE": 100.6539,
+        "rainfall_mm": 0.6
+    },
+    {
+        "LATITUDE": 3.29009,
+        "LONGITUDE": 101.736,
+        "rainfall_mm": 8.2
+    },
+    {
+        "LATITUDE": 2.69573,
+        "LONGITUDE": 101.6819,
+        "rainfall_mm": 0.3
+    },
+    {
+        "LATITUDE": 3.45213,
+        "LONGITUDE": 101.6278,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 3.18205,
+        "LONGITUDE": 101.6819,
+        "rainfall_mm": 3.5
+    },
+    {
+        "LATITUDE": 3.56013,
+        "LONGITUDE": 101.6278,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 5.60948,
+        "LONGITUDE": 100.4374,
+        "rainfall_mm": 6.9
+    },
+    {
+        "LATITUDE": 2.96594,
+        "LONGITUDE": 101.4655,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 5.771,
+        "LONGITUDE": 100.9785,
+        "rainfall_mm": 5.9
+    },
+    {
+        "LATITUDE": 5.82483,
+        "LONGITUDE": 100.708,
+        "rainfall_mm": 5.3
+    },
+    {
+        "LATITUDE": 5.44791,
+        "LONGITUDE": 100.5457,
+        "rainfall_mm": 1.9
+    },
+    {
+        "LATITUDE": 2.9119,
+        "LONGITUDE": 101.736,
+        "rainfall_mm": 1.6
+    },
+    {
+        "LATITUDE": 3.01997,
+        "LONGITUDE": 101.5737,
+        "rainfall_mm": 0.7
+    },
+    {
+        "LATITUDE": 3.61413,
+        "LONGITUDE": 101.736,
+        "rainfall_mm": 0.4
+    },
+    {
+        "LATITUDE": 6.20149,
+        "LONGITUDE": 100.2751,
+        "rainfall_mm": 14.4
+    },
+    {
+        "LATITUDE": 5.71716,
+        "LONGITUDE": 100.4915,
+        "rainfall_mm": 3.5
+    },
+    {
+        "LATITUDE": 5.98629,
+        "LONGITUDE": 100.6539,
+        "rainfall_mm": 4.7
+    },
+    {
+        "LATITUDE": 3.12802,
+        "LONGITUDE": 101.8983,
+        "rainfall_mm": 7.4
+    },
+    {
+        "LATITUDE": 6.14769,
+        "LONGITUDE": 100.4915,
+        "rainfall_mm": 5.8
+    },
+    {
+        "LATITUDE": 5.55563,
+        "LONGITUDE": 100.708,
+        "rainfall_mm": 3.1
+    },
+    {
+        "LATITUDE": 3.66813,
+        "LONGITUDE": 101.3572,
+        "rainfall_mm": 1.6
+    },
+    {
+        "LATITUDE": 2.85786,
+        "LONGITUDE": 101.3031,
+        "rainfall_mm": 0.5
+    },
+    {
+        "LATITUDE": 5.17855,
+        "LONGITUDE": 100.6539,
+        "rainfall_mm": 0.1
+    },
+    {
+        "LATITUDE": 3.77612,
+        "LONGITUDE": 100.9785,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 6.25527,
+        "LONGITUDE": 101.0326,
+        "rainfall_mm": 11.4
+    },
+    {
+        "LATITUDE": 3.23607,
+        "LONGITUDE": 101.6278,
+        "rainfall_mm": 0.4
+    },
+    {
+        "LATITUDE": 5.66332,
+        "LONGITUDE": 100.4915,
+        "rainfall_mm": 3.0
+    },
+    {
+        "LATITUDE": 6.20149,
+        "LONGITUDE": 100.8162,
+        "rainfall_mm": 16.1
+    },
+    {
+        "LATITUDE": 6.36283,
+        "LONGITUDE": 100.708,
+        "rainfall_mm": 8.0
+    },
+    {
+        "LATITUDE": 6.30906,
+        "LONGITUDE": 100.4915,
+        "rainfall_mm": 7.7
+    },
+    {
+        "LATITUDE": 6.0401,
+        "LONGITUDE": 100.8162,
+        "rainfall_mm": 9.8
+    },
+    {
+        "LATITUDE": 3.45213,
+        "LONGITUDE": 101.1408,
+        "rainfall_mm": 0.6
+    },
+    {
+        "LATITUDE": 6.0939,
+        "LONGITUDE": 101.0326,
+        "rainfall_mm": 9.1
+    },
+    {
+        "LATITUDE": 2.85786,
+        "LONGITUDE": 101.8442,
+        "rainfall_mm": 2.2
+    },
+    {
+        "LATITUDE": 3.56013,
+        "LONGITUDE": 101.1408,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 3.12802,
+        "LONGITUDE": 101.5196,
+        "rainfall_mm": 0.3
+    },
+    {
+        "LATITUDE": 6.25527,
+        "LONGITUDE": 100.2751,
+        "rainfall_mm": 14.4
+    },
+    {
+        "LATITUDE": 5.771,
+        "LONGITUDE": 100.4915,
+        "rainfall_mm": 3.5
+    },
+    {
+        "LATITUDE": 6.4166,
+        "LONGITUDE": 100.7621,
+        "rainfall_mm": 8.0
+    },
+    {
+        "LATITUDE": 5.34019,
+        "LONGITUDE": 100.7621,
+        "rainfall_mm": 3.0
+    },
+    {
+        "LATITUDE": 2.80382,
+        "LONGITUDE": 101.6819,
+        "rainfall_mm": 0.3
+    },
+    {
+        "LATITUDE": 3.3441,
+        "LONGITUDE": 101.5737,
+        "rainfall_mm": 1.1
+    },
+    {
+        "LATITUDE": 5.93247,
+        "LONGITUDE": 100.8703,
+        "rainfall_mm": 9.1
+    },
+    {
+        "LATITUDE": 2.69573,
+        "LONGITUDE": 101.736,
+        "rainfall_mm": 1.0
+    },
+    {
+        "LATITUDE": 3.45213,
+        "LONGITUDE": 101.6819,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 5.71716,
+        "LONGITUDE": 100.6539,
+        "rainfall_mm": 4.9
+    },
+    {
+        "LATITUDE": 3.18205,
+        "LONGITUDE": 101.736,
+        "rainfall_mm": 3.5
+    },
+    {
+        "LATITUDE": 5.93247,
+        "LONGITUDE": 101.0867,
+        "rainfall_mm": 5.8
+    },
+    {
+        "LATITUDE": 3.56013,
+        "LONGITUDE": 101.6819,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 5.12466,
+        "LONGITUDE": 100.5457,
+        "rainfall_mm": 1.2
+    },
+    {
+        "LATITUDE": 3.39811,
+        "LONGITUDE": 101.4114,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 5.60948,
+        "LONGITUDE": 100.4915,
+        "rainfall_mm": 3.0
+    },
+    {
+        "LATITUDE": 6.14769,
+        "LONGITUDE": 100.6539,
+        "rainfall_mm": 6.3
+    },
+    {
+        "LATITUDE": 5.82483,
+        "LONGITUDE": 100.7621,
+        "rainfall_mm": 5.3
+    },
+    {
+        "LATITUDE": 5.44791,
+        "LONGITUDE": 100.5998,
+        "rainfall_mm": 3.1
+    },
+    {
+        "LATITUDE": 5.87865,
+        "LONGITUDE": 100.7621,
+        "rainfall_mm": 5.3
+    },
+    {
+        "LATITUDE": 3.66813,
+        "LONGITUDE": 101.5196,
+        "rainfall_mm": 0.1
+    },
+    {
+        "LATITUDE": 3.8301,
+        "LONGITUDE": 101.3572,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 3.29009,
+        "LONGITUDE": 101.9524,
+        "rainfall_mm": 3.4
+    },
+    {
+        "LATITUDE": 6.20149,
+        "LONGITUDE": 100.3292,
+        "rainfall_mm": 6.9
+    },
+    {
+        "LATITUDE": 5.66332,
+        "LONGITUDE": 100.6539,
+        "rainfall_mm": 5.1
+    },
+    {
+        "LATITUDE": 6.30906,
+        "LONGITUDE": 100.6539,
+        "rainfall_mm": 7.1
+    },
+    {
+        "LATITUDE": 6.0401,
+        "LONGITUDE": 100.3292,
+        "rainfall_mm": 14.0
+    },
+    {
+        "LATITUDE": 2.96594,
+        "LONGITUDE": 101.6819,
+        "rainfall_mm": 0.7
+    },
+    {
+        "LATITUDE": 3.29009,
+        "LONGITUDE": 101.4114,
+        "rainfall_mm": 0.1
+    },
+    {
+        "LATITUDE": 5.55563,
+        "LONGITUDE": 100.7621,
+        "rainfall_mm": 6.7
+    },
+    {
+        "LATITUDE": 2.85786,
+        "LONGITUDE": 101.3572,
+        "rainfall_mm": 0.5
+    },
+    {
+        "LATITUDE": 3.01997,
+        "LONGITUDE": 101.7901,
+        "rainfall_mm": 1.7
+    },
+    {
+        "LATITUDE": 3.88409,
+        "LONGITUDE": 100.9244,
+        "rainfall_mm": 1.6
+    },
+    {
+        "LATITUDE": 6.36283,
+        "LONGITUDE": 100.7621,
+        "rainfall_mm": 8.0
+    },
+    {
+        "LATITUDE": 5.771,
+        "LONGITUDE": 100.6539,
+        "rainfall_mm": 4.9
+    },
+    {
+        "LATITUDE": 6.20149,
+        "LONGITUDE": 100.8703,
+        "rainfall_mm": 16.1
+    },
+    {
+        "LATITUDE": 3.72213,
+        "LONGITUDE": 100.8703,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 2.9119,
+        "LONGITUDE": 101.4114,
+        "rainfall_mm": 0.5
+    },
+    {
+        "LATITUDE": 6.0939,
+        "LONGITUDE": 100.4915,
+        "rainfall_mm": 5.8
+    },
+    {
+        "LATITUDE": 6.0401,
+        "LONGITUDE": 100.8703,
+        "rainfall_mm": 9.8
+    },
+    {
+        "LATITUDE": 3.72213,
+        "LONGITUDE": 101.0867,
+        "rainfall_mm": 0.6
+    },
+    {
+        "LATITUDE": 3.61413,
+        "LONGITUDE": 101.4114,
+        "rainfall_mm": 1.6
+    },
+    {
+        "LATITUDE": 5.93247,
+        "LONGITUDE": 100.3833,
+        "rainfall_mm": 8.7
+    },
+    {
+        "LATITUDE": 3.45213,
+        "LONGITUDE": 101.1949,
+        "rainfall_mm": 0.6
+    },
+    {
+        "LATITUDE": 3.77612,
+        "LONGITUDE": 101.4114,
+        "rainfall_mm": 0.2
+    },
+    {
+        "LATITUDE": 6.0401,
+        "LONGITUDE": 101.0867,
+        "rainfall_mm": 7.7
+    },
+    {
+        "LATITUDE": 5.23244,
+        "LONGITUDE": 100.6539,
+        "rainfall_mm": 0.6
+    },
+    {
+        "LATITUDE": 3.12802,
+        "LONGITUDE": 101.5737,
+        "rainfall_mm": 3.5
+    },
+    {
+        "LATITUDE": 6.4166,
+        "LONGITUDE": 100.4374,
+        "rainfall_mm": 4.6
+    },
+    {
+        "LATITUDE": 5.60948,
+        "LONGITUDE": 100.6539,
+        "rainfall_mm": 5.1
+    },
+    {
+        "LATITUDE": 6.47037,
+        "LONGITUDE": 100.4915,
+        "rainfall_mm": 3.2
+    },
+    {
+        "LATITUDE": 3.66813,
+        "LONGITUDE": 101.0326,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 3.3441,
+        "LONGITUDE": 101.249,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 5.93247,
+        "LONGITUDE": 100.9244,
+        "rainfall_mm": 9.1
+    },
+    {
+        "LATITUDE": 3.45213,
+        "LONGITUDE": 101.736,
+        "rainfall_mm": 0.7
+    },
+    {
+        "LATITUDE": 5.98629,
+        "LONGITUDE": 101.1408,
+        "rainfall_mm": 7.7
+    },
+    {
+        "LATITUDE": 2.96594,
+        "LONGITUDE": 101.1949,
+        "rainfall_mm": 1.5
+    },
+    {
+        "LATITUDE": 3.39811,
+        "LONGITUDE": 101.4655,
+        "rainfall_mm": 0.2
+    },
+    {
+        "LATITUDE": 5.12466,
+        "LONGITUDE": 100.5998,
+        "rainfall_mm": 0.1
+    },
+    {
+        "LATITUDE": 5.82483,
+        "LONGITUDE": 100.4374,
+        "rainfall_mm": 8.7
+    },
+    {
+        "LATITUDE": 3.01997,
+        "LONGITUDE": 101.3031,
+        "rainfall_mm": 1.5
+    },
+    {
+        "LATITUDE": 3.66813,
+        "LONGITUDE": 101.5737,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 3.3441,
+        "LONGITUDE": 101.7901,
+        "rainfall_mm": 1.1
+    },
+    {
+        "LATITUDE": 3.23607,
+        "LONGITUDE": 101.8983,
+        "rainfall_mm": 3.7
+    },
+    {
+        "LATITUDE": 5.87865,
+        "LONGITUDE": 101.0326,
+        "rainfall_mm": 7.9
+    },
+    {
+        "LATITUDE": 3.50613,
+        "LONGITUDE": 101.3031,
+        "rainfall_mm": 0.6
+    },
+    {
+        "LATITUDE": 6.20149,
+        "LONGITUDE": 100.3833,
+        "rainfall_mm": 6.9
+    },
+    {
+        "LATITUDE": 3.18205,
+        "LONGITUDE": 101.9524,
+        "rainfall_mm": 7.7
+    },
+    {
+        "LATITUDE": 2.74978,
+        "LONGITUDE": 101.4655,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 6.30906,
+        "LONGITUDE": 100.708,
+        "rainfall_mm": 11.1
+    },
+    {
+        "LATITUDE": 6.0401,
+        "LONGITUDE": 100.3833,
+        "rainfall_mm": 14.0
+    },
+    {
+        "LATITUDE": 6.0939,
+        "LONGITUDE": 100.6539,
+        "rainfall_mm": 6.3
+    },
+    {
+        "LATITUDE": 3.39811,
+        "LONGITUDE": 101.6278,
+        "rainfall_mm": 1.1
+    },
+    {
+        "LATITUDE": 2.96594,
+        "LONGITUDE": 101.736,
+        "rainfall_mm": 1.7
+    },
+    {
+        "LATITUDE": 3.29009,
+        "LONGITUDE": 101.4655,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 5.93247,
+        "LONGITUDE": 100.5457,
+        "rainfall_mm": 3.4
+    },
+    {
+        "LATITUDE": 5.55563,
+        "LONGITUDE": 100.4374,
+        "rainfall_mm": 2.7
+    },
+    {
+        "LATITUDE": 5.82483,
+        "LONGITUDE": 100.9785,
+        "rainfall_mm": 7.9
+    },
+    {
+        "LATITUDE": 5.44791,
+        "LONGITUDE": 100.8162,
+        "rainfall_mm": 5.5
+    },
+    {
+        "LATITUDE": 5.87865,
+        "LONGITUDE": 100.9785,
+        "rainfall_mm": 7.9
+    },
+    {
+        "LATITUDE": 3.01997,
+        "LONGITUDE": 101.8442,
+        "rainfall_mm": 4.9
+    },
+    {
+        "LATITUDE": 6.36283,
+        "LONGITUDE": 100.4374,
+        "rainfall_mm": 4.6
+    },
+    {
+        "LATITUDE": 3.72213,
+        "LONGITUDE": 100.9244,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 6.47037,
+        "LONGITUDE": 100.6539,
+        "rainfall_mm": 4.0
+    },
+    {
+        "LATITUDE": 6.0401,
+        "LONGITUDE": 100.9244,
+        "rainfall_mm": 9.8
+    },
+    {
+        "LATITUDE": 3.61413,
+        "LONGITUDE": 101.0867,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 3.61413,
+        "LONGITUDE": 101.4655,
+        "rainfall_mm": 0.1
+    },
+    {
+        "LATITUDE": 3.8301,
+        "LONGITUDE": 101.0326,
+        "rainfall_mm": 0.4
+    },
+    {
+        "LATITUDE": 3.29009,
+        "LONGITUDE": 101.6278,
+        "rainfall_mm": 0.4
+    },
+    {
+        "LATITUDE": 3.77612,
+        "LONGITUDE": 101.0867,
+        "rainfall_mm": 0.6
+    },
+    {
+        "LATITUDE": 3.074,
+        "LONGITUDE": 101.8983,
+        "rainfall_mm": 7.4
+    },
+    {
+        "LATITUDE": 5.50178,
+        "LONGITUDE": 100.708,
+        "rainfall_mm": 3.1
+    },
+    {
+        "LATITUDE": 5.23244,
+        "LONGITUDE": 100.708,
+        "rainfall_mm": 2.6
+    },
+    {
+        "LATITUDE": 6.4166,
+        "LONGITUDE": 100.4915,
+        "rainfall_mm": 1.6
+    },
+    {
+        "LATITUDE": 2.9119,
+        "LONGITUDE": 101.6278,
+        "rainfall_mm": 1.0
+    },
+    {
+        "LATITUDE": 3.3441,
+        "LONGITUDE": 101.3031,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 3.61413,
+        "LONGITUDE": 101.6278,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 5.66332,
+        "LONGITUDE": 100.9244,
+        "rainfall_mm": 6.0
+    },
+    {
+        "LATITUDE": 3.77612,
+        "LONGITUDE": 101.6278,
+        "rainfall_mm": 0.0
+    },
+    {
+        "LATITUDE": 6.20149,
+        "LONGITUDE": 100.5457,
+        "rainfall_mm": 7.7
+    },
+    {
+        "LATITUDE": 6.30906,
+        "LONGITUDE": 100.221,
+        "rainfall_mm": 14.4
+    },
+    {
+        "LATITUDE": 5.28631,
+        "LONGITUDE": 100.5998,
+        "rainfall_mm": 0.6
+    }
+]
