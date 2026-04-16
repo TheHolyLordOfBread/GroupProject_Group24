@@ -133,7 +133,7 @@ function updateSourceCheckboxes(sourceValue) {
 }
 
 function renderCombinedChart() {
-    const sourceValue = document.getElementById("Source").value;
+    const sourceValue = document.getElementById("Source")?.value;
     const kedahValue = document.getElementById("kedahLocation").value;
     const selangorValue = document.getElementById("selangorLocation").value;
 
@@ -395,7 +395,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             document.getElementById("kedahLocation").addEventListener("change", renderCombinedChart);
             document.getElementById("selangorLocation").addEventListener("change", renderCombinedChart);
-            document.getElementById("Source").addEventListener("change", renderCombinedChart);
+            document.getElementById("Source")?.addEventListener("change", renderCombinedChart);
         });
     });
 =======

@@ -4,25 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NAHRIM Dashboard</title>
-<<<<<<< Updated upstream
     <link rel="stylesheet" href="css/style.css">
-=======
 
     <link rel="stylesheet" href="css/style.css?v=14">
->>>>>>> Stashed changes
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
     <script defer src="js/index.js"></script>
-<<<<<<< Updated upstream
 
-=======
->>>>>>> Stashed changes
+    <link rel="stylesheet" href="css/style.css?v=30">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+    <script defer src="js/index.js?v=30"></script>F
 </head>
 <body>
 
 <?php include 'navbar.php'; ?>
 
-<div class="actionbar">
+<div role="banner" class="actionbar">
     <div class="imageBox" style="display: inline-flex;">
         <img src="images/nahrim-banner.png" alt="NAHRIM Banner">
     </div>
@@ -32,7 +30,6 @@
                 <img src="images/nahrim-banner.png" alt="NAHRIM Banner">
             </div>
 
-<<<<<<< Updated upstream
             <form action="Index.php" method="POST">
                 <label for="Range">Select Range:</label>
                     <select name="Range" id="Range">
@@ -45,8 +42,9 @@
 
         </div>
     </div>
-=======
     <form action="#" method="POST">
+
+    <form action="#" method="POST" role="form">
         <label for="Range">Select Range:</label>
         <select name="Range" id="Range">
             <option value="Range1">&lt;1 day</option>
@@ -55,7 +53,7 @@
             <option value="Range4">&lt;4 weeks</option>
         </select>
     </form>
->>>>>>> Stashed changes
+
 </div>
 
 <div class="page-content">
@@ -88,7 +86,6 @@
         </div>
     </div>
 
-<<<<<<< Updated upstream
 
 
     <div class="box-row">
@@ -103,7 +100,6 @@
                 <select id="selangorLocation"></select>
             </div>
 
-=======
     <div class="box-row">
         <div class="box">
             <h2>COMBINED RAINFALL DATA</h2>
@@ -120,7 +116,7 @@
                 </select>
             </div>
 
->>>>>>> Stashed changes
+
             <div class="chart-container">
                 <canvas id="combinedRainfallChart"></canvas>
             </div>
