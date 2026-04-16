@@ -2,12 +2,37 @@ let combinedChart = null;
 let kedahRows = [];
 let selangorRows = [];
 
+<<<<<<< Updated upstream
 function formatDate(year, month, day) {
     return `${year}-${String(month).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
 }
 
 function getUniqueLocations(rows) {
     const map = new Map();
+=======
+function parseCSV(text) {
+    const lines = text.trim().split("\n");
+    const headers = lines[0].split(",");
+
+    return lines.slice(1).map(line => {
+        const values = line.split(",");
+        const row = {};
+
+        headers.forEach((header, index) => {
+            row[header.trim()] = values[index] ? values[index].trim() : "";
+        });
+
+        return row;
+    });
+}
+
+function formatDate(year, month, day) {
+    return `${year}-${String(month).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
+}
+
+function groupByLocation(data) {
+    const grouped = {};
+>>>>>>> Stashed changes
 
     rows.forEach(row => {
         const lat = row.Latitude;
@@ -17,6 +42,17 @@ function getUniqueLocations(rows) {
         if (!map.has(key)) {
             map.set(key, { lat, lon });
         }
+<<<<<<< Updated upstream
+=======
+
+        grouped[key].push({
+            date: formatDate(row.Year, row.Month, row.Day),
+            rcp26: parseFloat(row["Ave_RCP2.6"]) || 0,
+            rcp45: parseFloat(row["Ave_RCP4.5"]) || 0,
+            rcp60: parseFloat(row["Ave_RCP6.0"]) || 0,
+            rcp85: parseFloat(row["Ave_RCP8.5"]) || 0
+        });
+>>>>>>> Stashed changes
     });
 
     return Array.from(map.values());
@@ -34,6 +70,7 @@ function populateLocationDropdown(selectId, locations) {
     });
 }
 
+<<<<<<< Updated upstream
 function getLocationSeries(rows, lat, lon, rcpColumn) {
     const filtered = rows.filter(row =>
         String(row.Latitude) === String(lat) &&
@@ -137,6 +174,157 @@ function renderCombinedChart() {
                     pointRadius: 3
                 }
             ]
+=======
+function getDatasetsForSource(kedahSeries, selangorSeries, sourceValue) {
+    if (sourceValue === "NAHRIM") {
+        return [
+            {
+                label: `Kedah NAHRIM - Ave_RCP4.5`,
+                data: kedahSeries.map(item => item.rcp45),
+                borderWidth: 2,
+                tension: 0.2,
+                fill: false
+            },
+            {
+                label: `Selangor NAHRIM - Ave_RCP4.5`,
+                data: selangorSeries.map(item => item.rcp45),
+                borderWidth: 2,
+                tension: 0.2,
+                fill: false
+            }
+        ];
+    }
+
+    if (sourceValue === "OpenMeteo") {
+        return [
+            {
+                label: `Kedah OpenMeteo - Ave_RCP4.5`,
+                data: kedahSeries.map(item => item.rcp45),
+                borderWidth: 2,
+                tension: 0.2,
+                fill: false
+            },
+            {
+                label: `Selangor OpenMeteo - Ave_RCP4.5`,
+                data: selangorSeries.map(item => item.rcp45),
+                borderWidth: 2,
+                tension: 0.2,
+                fill: false
+            }
+        ];
+    }
+
+    if (sourceValue === "Google") {
+        return [
+            {
+                label: `Kedah Google - Ave_RCP4.5`,
+                data: kedahSeries.map(item => item.rcp45),
+                borderWidth: 2,
+                tension: 0.2,
+                fill: false
+            },
+            {
+                label: `Selangor Google - Ave_RCP4.5`,
+                data: selangorSeries.map(item => item.rcp45),
+                borderWidth: 2,
+                tension: 0.2,
+                fill: false
+            }
+        ];
+    }
+
+    return [
+        {
+            label: `Kedah Combined - Ave_RCP4.5`,
+            data: kedahSeries.map(item => item.rcp45),
+            borderWidth: 2,
+            tension: 0.2,
+            fill: false
+        },
+        {
+            label: `Selangor Combined - Ave_RCP4.5`,
+            data: selangorSeries.map(item => item.rcp45),
+            borderWidth: 2,
+            tension: 0.2,
+            fill: false
+        }
+    ];
+}
+
+function updateSourcePanel(sourceValue) {
+    const panelTitle = document.getElementById("sourcePanelTitle");
+
+    if (!panelTitle) return;
+
+    if (sourceValue === "NAHRIM") {
+        panelTitle.textContent = "NAHRIM PANEL";
+    } else if (sourceValue === "OpenMeteo") {
+        panelTitle.textContent = "OPENMETEO PANEL";
+    } else if (sourceValue === "Google") {
+        panelTitle.textContent = "GOOGLE PANEL";
+    } else {
+        panelTitle.textContent = "COMBINED PANEL";
+    }
+}
+
+function updateSourceCheckboxes(sourceValue) {
+    const nahrim = document.getElementById("NAHRIM");
+    const openMeteo = document.getElementById("OpenMeteo");
+    const google = document.getElementById("Google");
+
+    if (!nahrim || !openMeteo || !google) return;
+
+    nahrim.checked = false;
+    openMeteo.checked = false;
+    google.checked = false;
+
+    if (sourceValue === "NAHRIM") {
+        nahrim.checked = true;
+    } else if (sourceValue === "OpenMeteo") {
+        openMeteo.checked = true;
+    } else if (sourceValue === "Google") {
+        google.checked = true;
+    } else {
+        nahrim.checked = true;
+        openMeteo.checked = true;
+        google.checked = true;
+    }
+}
+
+function renderCombinedChart() {
+    const sourceSelect = document.getElementById("Source");
+    const kedahLocationSelect = document.getElementById("kedahLocation");
+    const selangorLocationSelect = document.getElementById("selangorLocation");
+    const canvas = document.getElementById("combinedRainfallChart");
+
+    if (!sourceSelect || !kedahLocationSelect || !selangorLocationSelect || !canvas) return;
+
+    const sourceValue = sourceSelect.value;
+
+    const kedahGrouped = groupByLocation(kedahRows);
+    const selangorGrouped = groupByLocation(selangorRows);
+
+    const kedahLocation = kedahLocationSelect.value;
+    const selangorLocation = selangorLocationSelect.value;
+
+    const kedahSeries = kedahGrouped[kedahLocation] || [];
+    const selangorSeries = selangorGrouped[selangorLocation] || [];
+
+    const labels = kedahSeries.map(item => item.date);
+    const datasets = getDatasetsForSource(kedahSeries, selangorSeries, sourceValue);
+
+    const ctx = canvas.getContext("2d");
+
+    if (combinedChart) {
+        combinedChart.destroy();
+    }
+
+    combinedChart = new Chart(ctx, {
+        type: "line",
+        data: {
+            labels: labels,
+            datasets: datasets
+>>>>>>> Stashed changes
         },
         options: {
             responsive: true,
@@ -144,7 +332,11 @@ function renderCombinedChart() {
             plugins: {
                 title: {
                     display: true,
+<<<<<<< Updated upstream
                     text: "Combined Rainfall Comparison"
+=======
+                    text: `Combined Rainfall Comparison`
+>>>>>>> Stashed changes
                 },
                 legend: {
                     display: true
@@ -171,6 +363,7 @@ function renderCombinedChart() {
     updateSourceCheckboxes(sourceValue);
 }
 
+<<<<<<< Updated upstream
 function loadCsv(filePath, callback) {
     Papa.parse(filePath, {
         download: true,
@@ -205,4 +398,46 @@ document.addEventListener("DOMContentLoaded", function () {
             document.getElementById("Source").addEventListener("change", renderCombinedChart);
         });
     });
+=======
+async function loadCSV(path) {
+    const response = await fetch(path);
+    const text = await response.text();
+    return parseCSV(text);
+}
+
+document.addEventListener("DOMContentLoaded", async function () {
+    try {
+        kedahRows = await loadCSV("data/RF_Kedah_Mac_May_2026_AveRCP.csv");
+        selangorRows = await loadCSV("data/RF_Slgr_Wlyh_Mac_May_2026_AveRCP.csv");
+
+        const kedahGrouped = groupByLocation(kedahRows);
+        const selangorGrouped = groupByLocation(selangorRows);
+
+        const kedahLocationSelect = document.getElementById("kedahLocation");
+        const selangorLocationSelect = document.getElementById("selangorLocation");
+        const sourceSelect = document.getElementById("Source");
+
+        fillLocationDropdown(kedahLocationSelect, kedahGrouped);
+        fillLocationDropdown(selangorLocationSelect, selangorGrouped);
+
+        renderCombinedChart();
+
+        kedahLocationSelect.addEventListener("change", renderCombinedChart);
+        selangorLocationSelect.addEventListener("change", renderCombinedChart);
+        sourceSelect.addEventListener("change", renderCombinedChart);
+    } catch (error) {
+        console.error("Error loading CSV data:", error);
+
+        const kedahLocationSelect = document.getElementById("kedahLocation");
+        const selangorLocationSelect = document.getElementById("selangorLocation");
+
+        if (kedahLocationSelect) {
+            kedahLocationSelect.innerHTML = "<option>Failed to load Kedah data</option>";
+        }
+
+        if (selangorLocationSelect) {
+            selangorLocationSelect.innerHTML = "<option>Failed to load Selangor data</option>";
+        }
+    }
+>>>>>>> Stashed changes
 });
