@@ -4,17 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NAHRIM Dashboard</title>
-    <link rel="stylesheet" href="css/style.css">
-
-    <link rel="stylesheet" href="css/style.css?v=14">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
-    <script defer src="js/index.js"></script>
-
     <link rel="stylesheet" href="css/style.css?v=30">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
-    <script defer src="js/index.js?v=30"></script>F
+    <script defer src="js/index.js?v=30"></script>
 </head>
 <body>
 
@@ -24,25 +17,6 @@
     <div class="imageBox" style="display: inline-flex;">
         <img src="images/nahrim-banner.png" alt="NAHRIM Banner">
     </div>
-   
-        <div class="page-content">
-            <div class="nahrim-banner">
-                <img src="images/nahrim-banner.png" alt="NAHRIM Banner">
-            </div>
-
-            <form action="Index.php" method="POST">
-                <label for="Range">Select Range:</label>
-                    <select name="Range" id="Range">
-                        <option value="Range1">&lt;1 day</option>
-                        <option value="Range2">&lt;1 week</option>
-                        <option value="Range3">&lt;2 weeks</option>
-                        <option value="Range4">&lt;4 weeks</option>
-                    </select>
-            </form>
-
-        </div>
-    </div>
-    <form action="#" method="POST">
 
     <form action="#" method="POST" role="form">
         <label for="Range">Select Range:</label>
@@ -53,7 +27,6 @@
             <option value="Range4">&lt;4 weeks</option>
         </select>
     </form>
-
 </div>
 
 <div class="page-content">
@@ -86,8 +59,6 @@
         </div>
     </div>
 
-
-
     <div class="box-row">
         <div class="box">
             <h2>NAHRIM</h2>
@@ -99,23 +70,6 @@
                 <label for="selangorLocation">Selangor:</label>
                 <select id="selangorLocation"></select>
             </div>
-
-    <div class="box-row">
-        <div class="box">
-            <h2>COMBINED RAINFALL DATA</h2>
-
-            <div class="chart-controls">
-                <label for="kedahLocation">Kedah:</label>
-                <select id="kedahLocation">
-                    <option>Loading Kedah data...</option>
-                </select>
-
-                <label for="selangorLocation">Selangor:</label>
-                <select id="selangorLocation">
-                    <option>Loading Selangor data...</option>
-                </select>
-            </div>
-
 
             <div class="chart-container">
                 <canvas id="combinedRainfallChart"></canvas>

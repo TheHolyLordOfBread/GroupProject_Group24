@@ -26,35 +26,35 @@ body {
     gap: 40px;
 }
 
-    .logo a {
-        text-decoration: none;
-        font-size: 22px;
-        font-weight: bold;
-        color: #ffffff;
-    }
+.logo a {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffffff;
+}
 
-    .logo form {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-    }
+.logo form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
-    .logo label {
-        color: #ffffff;
-        font-size: 22px;
-        font-weight: bold;
-    }
+.logo label {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+}
 
-    .logo select {
-        padding: 5px 12px;
-        font-size: 18px;
-        border-radius: 5px;
-        height: 40px;
-        background-color: #156d64;
-        color: #ffffff;
-        font-weight: bold;
-        border: none;
-    }
+.logo select {
+    padding: 5px 12px;
+    font-size: 18px;
+    border-radius: 5px;
+    height: 40px;
+    background-color: #156d64;
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+}
 
 /* NAV LINKS */
 .nav-links {
@@ -69,7 +69,30 @@ body {
     color: #ffffff;
     font-weight: 600;
 }
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+
+=======
+
+>>>>>>> parent of 5d7830c (Main Fixes)
+/* ACTION BAR */
+.actionbar {
+    background-color: #d1d1d1;
+    border-bottom: 1px solid #ddd;
+    padding: 0 0px;
+    display: flex;
+    justify-content: space-between;
+
+    height: 190px;
+
+}
+<<<<<<< HEAD
+>>>>>>> parent of 5d7830c (Main Fixes)
+=======
+>>>>>>> parent of 5d7830c (Main Fixes)
 .nav-links a:hover {
     color: #d6e8ff;
 }
@@ -86,6 +109,8 @@ body {
     background-color: #08375f;
     color: #ffffff;
 }
+<<<<<<< HEAD
+<<<<<<< HEAD
 
 /* ACTION BAR */
 .actionbar {
@@ -101,10 +126,23 @@ body {
         color: #ffffff;
         font-weight: 600;
     }
+=======
+>>>>>>> parent of 5d7830c (Main Fixes)
 
-        .nav-links a:hover {
-            color: #d6e8ff;
-        }
+/* ACTION BAR */
+.actionbar {
+    background-color: #d1d1d1;
+    border-bottom: 1px solid #ddd;
+    padding: 0 0px;
+    display: flex;
+    justify-content: space-between;
+
+    height: 190px;
+
+}
+.nav-links a:hover {
+    color: #d6e8ff;
+}
 
 /* LOGIN BUTTON */
 .login-btn {
@@ -114,10 +152,14 @@ body {
     border-radius: 6px;
 }
 
-    .login-btn:hover {
-        background-color: #08375f;
-        color: #ffffff;
-    }
+.login-btn:hover {
+    background-color: #08375f;
+    color: #ffffff;
+}
+=======
+>>>>>>> parent of 5d7830c (Main Fixes)
+=======
+>>>>>>> parent of 5d7830c (Main Fixes)
 
 /* ACTION BAR */
 .actionbar {
@@ -127,12 +169,24 @@ body {
     display: flex;
     flex-direction: column;
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 =======
     justify-content: space-between;
+=======
+>>>>>>> parent of 5d7830c (Main Fixes)
+=======
+>>>>>>> parent of 5d7830c (Main Fixes)
+=======
+>>>>>>> parent of 5d7830c (Main Fixes)
     align-items: center;
     height: 140px;
 }
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 
 .actionbar form {
     display: flex;
@@ -163,31 +217,40 @@ body {
         align-items: center;
         gap: 15px;
     }
+=======
+>>>>>>> parent of 5d7830c (Main Fixes)
+=======
+>>>>>>> parent of 5d7830c (Main Fixes)
+=======
+>>>>>>> parent of 5d7830c (Main Fixes)
 
-    .actionbar label {
-        font-size: 26px;
-        font-weight: bold;
-        color: #000000;
-    }
-
-    .actionbar select {
-        padding: 8px 14px;
-        font-size: 20px;
-        border-radius: 5px;
-        height: 55px;
-        background-color: #156d64;
-        color: #ffffff;
-        font-weight: bold;
-        border: none;
-    }
-
-.imageBox img {
-    width: auto;
-    height: auto;
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
+.actionbar form {
+    display: flex;
+    margin: 40px;
+    align-items: center;
+    gap: 15px;
 }
+
+.actionbar label {
+    font-size: 26px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.actionbar select {
+    padding: 8px 14px;
+    font-size: 20px;
+    border: 5px;
+    border-radius: 5px;
+    height: 55px;
+    background-color: #156d64;
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+}
+
+
+
 
 /* PAGE CONTENT */
 .page-content {
@@ -216,6 +279,9 @@ body {
     border: 1px solid #ccc;
     font-weight: 500;
     cursor: pointer;
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 }
 
 .box {
@@ -287,55 +353,157 @@ body {
         padding: 10px;
         text-align: center;
     }
+=======
+}
 
-    .grid .NAHRIM {
-        grid-area: NAHRIM;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-    }
+.box {
+    width: 280px;
+    height: 380px;
+    border: 2px solid #333;
+>>>>>>> parent of 5d7830c (Main Fixes)
 
-    .grid .Sources {
-        grid-area: Sources;
-        background-color: #d1d1d1;
-        padding: 10px;
-    }
+    border-radius: 8px;
+    background-color: #ffffff;
+}
 
-        .grid .Sources form {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
 
-        .grid .Sources .source-item {
-            background-color: #156d64;
-            color: #ffffff;
-            font-weight: bold;
-            border-radius: 8px;
-            text-align: left;
-            padding: 12px;
-        }
+.grid > div {
+    background-color: #e9e9e9;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
 
-        .grid .Sources input[type="checkbox"] {
-            width: 22px;
-            height: 22px;
-            margin-right: 10px;
-            vertical-align: middle;
-        }
+.grid .NAHRIM {
+    grid-area: NAHRIM;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
 
-        .grid .Sources label {
-            font-size: 24px;
-            vertical-align: middle;
-        }
+.grid .Sources {
+    grid-area: Sources;
+    background-color: #d1d1d1;
+    padding: 10px;
+}
 
-    .grid .Map {
-        grid-area: Map;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 24px;
-    }
+.grid .Sources form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+=======
+}
+
+.box {
+    width: 280px;
+    height: 380px;
+    border: 2px solid #333;
+
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+
+.grid > div {
+    background-color: #e9e9e9;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+.grid .NAHRIM {
+    grid-area: NAHRIM;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.grid .Sources {
+    grid-area: Sources;
+    background-color: #d1d1d1;
+    padding: 10px;
+}
+
+.grid .Sources form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+>>>>>>> parent of 5d7830c (Main Fixes)
+=======
+}
+
+.box {
+    width: 280px;
+    height: 380px;
+    border: 2px solid #333;
+
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+
+.grid > div {
+    background-color: #e9e9e9;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+.grid .NAHRIM {
+    grid-area: NAHRIM;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.grid .Sources {
+    grid-area: Sources;
+    background-color: #d1d1d1;
+    padding: 10px;
+}
+
+.grid .Sources form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+>>>>>>> parent of 5d7830c (Main Fixes)
+.grid .Sources .source-item {
+    background-color: #156d64;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 8px;
+    text-align: left;
+    padding: 12px;
+}
+
+.grid .Sources input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.grid .Sources label {
+    font-size: 24px;
+    vertical-align: middle;
+}
+
+.grid .Map {
+    grid-area: Map;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
 
 /* RIGHT SIDE */
 .box-row {
@@ -368,11 +536,11 @@ body {
     padding: 18px;
 }
 
-    .box h2 {
-        font-size: 22px;
-        margin-bottom: 20px;
-        color: #000000;
-    }
+.box h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #000000;
+}
 
 /* BANNER */
 .nahrim-banner {
@@ -401,18 +569,18 @@ body {
     margin-bottom: 20px;
 }
 
-    .chart-controls label {
-        font-size: 15px;
-        font-weight: bold;
-    }
+.chart-controls label {
+    font-size: 15px;
+    font-weight: bold;
+}
 
-    .chart-controls select {
-        padding: 8px 10px;
-        border-radius: 6px;
-        border: 1px solid #aaa;
-        font-size: 14px;
-        min-width: 180px;
-    }
+.chart-controls select {
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: 1px solid #aaa;
+    font-size: 14px;
+    min-width: 180px;
+}
 
 /* CHART AREA */
 .chart-container {
@@ -421,11 +589,11 @@ body {
     position: relative;
 }
 
-    .chart-container canvas {
-        width: 100% !important;
-        height: 100% !important;
-        display: block;
-    }
+.chart-container canvas {
+    width: 100% !important;
+    height: 100% !important;
+    display: block;
+}
 
 /* FOOTER */
 .BottomNavbar {
@@ -444,7 +612,16 @@ body {
     font-weight: bold;
     z-index: 1000;
 }
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of 5d7830c (Main Fixes)
+=======
+>>>>>>> parent of 5d7830c (Main Fixes)
+=======
+>>>>>>> parent of 5d7830c (Main Fixes)
 /* GRAPHS PAGE */
 .graphs-title {
     margin: 20px 0;
@@ -469,8 +646,20 @@ body {
     border-radius: 12px;
     padding: 20px;
     height: 470px;
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
     transition: 0.2s;
+=======
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+>>>>>>> parent of 5d7830c (Main Fixes)
+=======
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+>>>>>>> parent of 5d7830c (Main Fixes)
+=======
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+>>>>>>> parent of 5d7830c (Main Fixes)
 }
 
 .graph-card h3 {
@@ -512,6 +701,9 @@ body {
     max-height: 100%;
     object-fit: contain;
 }
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 }
 
 /* RESPONSIVE */
@@ -576,3 +768,9 @@ body {
     }
 }
 
+=======
+>>>>>>> parent of 5d7830c (Main Fixes)
+=======
+>>>>>>> parent of 5d7830c (Main Fixes)
+=======
+>>>>>>> parent of 5d7830c (Main Fixes)
