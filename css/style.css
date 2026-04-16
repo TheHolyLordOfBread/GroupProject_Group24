@@ -64,6 +64,38 @@ body {
     align-items: center;
 }
 
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: #d6e8ff;
+}
+
+/* LOGIN BUTTON */
+.login-btn {
+    background-color: #0b4f8a;
+    color: #ffffff !important;
+    padding: 8px 14px;
+    border-radius: 6px;
+}
+
+.login-btn:hover {
+    background-color: #08375f;
+    color: #ffffff;
+}
+
+/* ACTION BAR */
+.actionbar {
+    background-color: #d1d1d1;
+    border-bottom: 1px solid #ddd;
+    padding: 0 0px;
+    display: flex;
+    justify-content: space-between;
+
+    height: 190px;
     .nav-links a {
         text-decoration: none;
         color: #ffffff;
@@ -93,11 +125,39 @@ body {
     border-bottom: 1px solid #ddd;
     padding: 0 30px;
     display: flex;
+    flex-direction: column;
+
+=======
     justify-content: space-between;
     align-items: center;
     height: 140px;
 }
 
+
+.actionbar form {
+    display: flex;
+    margin: 40px;
+    align-items: center;
+    gap: 15px;
+}
+
+.actionbar label {
+    font-size: 26px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.actionbar select {
+    padding: 8px 14px;
+    font-size: 20px;
+    border: 5px;
+    border-radius: 5px;
+    height: 55px;
+    background-color: #156d64;
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+=======
     .actionbar form {
         display: flex;
         align-items: center;
@@ -149,8 +209,77 @@ body {
     padding: 10px;
     width: 62%;
     min-width: 680px;
+}
+.box-group select {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.box {
+    width: 280px;
+    height: 380px;
+    border: 2px solid #333;
+
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+
     border-radius: 10px;
 }
+
+.grid > div {
+    background-color: #e9e9e9;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+.grid .NAHRIM {
+    grid-area: NAHRIM;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.grid .Sources {
+    grid-area: Sources;
+    background-color: #d1d1d1;
+    padding: 10px;
+}
+
+.grid .Sources form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.grid .Sources .source-item {
+    background-color: #156d64;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 8px;
+    text-align: left;
+    padding: 12px;
+}
+
+.grid .Sources input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.grid .Sources label {
+    font-size: 24px;
+    vertical-align: middle;
+=======
+    border-radius: 10px;
+  }
 
     .grid > div {
         background-color: #e9e9e9;
@@ -216,6 +345,20 @@ body {
     gap: 20px;
 }
 
+.box-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.box-group select {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-weight: 500;
+    cursor: pointer;
+}
+
 .box {
     width: 100%;
     min-height: 520px;
@@ -231,6 +374,25 @@ body {
         color: #000000;
     }
 
+/* BANNER */
+.nahrim-banner {
+    margin-bottom: 20px;
+}
+
+.nahrim-banner img {
+    width: 300px;
+    height: auto;
+    display: block;
+}
+
+.banner-line {
+    width: 100%;
+    height: 6px;
+    background: linear-gradient(to right, #4da6ff, #00cc99);
+    margin-top: 5px;
+}
+
+/* CHART CONTROLS */
 .chart-controls {
     display: flex;
     flex-wrap: wrap;
@@ -252,6 +414,7 @@ body {
         min-width: 180px;
     }
 
+/* CHART AREA */
 .chart-container {
     width: 100%;
     height: 360px;
@@ -281,3 +444,135 @@ body {
     font-weight: bold;
     z-index: 1000;
 }
+
+/* GRAPHS PAGE */
+.graphs-title {
+    margin: 20px 0;
+    color: #0b4f8a;
+    font-size: 28px;
+}
+
+.graphs-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.rainfall-grid {
+    align-items: start;
+}
+
+.graph-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    height: 470px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: 0.2s;
+}
+
+.graph-card h3 {
+    margin-bottom: 15px;
+    color: #123b63;
+    font-size: 18px;
+}
+
+.graph-controls {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.graph-controls select {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.graph-card canvas {
+    width: 100% !important;
+    height: 320px !important;
+}
+
+.graph-card:hover {
+    transform: translateY(-3px);
+    transition: 0.2s;
+
+}
+.imageBox img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+}
+
+/* RESPONSIVE */
+@media (max-width: 1200px) {
+    .page-content {
+        flex-direction: column;
+    }
+
+    .grid,
+    .box-row {
+        width: 100%;
+        min-width: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+        padding: 15px;
+    }
+
+    .logo {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .actionbar {
+        height: auto;
+        padding: 15px;
+    }
+
+    .actionbar form {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .grid {
+        grid-template-areas:
+            "NAHRIM"
+            "Sources"
+            "Map";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    .graphs-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .chart-controls,
+    .graph-controls {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
