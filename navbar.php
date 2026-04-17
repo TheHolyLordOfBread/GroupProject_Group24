@@ -1,16 +1,17 @@
-
 <nav class="navbar">
 
         <link rel="stylesheet" href="css/style.css?">
 
-    <div class="logo">
-        <a>LAST UPDATED: XXXXXXXXXXXXXXXX</a>
-          <select id="redirectDropdown" value="Select A Page" onChange="selectRedirect()">
+    <div class="logo" >
+    <label> select a page:
+          <select  id="redirectDropdown" value="Select A Page" onChange="selectRedirect()">
             <option value="http://localhost/GROUPPROJECT_GROUP24/Index.php">Combined Graphs</option>
             <option value="http://localhost/GROUPPROJECT_GROUP24/nahrim-map.php">Nahrim Map</option>
             <option value="http://localhost/GROUPPROJECT_GROUP24/open_meteo.php">Open Meteo Map</option>
             <option value="">Google</option>
           </select>
+    </label>
+
 
 
 
