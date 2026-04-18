@@ -23,6 +23,22 @@
     <option value="Ave_RCP6.0">RCP 6.0</option>
     <option value="Ave_RCP8.5">RCP 8.5</option>
   </select>
+  <script>
+       window.onload = function()
+        {
+          rcpselect = document.getElementById("rcp-select");
+          RCP = rcpselect.value;
+        }
+
+
+
+        function selectRedirect() {
+          rcpselect = document.getElementById("redirectDropdown");
+          RCP = rcpselect.value;
+          
+        }
+  </script>
+
   <div style="margin: 0 auto; display: block; text-align: center;">
     <label><input type="checkbox" id="show-pins" checked> Show Hospital Pins</label>
   </div>
@@ -54,80 +70,87 @@
   </div>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.js"></script>
-  <script>
+    <script>
     var map = L.map('map').setView([4.2105, 101.9758], 7);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 19,
-      attribution: '© OpenStreetMap'
+      attribution: '© OpenStreetMap | Data: Open-Meteo'
     }).addTo(map);
-    L.control.scale().addTo(map);
 
     let heatmapLayer;
-    let markers = [];
+    let hospitalMarkers = [];
     const showPinsCheckbox = document.getElementById('show-pins');
-    const rpcSelect = document.getElementById('rpc-select');
+    const refreshBtn = document.getElementById('refresh');
 
-    fetch('map_data.json')
-      .then(response => response.json())
-      .then(data => {
-       data.forEach(hospital => {
-          var marker = L.marker([hospital.LATITUDE, hospital.LONGITUDE], {
-          icon: L.icon({
-          iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png',
-          iconSize: [25, 41],
-          iconAnchor: [12, 41],
-          popupAnchor: [1, -34],
-          tooltipAnchor: [16, -28]
+    
+    
+fetch('map_data.json')
+ .then(res => res.json())
+ .then(data => {
+    data.forEach(h => {
+      const popupContent = `
+        <b>${h.NAME}</b><br>
+        Type: ${h.TYPE_OF_HOSPITAL}<br>
+        Address: ${h.ADDRESS}<br>
+      `;
+      const marker = L.marker([h.LATITUDE, h.LONGITUDE])
+        .bindPopup(popupContent);
+      hospitalMarkers.push(marker);
+      if (showPinsCheckbox.checked) marker.addTo(map);
+    });
+  });
+
+
+
+    
+    function updateHeatmap(RCP) {
+      var rcp = RCP;
+      fetch('nahrim_data.json?v=' + Date.now()) 
+       .then(res => res.json())
+       .then(data => {
+          const maxRainfall = 50
+          const heatData = data.map(point => [
+            point.LATITUDE,
+            point.LONGITUDE,
+            switch(rcp)
+            {
+              case "Ave_RCP2.6": point.Ave_RCP26 / maxRainfall; break;
+              case "Ave_RCP4.5": point.Ave_RCP45 / maxRainfall; break;
+              case "Ave_RCP6.0": point.Ave_RCP60 / maxRainfall; break;              
+              case "Ave_RCP8.5": point.Ave_RCP85 / maxRainfall; break;
+              default; break;
+            }
+          ]);
+
+          if (heatmapLayer) map.removeLayer(heatmapLayer);
+          heatmapLayer = L.heatLayer(heatData, {
+            radius: 25,
+            blur: 15,
+            maxZoom: 10,
+            gradient: {
+              0.0: '#0000ff',
+              0.2: '#00ffff',
+              0.4: '#00ff00',
+              0.6: '#ffff00',
+              1.0: '#ff0000'
+            }
+          }).addTo(map);
+          console.log(`Heatmap updated: ${data.length} points, max ${maxRainfall.toFixed(1)}mm`);
         })
-      });
-      marker.bindPopup(`
-        <b>${hospital.NAME}</b><br>
-        ${hospital.TYPE_OF_HOSPITAL} Hospital<br>
-        State: ${hospital.STATE}<br>
-      `);
-      markers.push(marker);
-      if (showPinsCheckbox.checked) {
-        marker.addTo(map);
+       .catch(err => console.log('Error loading live_rainfall.json:', err));
+    }
+
+    updateHeatmap(RCP);
+
+    showPinsCheckbox.addEventListener('change', (e) => {
+      if (e.target.checked) {
+        hospitalMarkers.forEach(m => m.addTo(map));
+      } else {
+        hospitalMarkers.forEach(m => map.removeLayer(m));
       }
     });
-  })
-  .catch(error => console.log('Error fetching map data:', error));
 
-updateHeatmap('rcp-select');
-
-rpcSelect.addEventListener('change', (e) => {
-  updateHeatmap(e.target.value);
-});
-
-showPinsCheckbox.addEventListener('change', (e) => {
-  if (e.target.checked) {
-    markers.forEach(marker => marker.addTo(map));
-  } else {
-    markers.forEach(marker => map.removeLayer(marker));
-  }
-});
-
-function updateHeatmap(rcp) {
-  fetch('nahrim_data.json')
-    .then(response => response.json())
-    .then(data => {
-      const maxRainfall = 50;
-      const heatData = data.map(point => [point.LATITUDE, point.LONGITUDE, point[rcp] / maxRainfall]);
-      if (heatmapLayer) map.removeLayer(heatmapLayer);
-      heatmapLayer = L.heatLayer(heatData, {
-        radius: 25,
-        gradient: {
-          0: '#0000ff',
-          0.2: '#00ffff',
-          0.4: '#00ff00',
-          0.6: '#ffff00',
-          0.8: '#ff0000',
-          1: '#ff0000'
-        }
-      }).addTo(map);
-    })
-    .catch(error => console.log('Error fetching NAHRIM data:', error));
-}
+    refreshBtn.addEventListener('click', updateHeatmap);
   </script>
 </body>
 </html>
