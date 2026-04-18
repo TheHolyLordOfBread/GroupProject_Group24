@@ -18,9 +18,14 @@
       <script>
         window.onload = function()
         {
+            if (storedpage == true){
             const storedpage = localStorage.getItem('page')
-
             document.getElementById('redirectDropdown').value=storedpage;
+            }
+            else
+            {
+            document.getElementById('redirectDropdown').value="Combined Graphs";
+            }
         }
 
 
