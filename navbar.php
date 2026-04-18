@@ -34,7 +34,7 @@
           if (selectedValue) 
           {
           localStorage.setItem('page',selectedValue)
-          window.location = selectedValue; // Redirects the page
+          window.location = selectedValue; 
           }
           
         }
