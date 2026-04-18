@@ -16,33 +16,26 @@
 
 
       <script>
-        window.onload = function()
-        {
-            if (storedpage == true){
-            const storedpage = localStorage.getItem('page')
-            document.getElementById('redirectDropdown').value=storedpage;
-            }
-            else
-            {
-            document.getElementById('redirectDropdown').value="Combined Graphs";
-            }
-        }
+window.onload = function() {
+    const storedPage = localStorage.getItem('page');
+    const dropdown = document.getElementById('redirectDropdown');
 
+    if (storedPage) {
+        dropdown.value = storedPage;
+    } else {
+        dropdown.value = "Combined Graphs";
+    }
+}
 
+function selectRedirect() {
+    const select = document.getElementById("redirectDropdown");
+    const selectedValue = select.value;
 
-        function selectRedirect() {
-          const select = document.getElementById("redirectDropdown");
-          const selectedValue = select.value;
-
-          
-
-          if (selectedValue) 
-          {
-          localStorage.setItem('page',selectedValue)
-          window.location = selectedValue; 
-          }
-          
-        }
+    if (selectedValue) {
+        localStorage.setItem('page', selectedValue);
+        window.location.href = selectedValue; 
+    }
+}
       </script>
 
 
