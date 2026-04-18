@@ -6,7 +6,7 @@
         "LONGITUDE": 100.41509,
         "LATITUDE": 6.134279,
         "TYPE_OF_HOSPITAL": "Public",
-        "rainfall_mm": "14.0000000",
+        "rainfall_mm": "12.9000000",
         "condition": "Overcast"
     },
     {
@@ -16,7 +16,7 @@
         "LONGITUDE": 100.5136,
         "LATITUDE": 5.6669,
         "TYPE_OF_HOSPITAL": "Public",
-        "rainfall_mm": "3.0000000",
+        "rainfall_mm": "7.4000000",
         "condition": "Overcast"
     },
     {
@@ -26,7 +26,7 @@
         "LONGITUDE": 100.4839675,
         "LATITUDE": 5.9770837,
         "TYPE_OF_HOSPITAL": "Public",
-        "rainfall_mm": "10.6000000",
+        "rainfall_mm": "12.3000000",
         "condition": "Overcast"
     },
     {
@@ -36,7 +36,7 @@
         "LONGITUDE": 100.573688,
         "LATITUDE": 5.390833,
         "TYPE_OF_HOSPITAL": "Public",
-        "rainfall_mm": "3.9000000",
+        "rainfall_mm": "17.8000000",
         "condition": "Overcast"
     },
     {
@@ -46,8 +46,8 @@
         "LONGITUDE": 100.9266299,
         "LATITUDE": 5.6783677,
         "TYPE_OF_HOSPITAL": "Public",
-        "rainfall_mm": "6.0000000",
-        "condition": "Overcast"
+        "rainfall_mm": "18.9000000",
+        "condition": "Thunderstorm"
     },
     {
         "NAME": "Sik Hospital",
@@ -56,8 +56,8 @@
         "LONGITUDE": 100.7271215,
         "LATITUDE": 5.811816,
         "TYPE_OF_HOSPITAL": "Public",
-        "rainfall_mm": "7.3000000",
-        "condition": "Slight rain showers"
+        "rainfall_mm": "27.8000000",
+        "condition": "Overcast"
     },
     {
         "NAME": "Hospital Sultanah Maliha",
@@ -66,8 +66,8 @@
         "LONGITUDE": 99.7968897,
         "LATITUDE": 6.3251837,
         "TYPE_OF_HOSPITAL": "Public",
-        "rainfall_mm": "11.2000000",
-        "condition": "Partly cloudy"
+        "rainfall_mm": "2.4000000",
+        "condition": "Overcast"
     },
     {
         "NAME": "Hospital Yan",
@@ -76,7 +76,7 @@
         "LONGITUDE": 100.3848697,
         "LATITUDE": 5.8197935,
         "TYPE_OF_HOSPITAL": "Public",
-        "rainfall_mm": "8.7000000",
+        "rainfall_mm": "14.8000000",
         "condition": "Overcast"
     },
     {
@@ -86,7 +86,7 @@
         "LONGITUDE": 100.4179074,
         "LATITUDE": 6.2788378,
         "TYPE_OF_HOSPITAL": "Public",
-        "rainfall_mm": "6.9000000",
+        "rainfall_mm": "17.9000000",
         "condition": "Overcast"
     },
     {
@@ -96,8 +96,8 @@
         "LONGITUDE": 100.6099783,
         "LATITUDE": 6.2507418,
         "TYPE_OF_HOSPITAL": "Public",
-        "rainfall_mm": "7.1000000",
-        "condition": "Overcast"
+        "rainfall_mm": "13.5000000",
+        "condition": "Slight rain showers"
     },
     {
         "NAME": "Putra Medical Centre",
@@ -106,7 +106,7 @@
         "LONGITUDE": 100.3656896,
         "LATITUDE": 6.1236656,
         "TYPE_OF_HOSPITAL": "Private",
-        "rainfall_mm": "14.0000000",
+        "rainfall_mm": "12.9000000",
         "condition": "Overcast"
     },
     {
@@ -116,7 +116,7 @@
         "LONGITUDE": 100.3693877,
         "LATITUDE": 6.148906,
         "TYPE_OF_HOSPITAL": "Private",
-        "rainfall_mm": "14.0000000",
+        "rainfall_mm": "12.9000000",
         "condition": "Overcast"
     },
     {
@@ -126,7 +126,7 @@
         "LONGITUDE": 100.50893,
         "LATITUDE": 5.652726,
         "TYPE_OF_HOSPITAL": "Private",
-        "rainfall_mm": "3.0000000",
+        "rainfall_mm": "7.4000000",
         "condition": "Overcast"
     },
     {
@@ -136,7 +136,7 @@
         "LONGITUDE": 100.5134184,
         "LATITUDE": 5.672525,
         "TYPE_OF_HOSPITAL": "Private",
-        "rainfall_mm": "3.0000000",
+        "rainfall_mm": "7.4000000",
         "condition": "Overcast"
     },
     {
@@ -146,7 +146,7 @@
         "LONGITUDE": 100.4949801,
         "LATITUDE": 5.6830211,
         "TYPE_OF_HOSPITAL": "Private",
-        "rainfall_mm": "3.0000000",
+        "rainfall_mm": "7.4000000",
         "condition": "Overcast"
     },
     {
@@ -156,7 +156,7 @@
         "LONGITUDE": 101.4898519,
         "LATITUDE": 3.0709323,
         "TYPE_OF_HOSPITAL": "Public",
-        "rainfall_mm": "0.3000000",
+        "rainfall_mm": "10.6000000",
         "condition": "Overcast"
     },
     {
@@ -166,7 +166,7 @@
         "LONGITUDE": 101.7639498,
         "LATITUDE": 3.12811,
         "TYPE_OF_HOSPITAL": "Public",
-        "rainfall_mm": "3.5000000",
+        "rainfall_mm": "12.2000000",
         "condition": "Slight rain showers"
     },
     {
@@ -176,8 +176,8 @@
         "LONGITUDE": 101.4924677,
         "LATITUDE": 2.8033665,
         "TYPE_OF_HOSPITAL": "Public",
-        "rainfall_mm": "0.0000000",
-        "condition": "Overcast"
+        "rainfall_mm": "5.2000000",
+        "condition": "Mainly clear"
     },
     {
         "NAME": "Tengku Permaisuri Norashikin Hospital",
@@ -186,7 +186,7 @@
         "LONGITUDE": 101.7984351,
         "LATITUDE": 2.9931997,
         "TYPE_OF_HOSPITAL": "Public",
-        "rainfall_mm": "1.7000000",
+        "rainfall_mm": "13.8000000",
         "condition": "Slight rain showers"
     },
     {
@@ -196,8 +196,8 @@
         "LONGITUDE": 101.652704,
         "LATITUDE": 3.565131,
         "TYPE_OF_HOSPITAL": "Public",
-        "rainfall_mm": "0.0000000",
-        "condition": "Overcast"
+        "rainfall_mm": "14.8000000",
+        "condition": "Thunderstorm"
     },
     {
         "NAME": "Hospital Selayang",
@@ -206,8 +206,8 @@
         "LONGITUDE": 101.6469679,
         "LATITUDE": 3.2434232,
         "TYPE_OF_HOSPITAL": "Public",
-        "rainfall_mm": "0.4000000",
-        "condition": "Overcast"
+        "rainfall_mm": "10.2000000",
+        "condition": "Thunderstorm"
     },
     {
         "NAME": "Sultan Idris Shah Serdang Hospital",
@@ -216,7 +216,7 @@
         "LONGITUDE": 101.7207653,
         "LATITUDE": 2.9768538,
         "TYPE_OF_HOSPITAL": "Public",
-        "rainfall_mm": "1.7000000",
+        "rainfall_mm": "13.8000000",
         "condition": "Slight rain showers"
     },
     {
@@ -226,8 +226,8 @@
         "LONGITUDE": 101.5853037,
         "LATITUDE": 3.2189944,
         "TYPE_OF_HOSPITAL": "Public",
-        "rainfall_mm": "0.4000000",
-        "condition": "Overcast"
+        "rainfall_mm": "10.2000000",
+        "condition": "Thunderstorm"
     },
     {
         "NAME": "Hospital Tanjung Karang",
@@ -236,8 +236,8 @@
         "LONGITUDE": 101.217602,
         "LATITUDE": 3.39578,
         "TYPE_OF_HOSPITAL": "Public",
-        "rainfall_mm": "0.6000000",
-        "condition": "Mainly clear"
+        "rainfall_mm": "8.3000000",
+        "condition": "Overcast"
     },
     {
         "NAME": "Hospital Tengku Ampuan Jemaah",
@@ -246,8 +246,8 @@
         "LONGITUDE": 100.989554,
         "LATITUDE": 3.759306,
         "TYPE_OF_HOSPITAL": "Public",
-        "rainfall_mm": "0.0000000",
-        "condition": "Overcast"
+        "rainfall_mm": "9.9000000",
+        "condition": "Partly cloudy"
     },
     {
         "NAME": "Tengku Ampuan Rahimah Hospital",
@@ -256,7 +256,7 @@
         "LONGITUDE": 101.4394637,
         "LATITUDE": 3.0210892,
         "TYPE_OF_HOSPITAL": "Public",
-        "rainfall_mm": "0.0000000",
+        "rainfall_mm": "7.5000000",
         "condition": "Overcast"
     },
     {
@@ -266,7 +266,7 @@
         "LONGITUDE": 101.7179603,
         "LATITUDE": 2.9800853,
         "TYPE_OF_HOSPITAL": "Public",
-        "rainfall_mm": "1.7000000",
+        "rainfall_mm": "13.8000000",
         "condition": "Slight rain showers"
     },
     {
@@ -276,7 +276,7 @@
         "LONGITUDE": 101.4509521,
         "LATITUDE": 3.2096393,
         "TYPE_OF_HOSPITAL": "Public",
-        "rainfall_mm": "0.0000000",
+        "rainfall_mm": "12.0000000",
         "condition": "Overcast"
     },
     {
@@ -286,8 +286,8 @@
         "LONGITUDE": 101.6310859,
         "LATITUDE": 2.9201263,
         "TYPE_OF_HOSPITAL": "Public",
-        "rainfall_mm": "1.0000000",
-        "condition": "Overcast"
+        "rainfall_mm": "1.7000000",
+        "condition": "Partly cloudy"
     },
     {
         "NAME": "Andalas Medical Centre",
@@ -296,7 +296,7 @@
         "LONGITUDE": 101.44093,
         "LATITUDE": 3.015415,
         "TYPE_OF_HOSPITAL": "Private",
-        "rainfall_mm": "0.0000000",
+        "rainfall_mm": "7.5000000",
         "condition": "Overcast"
     },
     {
@@ -306,7 +306,7 @@
         "LONGITUDE": 101.6780977,
         "LATITUDE": 2.974408,
         "TYPE_OF_HOSPITAL": "Private",
-        "rainfall_mm": "0.7000000",
+        "rainfall_mm": "5.4000000",
         "condition": "Overcast"
     },
     {
@@ -316,7 +316,7 @@
         "LONGITUDE": 101.5954388,
         "LATITUDE": 3.1532289,
         "TYPE_OF_HOSPITAL": "Private",
-        "rainfall_mm": "3.5000000",
+        "rainfall_mm": "12.2000000",
         "condition": "Slight rain showers"
     },
     {
@@ -326,7 +326,7 @@
         "LONGITUDE": 101.5649901,
         "LATITUDE": 3.1146633,
         "TYPE_OF_HOSPITAL": "Private",
-        "rainfall_mm": "3.5000000",
+        "rainfall_mm": "12.2000000",
         "condition": "Slight rain showers"
     },
     {
@@ -336,7 +336,7 @@
         "LONGITUDE": 101.6452651,
         "LATITUDE": 3.093455,
         "TYPE_OF_HOSPITAL": "Private",
-        "rainfall_mm": "3.5000000",
+        "rainfall_mm": "12.2000000",
         "condition": "Slight rain showers"
     },
     {
@@ -346,7 +346,7 @@
         "LONGITUDE": 101.5236927,
         "LATITUDE": 3.0714143,
         "TYPE_OF_HOSPITAL": "Private",
-        "rainfall_mm": "0.3000000",
+        "rainfall_mm": "10.6000000",
         "condition": "Overcast"
     },
     {
@@ -356,7 +356,7 @@
         "LONGITUDE": 101.521029,
         "LATITUDE": 3.071697,
         "TYPE_OF_HOSPITAL": "Private",
-        "rainfall_mm": "0.3000000",
+        "rainfall_mm": "10.6000000",
         "condition": "Overcast"
     },
     {
@@ -366,7 +366,7 @@
         "LONGITUDE": 101.638014,
         "LATITUDE": 3.091461,
         "TYPE_OF_HOSPITAL": "Private",
-        "rainfall_mm": "3.5000000",
+        "rainfall_mm": "12.2000000",
         "condition": "Slight rain showers"
     },
     {
@@ -376,7 +376,7 @@
         "LONGITUDE": 101.613772,
         "LATITUDE": 3.115553,
         "TYPE_OF_HOSPITAL": "Private",
-        "rainfall_mm": "3.5000000",
+        "rainfall_mm": "12.2000000",
         "condition": "Slight rain showers"
     },
     {
@@ -386,7 +386,7 @@
         "LONGITUDE": 101.4316994,
         "LATITUDE": 3.0101193,
         "TYPE_OF_HOSPITAL": "Private",
-        "rainfall_mm": "0.0000000",
+        "rainfall_mm": "3.0000000",
         "condition": "Overcast"
     },
     {
@@ -396,7 +396,7 @@
         "LONGITUDE": 101.4465895,
         "LATITUDE": 3.085915,
         "TYPE_OF_HOSPITAL": "Private",
-        "rainfall_mm": "0.3000000",
+        "rainfall_mm": "10.6000000",
         "condition": "Overcast"
     },
     {
@@ -406,7 +406,7 @@
         "LONGITUDE": 101.7628799,
         "LATITUDE": 3.0317887,
         "TYPE_OF_HOSPITAL": "Private",
-        "rainfall_mm": "1.7000000",
+        "rainfall_mm": "13.8000000",
         "condition": "Slight rain showers"
     },
     {
@@ -416,7 +416,7 @@
         "LONGITUDE": 101.6225105,
         "LATITUDE": 3.0240782,
         "TYPE_OF_HOSPITAL": "Private",
-        "rainfall_mm": "0.7000000",
+        "rainfall_mm": "5.4000000",
         "condition": "Overcast"
     },
     {
@@ -426,7 +426,7 @@
         "LONGITUDE": 101.5289035,
         "LATITUDE": 2.9970999,
         "TYPE_OF_HOSPITAL": "Private",
-        "rainfall_mm": "0.0000000",
+        "rainfall_mm": "7.5000000",
         "condition": "Overcast"
     },
     {
@@ -436,7 +436,7 @@
         "LONGITUDE": 101.6378698,
         "LATITUDE": 3.1180471,
         "TYPE_OF_HOSPITAL": "Private",
-        "rainfall_mm": "3.5000000",
+        "rainfall_mm": "12.2000000",
         "condition": "Slight rain showers"
     },
     {
@@ -446,7 +446,7 @@
         "LONGITUDE": 101.5051051,
         "LATITUDE": 3.0471435,
         "TYPE_OF_HOSPITAL": "Private",
-        "rainfall_mm": "0.0000000",
+        "rainfall_mm": "7.5000000",
         "condition": "Overcast"
     },
     {
@@ -456,7 +456,7 @@
         "LONGITUDE": 101.4382055,
         "LATITUDE": 3.0340783,
         "TYPE_OF_HOSPITAL": "Private",
-        "rainfall_mm": "0.0000000",
+        "rainfall_mm": "7.5000000",
         "condition": "Overcast"
     },
     {
@@ -466,7 +466,7 @@
         "LONGITUDE": 101.5398981,
         "LATITUDE": 3.0829651,
         "TYPE_OF_HOSPITAL": "Private",
-        "rainfall_mm": "0.3000000",
+        "rainfall_mm": "10.6000000",
         "condition": "Overcast"
     },
     {
@@ -476,8 +476,8 @@
         "LONGITUDE": 101.5313989,
         "LATITUDE": 2.822678,
         "TYPE_OF_HOSPITAL": "Private",
-        "rainfall_mm": "0.0000000",
-        "condition": "Overcast"
+        "rainfall_mm": "5.2000000",
+        "condition": "Mainly clear"
     },
     {
         "NAME": "Hospital Wanita Metro (Klang)",
@@ -486,7 +486,7 @@
         "LONGITUDE": 101.444863,
         "LATITUDE": 3.049288,
         "TYPE_OF_HOSPITAL": "Private",
-        "rainfall_mm": "0.0000000",
+        "rainfall_mm": "7.5000000",
         "condition": "Overcast"
     },
     {
@@ -496,7 +496,7 @@
         "LONGITUDE": 101.276202,
         "LATITUDE": 3.315345,
         "TYPE_OF_HOSPITAL": "Private",
-        "rainfall_mm": "0.1000000",
+        "rainfall_mm": "17.4000000",
         "condition": "Overcast"
     },
     {
@@ -506,7 +506,7 @@
         "LONGITUDE": 101.788256,
         "LATITUDE": 2.995727,
         "TYPE_OF_HOSPITAL": "Private",
-        "rainfall_mm": "1.7000000",
+        "rainfall_mm": "13.8000000",
         "condition": "Slight rain showers"
     },
     {
@@ -516,7 +516,7 @@
         "LONGITUDE": 101.5953209,
         "LATITUDE": 3.1084355,
         "TYPE_OF_HOSPITAL": "Private",
-        "rainfall_mm": "3.5000000",
+        "rainfall_mm": "12.2000000",
         "condition": "Slight rain showers"
     },
     {
@@ -526,7 +526,7 @@
         "LONGITUDE": 101.7515376,
         "LATITUDE": 3.1600366,
         "TYPE_OF_HOSPITAL": "Private",
-        "rainfall_mm": "3.5000000",
+        "rainfall_mm": "12.2000000",
         "condition": "Slight rain showers"
     },
     {
@@ -536,7 +536,7 @@
         "LONGITUDE": 101.62754,
         "LATITUDE": 3.1373862,
         "TYPE_OF_HOSPITAL": "Private",
-        "rainfall_mm": "3.5000000",
+        "rainfall_mm": "12.2000000",
         "condition": "Slight rain showers"
     },
     {
@@ -546,7 +546,7 @@
         "LONGITUDE": 101.6184986,
         "LATITUDE": 3.1710937,
         "TYPE_OF_HOSPITAL": "Private",
-        "rainfall_mm": "3.5000000",
+        "rainfall_mm": "12.2000000",
         "condition": "Slight rain showers"
     },
     {
@@ -556,7 +556,7 @@
         "LONGITUDE": 101.7858949,
         "LATITUDE": 2.9998953,
         "TYPE_OF_HOSPITAL": "Private",
-        "rainfall_mm": "1.7000000",
+        "rainfall_mm": "13.8000000",
         "condition": "Slight rain showers"
     },
     {
@@ -566,8 +566,8 @@
         "LONGITUDE": 101.5789405,
         "LATITUDE": 3.3206983,
         "TYPE_OF_HOSPITAL": "Private",
-        "rainfall_mm": "1.1000000",
-        "condition": "Slight rain showers"
+        "rainfall_mm": "12.6000000",
+        "condition": "Thunderstorm"
     },
     {
         "NAME": "KPJ Selangor Specialist Hospital",
@@ -576,7 +576,7 @@
         "LONGITUDE": 101.5409949,
         "LATITUDE": 3.0574921,
         "TYPE_OF_HOSPITAL": "Private",
-        "rainfall_mm": "0.0000000",
+        "rainfall_mm": "7.5000000",
         "condition": "Overcast"
     },
     {
@@ -586,7 +586,7 @@
         "LONGITUDE": 101.788263,
         "LATITUDE": 2.995729,
         "TYPE_OF_HOSPITAL": "Private",
-        "rainfall_mm": "1.7000000",
+        "rainfall_mm": "13.8000000",
         "condition": "Slight rain showers"
     },
     {
@@ -596,7 +596,7 @@
         "LONGITUDE": 101.616661,
         "LATITUDE": 3.023692,
         "TYPE_OF_HOSPITAL": "Private",
-        "rainfall_mm": "0.7000000",
+        "rainfall_mm": "5.4000000",
         "condition": "Overcast"
     },
     {
@@ -606,7 +606,7 @@
         "LONGITUDE": 101.5527679,
         "LATITUDE": 3.0767228,
         "TYPE_OF_HOSPITAL": "Private",
-        "rainfall_mm": "0.3000000",
+        "rainfall_mm": "10.6000000",
         "condition": "Overcast"
     },
     {
@@ -616,7 +616,7 @@
         "LONGITUDE": 101.562054,
         "LATITUDE": 3.2094,
         "TYPE_OF_HOSPITAL": "Private",
-        "rainfall_mm": "0.0000000",
+        "rainfall_mm": "12.0000000",
         "condition": "Overcast"
     },
     {
@@ -626,7 +626,7 @@
         "LONGITUDE": 101.4263106,
         "LATITUDE": 3.0263859,
         "TYPE_OF_HOSPITAL": "Private",
-        "rainfall_mm": "0.0000000",
+        "rainfall_mm": "3.0000000",
         "condition": "Overcast"
     },
     {
@@ -636,7 +636,7 @@
         "LONGITUDE": 101.7408736,
         "LATITUDE": 3.1026904,
         "TYPE_OF_HOSPITAL": "Private",
-        "rainfall_mm": "3.5000000",
+        "rainfall_mm": "12.2000000",
         "condition": "Slight rain showers"
     },
     {
@@ -646,7 +646,7 @@
         "LONGITUDE": 101.7951177,
         "LATITUDE": 3.0396483,
         "TYPE_OF_HOSPITAL": "Private",
-        "rainfall_mm": "1.7000000",
+        "rainfall_mm": "13.8000000",
         "condition": "Slight rain showers"
     },
     {
@@ -656,7 +656,7 @@
         "LONGITUDE": 101.5936654,
         "LATITUDE": 3.0790791,
         "TYPE_OF_HOSPITAL": "Private",
-        "rainfall_mm": "3.5000000",
+        "rainfall_mm": "12.2000000",
         "condition": "Slight rain showers"
     },
     {
@@ -666,7 +666,7 @@
         "LONGITUDE": 101.596413,
         "LATITUDE": 3.150126,
         "TYPE_OF_HOSPITAL": "Private",
-        "rainfall_mm": "3.5000000",
+        "rainfall_mm": "12.2000000",
         "condition": "Slight rain showers"
     },
     {
@@ -676,7 +676,7 @@
         "LONGITUDE": 101.535179,
         "LATITUDE": 3.049106,
         "TYPE_OF_HOSPITAL": "Private",
-        "rainfall_mm": "0.0000000",
+        "rainfall_mm": "7.5000000",
         "condition": "Overcast"
     },
     {
@@ -686,7 +686,7 @@
         "LONGITUDE": 101.483051,
         "LATITUDE": 3.005582,
         "TYPE_OF_HOSPITAL": "Private",
-        "rainfall_mm": "0.0000000",
+        "rainfall_mm": "7.5000000",
         "condition": "Overcast"
     },
     {
@@ -696,7 +696,7 @@
         "LONGITUDE": 101.473371,
         "LATITUDE": 3.05676,
         "TYPE_OF_HOSPITAL": "Private",
-        "rainfall_mm": "0.0000000",
+        "rainfall_mm": "7.5000000",
         "condition": "Overcast"
     },
     {
@@ -706,7 +706,7 @@
         "LONGITUDE": 101.4455479,
         "LATITUDE": 3.0404357,
         "TYPE_OF_HOSPITAL": "Private",
-        "rainfall_mm": "0.0000000",
+        "rainfall_mm": "7.5000000",
         "condition": "Overcast"
     },
     {
@@ -716,7 +716,7 @@
         "LONGITUDE": 101.608493,
         "LATITUDE": 3.066127,
         "TYPE_OF_HOSPITAL": "Private",
-        "rainfall_mm": "3.5000000",
+        "rainfall_mm": "12.2000000",
         "condition": "Slight rain showers"
     },
     {
@@ -726,7 +726,7 @@
         "LONGITUDE": 101.5785858,
         "LATITUDE": 3.1488124,
         "TYPE_OF_HOSPITAL": "Private",
-        "rainfall_mm": "3.5000000",
+        "rainfall_mm": "12.2000000",
         "condition": "Slight rain showers"
     },
     {
@@ -736,8 +736,8 @@
         "LONGITUDE": 101.593396,
         "LATITUDE": 3.220823,
         "TYPE_OF_HOSPITAL": "Private",
-        "rainfall_mm": "0.4000000",
-        "condition": "Overcast"
+        "rainfall_mm": "10.2000000",
+        "condition": "Thunderstorm"
     },
     {
         "NAME": "Universiti Malaya Medical Centre",
@@ -746,7 +746,7 @@
         "LONGITUDE": 101.65308,
         "LATITUDE": 3.112398,
         "TYPE_OF_HOSPITAL": "Private",
-        "rainfall_mm": "3.5000000",
+        "rainfall_mm": "12.2000000",
         "condition": "Slight rain showers"
     },
     {
@@ -756,7 +756,7 @@
         "LONGITUDE": 101.58739,
         "LATITUDE": 3.047531,
         "TYPE_OF_HOSPITAL": "Private",
-        "rainfall_mm": "0.7000000",
+        "rainfall_mm": "5.4000000",
         "condition": "Overcast"
     }
 ]
