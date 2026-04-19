@@ -86,10 +86,107 @@
                 <canvas id="combinedRainfallChart"></canvas>
             </div>
         </div>
+      </div>
     </div>
-</div>
+  </div>
+  <?php include 'BottomBar.php'; ?>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      var map = L.map('map').setView([4.2105, 101.9758], 7);
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '© OpenStreetMap | Data: Open-Meteo'
+      }).addTo(map);
 
-<?php include 'BottomBar.php'; ?>
+      let hospitalMarkers = [];
+      const showPinsCheckbox = document.getElementById('show-pins');
+      const refreshBtn = document.getElementById('refresh');
 
+      fetch('map_data.json')
+        .then(res => res.json())
+        .then(data => {
+          data.forEach(h => {
+            const popupContent = ` <b>${h.NAME}</b><br> Type: ${h.TYPE_OF_HOSPITAL}<br> Address: ${h.ADDRESS}<br> `;
+            const marker = L.marker([h.LATITUDE, h.LONGITUDE])
+              .bindPopup(popupContent);
+            hospitalMarkers.push(marker);
+            if (showPinsCheckbox && showPinsCheckbox.checked) marker.addTo(map);
+          });
+        });
+
+      if (showPinsCheckbox) {
+        showPinsCheckbox.addEventListener('change', (e) => {
+          if (e.target.checked) {
+            hospitalMarkers.forEach(m => m.addTo(map));
+          } else {
+            hospitalMarkers.forEach(m => map.removeLayer(m));
+          }
+        });
+      }
+
+      if (refreshBtn) {
+        refreshBtn.addEventListener('click', () => {
+          
+        });
+      }
+
+      
+      let kedahRows = [];
+      let selangorRows = [];
+
+      function loadCsv(filePath, callback) {
+        Papa.parse(filePath, {
+          download: true,
+          header: true,
+          skipEmptyLines: true,
+          complete: function(results) {
+            callback(results.data);
+          },
+          error: function(err) {
+            console.error('Error loading CSV:', err);
+          }
+        });
+      }
+
+      loadCsv("data/RF_Kedah_Mac_May_2026_AveRCP.csv", function(data) {
+        kedahRows = data;
+        loadCsv("data/RF_Slgr_Wlyh_Mac_May_2026_AveRCP.csv", function(data2) {
+          selangorRows = data2;
+          
+          populateLocationDropdown('kedahLocation', getUniqueLocations(kedahRows));
+          populateLocationDropdown('selangorLocation', getUniqueLocations(selangorRows));
+          renderCombinedRainfallChart();
+        });
+      });
+
+      function getUniqueLocations(rows) {
+        const map = new Map();
+        rows.forEach(row => {
+          const lat = row.Latitude;
+          const lon = row.Longitude;
+          const key = `${lat},${lon}`;
+          if (!map.has(key)) {
+            map.set(key, { lat, lon });
+          }
+        });
+        return Array.from(map.values());
+      }
+
+      function populateLocationDropdown(selectId, locations) {
+        const select = document.getElementById(selectId);
+        select.innerHTML = "";
+        locations.forEach(loc => {
+          const option = document.createElement("option");
+          option.value = `${loc.lat},${loc.lon}`;
+          option.textContent = `${loc.lat}, ${loc.lon}`;
+          select.appendChild(option);
+        });
+      }
+
+      function renderCombinedRainfallChart() {
+        
+      }
+    });
+  </script>
 </body>
 </html>

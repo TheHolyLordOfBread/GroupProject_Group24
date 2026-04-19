@@ -50,7 +50,7 @@ def generate_live_rainfall_json():
         except Exception as e:
             print(f"Error fetching batch {i}: {e}")
 
-        time.sleep(1) # Be nice to the free API
+        time.sleep(1) 
 
     with open('live_rainfall.json', 'w') as f:
         json.dump(rainfall_data, f, indent=4)
