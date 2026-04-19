@@ -83,7 +83,7 @@
         <div style="width: 20px; height: 20px; background-color: #88ff00;"></div><span>75-90</span> 
       </div> 
       <div style="display: flex; align-items: center; margin-bottom: 5px;"> 
-        <div style="width: 20px; height: 20px; background-color: #ffff00;"></div><span>90-129</span> 
+        <div style="width: 20px; height: 20px; background-color: #ffff00;"></div><span>90-120</span> 
       </div> 
       <div style="display: flex; align-items: center; margin-bottom: 5px;"> 
         <div style="width: 20px; height: 20px; background-color: #ff8800;"></div><span>120-150</span> 
