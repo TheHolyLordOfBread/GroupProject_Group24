@@ -61,95 +61,108 @@
     </div>
   </div>
 
-  <div id="map"></div>
+  <div id="legend" style="z-index: 10"> 
+    <h4>Rainfall (mm) Today</h4> 
+    <div style="display: flex; flex-direction: column;"> 
+      <div style="display: flex; align-items: center; margin-bottom: 5px;"> 
+        <div style="width: 20px; height: 20px; background-color: #0000ff;"></div><span>0 - 15</span> 
+      </div> 
+      <div style="display: flex; align-items: center; margin-bottom: 5px;"> 
+        <div style="width: 20px; height: 20px; background-color: #0088ff;"></div><span>15-30</span> 
+      </div> 
+      <div style="display: flex; align-items: center; margin-bottom: 5px;"> 
+        <div style="width: 20px; height: 20px; background-color: #00ffff;"></div><span>30-45</span> 
+      </div> 
+      <div style="display: flex; align-items: center; margin-bottom: 5px;"> 
+        <div style="width: 20px; height: 20px; background-color: #00ff88;"></div><span>45-60</span> 
+      </div> 
+      <div style="display: flex; align-items: center; margin-bottom: 5px;"> 
+        <div style="width: 20px; height: 20px; background-color: #00ff00;"></div><span>60-75</span> 
+      </div> 
+      <div style="display: flex; align-items: center; margin-bottom: 5px;"> 
+        <div style="width: 20px; height: 20px; background-color: #88ff00;"></div><span>75-90</span> 
+      </div> 
+      <div style="display: flex; align-items: center; margin-bottom: 5px;"> 
+        <div style="width: 20px; height: 20px; background-color: #ffff00;"></div><span>90-129</span> 
+      </div> 
+      <div style="display: flex; align-items: center; margin-bottom: 5px;"> 
+        <div style="width: 20px; height: 20px; background-color: #ff8800;"></div><span>120-150</span> 
+      </div>       
+      <div style="display: flex; align-items: center; margin-bottom: 5px;"> 
+        <div style="width: 20px; height: 20px; background-color: #ff0000;"></div><span>150+</span> 
+      </div> 
+    </div> 
+  </div> 
+  <div id="map"></div> 
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script> 
+  <script src="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.js"></script> 
+  <script> 
+    var map = L.map('map').setView([4.2105, 101.9758], 7); 
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { 
+      maxZoom: 19, 
+      attribution: '© OpenStreetMap | Data: NAHRIM' 
+    }).addTo(map); 
+    let heatmapLayer; 
+    let hospitalMarkers = []; 
+    const showPinsCheckbox = document.getElementById('show-pins'); 
+    const refreshBtn = document.getElementById('refresh'); 
+    const rcpSelect = document.getElementById('rcp-select'); 
+    fetch('map_data.json') 
+      .then(res => res.json()) 
+      .then(data => { 
+        data.forEach(h => { 
+          const popupContent = ` 
+            <b>${h.NAME}</b><br> 
+            Type: ${h.TYPE_OF_HOSPITAL}<br> 
+            Address: ${h.ADDRESS}<br> 
+            Rainfall: ${h.rainfall_mm} mm<br> 
+            Condition: ${h.condition} 
+          `; 
+          const marker = L.marker([h.LATITUDE, h.LONGITUDE]) 
+            .bindPopup(popupContent); 
+          hospitalMarkers.push(marker); 
+          if (showPinsCheckbox.checked) marker.addTo(map); 
+        }); 
+      }); 
+    function updateHeatmap() { 
+      const selectedRCP = rcpSelect.value; 
+      fetch('nahrim_data.json?v=' + Date.now()) 
+        .then(res => res.json()) 
+        .then(data => { 
+          const maxRainfall = 150
+          const heatData = data.map(point => [ 
+            point.LATITUDE, 
+            point.LONGITUDE, 
+            point[selectedRCP] / maxRainfall 
+          ]); 
 
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.js"></script>
-  <script>
-    var map = L.map('map').setView([4.2105, 101.9758], 7);
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      maxZoom: 19,
-      attribution: '© OpenStreetMap | Data: NAHRIM'
-    }).addTo(map);
-
-    let heatmapLayer;
-    let hospitalMarkers = [];
-    const showPinsCheckbox = document.getElementById('show-pins');
-    const refreshBtn = document.getElementById('refresh');
-    const rcpSelect = document.getElementById('rcp-select');
-
-    fetch('map_data.json')
-      .then(res => res.json())
-      .then(data => {
-        data.forEach(h => {
-          const popupContent = `
-            <b>${h.NAME}</b><br>
-            Type: ${h.TYPE_OF_HOSPITAL}<br>
-            Address: ${h.ADDRESS}<br>
-          `;
-          const marker = L.marker([h.LATITUDE, h.LONGITUDE])
-            .bindPopup(popupContent);
-          hospitalMarkers.push(marker);
-          if (showPinsCheckbox.checked) marker.addTo(map);
-        });
-      });
-
-    function updateHeatmap() {
-      const selectedRCP = rcpSelect.value;
-      fetch('nahrim_data.json?v=' + Date.now())
-        .then(res => res.json())
-        .then(data => {
-          const maxRainfall = Math.max(...data.map(p => p[selectedRCP]));
-          const heatData = data.map(point => [
-            point.LATITUDE,
-            point.LONGITUDE,
-            point[selectedRCP] / maxRainfall
-          ]);
-
-          document.getElementById('legend').innerHTML = `
-            <h4>Rainfall (mm) - ${selectedRCP}</h4>
-            <div style="display: flex; flex-direction: column;">
-              <div style="display: flex; align-items: center; margin-bottom: 5px;">
-                <div style="width: 20px; height: 20px; background-color: #0000ff;"></div><span>0 - ${(maxRainfall * 0.2).toFixed(1)}</span>
-              </div>
-              <div style="display: flex; align-items: center; margin-bottom: 5px;">
-                <div style="width: 20px; height: 20px; background-color: #00ffff;"></div><span>${(maxRainfall * 0.2).toFixed(1)} - ${(maxRainfall * 0.4).toFixed(1)}</span>
-              </div>
-              <div style="display: flex; align-items: center; margin-bottom: 5px;">
-                <div style="width: 20px; height: 20px; background-color: #00ff00;"></div><span>${(maxRainfall * 0.4).toFixed(1)} - ${(maxRainfall * 0.6).toFixed(1)}</span>
-              </div>
-              <div style="display: flex; align-items: center; margin-bottom: 5px;">
-                <div style="width: 20px; height: 20px; background-color: #ffff00;"></div><span>${(maxRainfall * 0.6).toFixed(1)} - ${(maxRainfall * 0.8).toFixed(1)}</span>
-              </div>
-              <div style="display: flex; align-items: center; margin-bottom: 5px;">
-                <div style="width: 20px; height: 20px; background-color: #ff0000;"></div><span>${(maxRainfall * 0.8).toFixed(1)}+</span>
-              </div>
-            </div>
-          `;
-
-          if (heatmapLayer) map.removeLayer(heatmapLayer);
-          heatmapLayer = L.heatLayer(heatData, {
-            radius: 25,
-            blur: 15,
-            maxZoom: 10,
-            gradient: {
-              0.0: '#0000ff',
+          ; 
+          if (heatmapLayer) map.removeLayer(heatmapLayer); 
+          heatmapLayer = L.heatLayer(heatData, { 
+            radius: 25, 
+            blur: 15, 
+            maxZoom: 10, 
+            gradient: { 
+              0.0: '#0000ff', 
+              0.1: '#0088ff',
               0.2: '#00ffff',
+              0.3: '#00ff88',
               0.4: '#00ff00',
+              0.5: '#88ff00',
               0.6: '#ffff00',
-              1.0: '#ff0000'
-            }
-          }).addTo(map);
-        })
-        .catch(err => console.log('Error loading nahrim_data.json:', err));
-    }
-
-    rcpSelect.addEventListener('change', updateHeatmap);
-    updateHeatmap();
-
-    showPinsCheckbox.addEventListener('change', (e) => {
-      if (e.target.checked) {
-        hospitalMarkers.forEach(m => m.addTo(map));
+              0.8: '#ff8800', 
+              1.0: '#ff0000', 
+            } 
+          }).addTo(map); 
+          console.log(`Heatmap updated: ${data.length} points, max ${maxRainfall.toFixed(1)}mm`); 
+        }) 
+        .catch(err => console.log('Error loading nahrim_data.json:', err)); 
+    } 
+    rcpSelect.addEventListener('change', updateHeatmap); 
+    updateHeatmap(); 
+    showPinsCheckbox.addEventListener('change', (e) => { 
+      if (e.target.checked) { 
+        hospitalMarkers.forEach(m => m.addTo(map)); 
       } else {
         hospitalMarkers.forEach(m => map.removeLayer(m));
       }
