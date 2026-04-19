@@ -1,110 +1,41 @@
 let combinedChart = null;
-let kedahRows = [];
-let selangorRows = [];
 
-<<<<<<< Updated upstream
-function formatDate(year, month, day) {
-    return `${year}-${String(month).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
-}
-
-function getUniqueLocations(rows) {
-    const map = new Map();
-=======
-function parseCSV(text) {
-    const lines = text.trim().split("\n");
-    const headers = lines[0].split(",");
-
-    return lines.slice(1).map(line => {
-        const values = line.split(",");
-        const row = {};
-
-        headers.forEach((header, index) => {
-            row[header.trim()] = values[index] ? values[index].trim() : "";
-        });
-
-        return row;
-    });
-}
+let nahrimKedahRows = [];
+let nahrimSelangorRows = [];
+let openMeteoRows = [];
+let googleRows = [];
 
 function formatDate(year, month, day) {
     return `${year}-${String(month).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
 }
 
-function groupByLocation(data) {
-    const grouped = {};
->>>>>>> Stashed changes
-
-    rows.forEach(row => {
-        const lat = row.Latitude;
-        const lon = row.Longitude;
-        const key = `${lat},${lon}`;
-
-        if (!map.has(key)) {
-            map.set(key, { lat, lon });
-        }
-<<<<<<< Updated upstream
-=======
-
-        grouped[key].push({
-            date: formatDate(row.Year, row.Month, row.Day),
-            rcp26: parseFloat(row["Ave_RCP2.6"]) || 0,
-            rcp45: parseFloat(row["Ave_RCP4.5"]) || 0,
-            rcp60: parseFloat(row["Ave_RCP6.0"]) || 0,
-            rcp85: parseFloat(row["Ave_RCP8.5"]) || 0
-        });
->>>>>>> Stashed changes
-    });
-
-    return Array.from(map.values());
-}
-
-function populateLocationDropdown(selectId, locations) {
-    const select = document.getElementById(selectId);
-    select.innerHTML = "";
-
-    locations.forEach(loc => {
-        const option = document.createElement("option");
-        option.value = `${loc.lat},${loc.lon}`;
-        option.textContent = `${loc.lat}, ${loc.lon}`;
-        select.appendChild(option);
-    });
-}
-
-<<<<<<< Updated upstream
-function getLocationSeries(rows, lat, lon, rcpColumn) {
-    const filtered = rows.filter(row =>
-        String(row.Latitude) === String(lat) &&
-        String(row.Longitude) === String(lon)
-    );
-
-    const labels = [];
-    const values = [];
-
-    filtered.forEach(row => {
-        const value = parseFloat(row[rcpColumn]);
-
-        if (!isNaN(value)) {
-            labels.push(formatDate(row.Year, row.Month, row.Day));
-            values.push(value);
+function loadCsv(filePath, callback, errorCallback = null) {
+    Papa.parse(filePath, {
+        download: true,
+        header: true,
+        skipEmptyLines: true,
+        complete: function (results) {
+            callback(results.data);
+        },
+        error: function (error) {
+            console.error("Papa Parse error for " + filePath + ":", error);
+            if (errorCallback) {
+                errorCallback(error);
+            }
         }
     });
-
-    return { labels, values };
 }
 
 function updateSourcePanel(sourceValue) {
     const panelTitle = document.getElementById("sourcePanelTitle");
+    const chartBoxTitle = document.getElementById("chartBoxTitle");
 
-    if (!panelTitle) return;
+    if (panelTitle) {
+        panelTitle.textContent = `${sourceValue.toUpperCase()} PANEL`;
+    }
 
-    if (sourceValue === "NAHRIM") {
-        panelTitle.textContent = "NAHRIM PANEL";
-    } else if (sourceValue === "OpenMeteo") {
-        panelTitle.textContent = "OPENMETEO PANEL";
-    } else if (sourceValue === "Google") {
-        panelTitle.textContent = "GOOGLE PANEL";
-    } else {
-        panelTitle.textContent = "COMBINED PANEL";
+    if (chartBoxTitle) {
+        chartBoxTitle.textContent = sourceValue;
     }
 }
 
@@ -125,27 +56,149 @@ function updateSourceCheckboxes(sourceValue) {
         openMeteo.checked = true;
     } else if (sourceValue === "Google") {
         google.checked = true;
-    } else {
-        nahrim.checked = true;
-        openMeteo.checked = true;
-        google.checked = true;
     }
 }
 
-function renderCombinedChart() {
-    const sourceValue = document.getElementById("Source")?.value;
-    const kedahValue = document.getElementById("kedahLocation").value;
-    const selangorValue = document.getElementById("selangorLocation").value;
+function toggleScenarioVisibility(sourceValue) {
+    const scenarioSelect = document.getElementById("Scenario");
+    const scenarioLabel = document.querySelector('label[for="Scenario"]');
 
-    if (!kedahValue || !selangorValue) return;
+    if (!scenarioSelect || !scenarioLabel) return;
 
-    const [kedahLat, kedahLon] = kedahValue.split(",");
-    const [selangorLat, selangorLon] = selangorValue.split(",");
+    if (sourceValue === "NAHRIM") {
+        scenarioSelect.style.display = "";
+        scenarioLabel.style.display = "";
+    } else {
+        scenarioSelect.style.display = "none";
+        scenarioLabel.style.display = "none";
+    }
+}
 
-    const kedahSeries = getLocationSeries(kedahRows, kedahLat, kedahLon, "Ave_RCP4.5");
-    const selangorSeries = getLocationSeries(selangorRows, selangorLat, selangorLon, "Ave_RCP4.5");
+function buildNahrimRegionalAverageSeries(rows, scenarioColumn) {
+    const groupedByDate = {};
 
-    const canvas = document.getElementById("combinedRainfallChart");
+    rows.forEach(row => {
+        const value = parseFloat(row[scenarioColumn]);
+        if (isNaN(value)) return;
+
+        const date = formatDate(row.Year, row.Month, row.Day);
+
+        if (!groupedByDate[date]) {
+            groupedByDate[date] = [];
+        }
+
+        groupedByDate[date].push(value);
+    });
+
+    const sortedDates = Object.keys(groupedByDate).sort();
+
+    return {
+        labels: sortedDates,
+        values: sortedDates.map(date => {
+            const arr = groupedByDate[date];
+            const sum = arr.reduce((a, b) => a + b, 0);
+            return sum / arr.length;
+        })
+    };
+}
+
+function buildOpenMeteoRegionalAverageSeries(rows, targetState) {
+    const groupedByDate = {};
+
+    rows.forEach(row => {
+        const state = String(row.State || "").trim().toUpperCase();
+        const rainfall = parseFloat(row["Rainfall (mm)"]);
+
+        if (state !== targetState) return;
+        if (isNaN(rainfall)) return;
+
+        const date = formatDate(row.Year, row.Month, row.Day);
+
+        if (!groupedByDate[date]) {
+            groupedByDate[date] = [];
+        }
+
+        groupedByDate[date].push(rainfall);
+    });
+
+    const sortedDates = Object.keys(groupedByDate).sort();
+
+    return {
+        labels: sortedDates,
+        values: sortedDates.map(date => {
+            const arr = groupedByDate[date];
+            const sum = arr.reduce((a, b) => a + b, 0);
+            return sum / arr.length;
+        })
+    };
+}
+
+function buildGoogleRegionalAverageSeries(rows, targetState) {
+    const groupedByDate = {};
+
+    rows.forEach(row => {
+        const state = String(row.State || "").trim().toUpperCase();
+        const rainfall = parseFloat(row["Rainfall  (mm)"]);
+
+        if (state !== targetState) return;
+        if (isNaN(rainfall)) return;
+
+        const date = formatDate(row.year, row.month, row.day);
+
+        if (!groupedByDate[date]) {
+            groupedByDate[date] = [];
+        }
+
+        groupedByDate[date].push(rainfall);
+    });
+
+    const sortedDates = Object.keys(groupedByDate).sort();
+
+    return {
+        labels: sortedDates,
+        values: sortedDates.map(date => {
+            const arr = groupedByDate[date];
+            const sum = arr.reduce((a, b) => a + b, 0);
+            return sum / arr.length;
+        })
+    };
+}
+
+function filterLastNDays(series, days) {
+    return {
+        labels: series.labels.slice(-days),
+        values: series.values.slice(-days)
+    };
+}
+
+function showNoDataMessage(canvas, message) {
+    if (combinedChart) {
+        combinedChart.destroy();
+        combinedChart = null;
+    }
+
+    const ctx = canvas.getContext("2d");
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.save();
+    ctx.font = "18px Arial";
+    ctx.fillStyle = "#333";
+    ctx.textAlign = "center";
+    ctx.fillText(message, canvas.width / 2, canvas.height / 2);
+    ctx.restore();
+}
+
+function renderNahrimChart(rangeValue, scenarioValue, canvas) {
+    const kedahSeriesFull = buildNahrimRegionalAverageSeries(nahrimKedahRows, scenarioValue);
+    const selangorSeriesFull = buildNahrimRegionalAverageSeries(nahrimSelangorRows, scenarioValue);
+
+    const kedahSeries = filterLastNDays(kedahSeriesFull, rangeValue);
+    const selangorSeries = filterLastNDays(selangorSeriesFull, rangeValue);
+
+    if (!kedahSeries.labels.length || !selangorSeries.labels.length) {
+        showNoDataMessage(canvas, "No NAHRIM data available");
+        return;
+    }
+
     const ctx = canvas.getContext("2d");
 
     if (combinedChart) {
@@ -158,7 +211,7 @@ function renderCombinedChart() {
             labels: kedahSeries.labels,
             datasets: [
                 {
-                    label: `${sourceValue} Kedah - Ave_RCP4.5`,
+                    label: `NAHRIM Kedah Average - ${scenarioValue}`,
                     data: kedahSeries.values,
                     borderWidth: 2,
                     tension: 0.2,
@@ -166,7 +219,7 @@ function renderCombinedChart() {
                     pointRadius: 3
                 },
                 {
-                    label: `${sourceValue} Selangor - Ave_RCP4.5`,
+                    label: `NAHRIM Selangor Average - ${scenarioValue}`,
                     data: selangorSeries.values,
                     borderWidth: 2,
                     tension: 0.2,
@@ -174,157 +227,6 @@ function renderCombinedChart() {
                     pointRadius: 3
                 }
             ]
-=======
-function getDatasetsForSource(kedahSeries, selangorSeries, sourceValue) {
-    if (sourceValue === "NAHRIM") {
-        return [
-            {
-                label: `Kedah NAHRIM - Ave_RCP4.5`,
-                data: kedahSeries.map(item => item.rcp45),
-                borderWidth: 2,
-                tension: 0.2,
-                fill: false
-            },
-            {
-                label: `Selangor NAHRIM - Ave_RCP4.5`,
-                data: selangorSeries.map(item => item.rcp45),
-                borderWidth: 2,
-                tension: 0.2,
-                fill: false
-            }
-        ];
-    }
-
-    if (sourceValue === "OpenMeteo") {
-        return [
-            {
-                label: `Kedah OpenMeteo - Ave_RCP4.5`,
-                data: kedahSeries.map(item => item.rcp45),
-                borderWidth: 2,
-                tension: 0.2,
-                fill: false
-            },
-            {
-                label: `Selangor OpenMeteo - Ave_RCP4.5`,
-                data: selangorSeries.map(item => item.rcp45),
-                borderWidth: 2,
-                tension: 0.2,
-                fill: false
-            }
-        ];
-    }
-
-    if (sourceValue === "Google") {
-        return [
-            {
-                label: `Kedah Google - Ave_RCP4.5`,
-                data: kedahSeries.map(item => item.rcp45),
-                borderWidth: 2,
-                tension: 0.2,
-                fill: false
-            },
-            {
-                label: `Selangor Google - Ave_RCP4.5`,
-                data: selangorSeries.map(item => item.rcp45),
-                borderWidth: 2,
-                tension: 0.2,
-                fill: false
-            }
-        ];
-    }
-
-    return [
-        {
-            label: `Kedah Combined - Ave_RCP4.5`,
-            data: kedahSeries.map(item => item.rcp45),
-            borderWidth: 2,
-            tension: 0.2,
-            fill: false
-        },
-        {
-            label: `Selangor Combined - Ave_RCP4.5`,
-            data: selangorSeries.map(item => item.rcp45),
-            borderWidth: 2,
-            tension: 0.2,
-            fill: false
-        }
-    ];
-}
-
-function updateSourcePanel(sourceValue) {
-    const panelTitle = document.getElementById("sourcePanelTitle");
-
-    if (!panelTitle) return;
-
-    if (sourceValue === "NAHRIM") {
-        panelTitle.textContent = "NAHRIM PANEL";
-    } else if (sourceValue === "OpenMeteo") {
-        panelTitle.textContent = "OPENMETEO PANEL";
-    } else if (sourceValue === "Google") {
-        panelTitle.textContent = "GOOGLE PANEL";
-    } else {
-        panelTitle.textContent = "COMBINED PANEL";
-    }
-}
-
-function updateSourceCheckboxes(sourceValue) {
-    const nahrim = document.getElementById("NAHRIM");
-    const openMeteo = document.getElementById("OpenMeteo");
-    const google = document.getElementById("Google");
-
-    if (!nahrim || !openMeteo || !google) return;
-
-    nahrim.checked = false;
-    openMeteo.checked = false;
-    google.checked = false;
-
-    if (sourceValue === "NAHRIM") {
-        nahrim.checked = true;
-    } else if (sourceValue === "OpenMeteo") {
-        openMeteo.checked = true;
-    } else if (sourceValue === "Google") {
-        google.checked = true;
-    } else {
-        nahrim.checked = true;
-        openMeteo.checked = true;
-        google.checked = true;
-    }
-}
-
-function renderCombinedChart() {
-    const sourceSelect = document.getElementById("Source");
-    const kedahLocationSelect = document.getElementById("kedahLocation");
-    const selangorLocationSelect = document.getElementById("selangorLocation");
-    const canvas = document.getElementById("combinedRainfallChart");
-
-    if (!sourceSelect || !kedahLocationSelect || !selangorLocationSelect || !canvas) return;
-
-    const sourceValue = sourceSelect.value;
-
-    const kedahGrouped = groupByLocation(kedahRows);
-    const selangorGrouped = groupByLocation(selangorRows);
-
-    const kedahLocation = kedahLocationSelect.value;
-    const selangorLocation = selangorLocationSelect.value;
-
-    const kedahSeries = kedahGrouped[kedahLocation] || [];
-    const selangorSeries = selangorGrouped[selangorLocation] || [];
-
-    const labels = kedahSeries.map(item => item.date);
-    const datasets = getDatasetsForSource(kedahSeries, selangorSeries, sourceValue);
-
-    const ctx = canvas.getContext("2d");
-
-    if (combinedChart) {
-        combinedChart.destroy();
-    }
-
-    combinedChart = new Chart(ctx, {
-        type: "line",
-        data: {
-            labels: labels,
-            datasets: datasets
->>>>>>> Stashed changes
         },
         options: {
             responsive: true,
@@ -332,11 +234,7 @@ function renderCombinedChart() {
             plugins: {
                 title: {
                     display: true,
-<<<<<<< Updated upstream
-                    text: "Combined Rainfall Comparison"
-=======
-                    text: `Combined Rainfall Comparison`
->>>>>>> Stashed changes
+                    text: "NAHRIM Rainfall (Kedah vs Selangor - Regional Average)"
                 },
                 legend: {
                     display: true
@@ -345,7 +243,7 @@ function renderCombinedChart() {
             scales: {
                 x: {
                     ticks: {
-                        maxTicksLimit: 8
+                        maxTicksLimit: 6
                     }
                 },
                 y: {
@@ -358,86 +256,207 @@ function renderCombinedChart() {
             }
         }
     });
+}
+
+function renderOpenMeteoChart(rangeValue, canvas) {
+    const kedahSeriesFull = buildOpenMeteoRegionalAverageSeries(openMeteoRows, "KEDAH");
+    const selangorSeriesFull = buildOpenMeteoRegionalAverageSeries(openMeteoRows, "SELANGOR");
+
+    const kedahSeries = filterLastNDays(kedahSeriesFull, rangeValue);
+    const selangorSeries = filterLastNDays(selangorSeriesFull, rangeValue);
+
+    if (!kedahSeries.labels.length || !selangorSeries.labels.length) {
+        showNoDataMessage(canvas, "OpenMeteo data not found");
+        return;
+    }
+
+    const ctx = canvas.getContext("2d");
+
+    if (combinedChart) {
+        combinedChart.destroy();
+    }
+
+    combinedChart = new Chart(ctx, {
+        type: "line",
+        data: {
+            labels: kedahSeries.labels,
+            datasets: [
+                {
+                    label: "OpenMeteo Kedah Average",
+                    data: kedahSeries.values,
+                    borderWidth: 2,
+                    tension: 0.2,
+                    fill: false,
+                    pointRadius: 3
+                },
+                {
+                    label: "OpenMeteo Selangor Average",
+                    data: selangorSeries.values,
+                    borderWidth: 2,
+                    tension: 0.2,
+                    fill: false,
+                    pointRadius: 3
+                }
+            ]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                title: {
+                    display: true,
+                    text: "OpenMeteo Rainfall (Kedah vs Selangor - Regional Average)"
+                },
+                legend: {
+                    display: true
+                }
+            },
+            scales: {
+                x: {
+                    ticks: {
+                        maxTicksLimit: 6
+                    }
+                },
+                y: {
+                    beginAtZero: true,
+                    title: {
+                        display: true,
+                        text: "Rainfall (mm)"
+                    }
+                }
+            }
+        }
+    });
+}
+
+function renderGoogleChart(rangeValue, canvas) {
+    const kedahSeriesFull = buildGoogleRegionalAverageSeries(googleRows, "KEDAH");
+    const selangorSeriesFull = buildGoogleRegionalAverageSeries(googleRows, "SELANGOR");
+
+    const kedahSeries = filterLastNDays(kedahSeriesFull, rangeValue);
+    const selangorSeries = filterLastNDays(selangorSeriesFull, rangeValue);
+
+    if (!kedahSeries.labels.length || !selangorSeries.labels.length) {
+        showNoDataMessage(canvas, "Google data not found");
+        return;
+    }
+
+    const ctx = canvas.getContext("2d");
+
+    if (combinedChart) {
+        combinedChart.destroy();
+    }
+
+    combinedChart = new Chart(ctx, {
+        type: "line",
+        data: {
+            labels: kedahSeries.labels,
+            datasets: [
+                {
+                    label: "Google Kedah Average",
+                    data: kedahSeries.values,
+                    borderWidth: 2,
+                    tension: 0.2,
+                    fill: false,
+                    pointRadius: 3
+                },
+                {
+                    label: "Google Selangor Average",
+                    data: selangorSeries.values,
+                    borderWidth: 2,
+                    tension: 0.2,
+                    fill: false,
+                    pointRadius: 3
+                }
+            ]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                title: {
+                    display: true,
+                    text: "Google Rainfall (Kedah vs Selangor - Regional Average)"
+                },
+                legend: {
+                    display: true
+                }
+            },
+            scales: {
+                x: {
+                    ticks: {
+                        maxTicksLimit: 6
+                    }
+                },
+                y: {
+                    beginAtZero: true,
+                    title: {
+                        display: true,
+                        text: "Rainfall (mm)"
+                    }
+                }
+            }
+        }
+    });
+}
+
+function renderCombinedChart() {
+    const sourceValue = document.getElementById("Source")?.value || "NAHRIM";
+    const rangeValue = parseInt(document.getElementById("Range")?.value || "7", 10);
+    const scenarioValue = document.getElementById("Scenario")?.value || "Ave_RCP4.5";
+    const canvas = document.getElementById("combinedRainfallChart");
+
+    if (!canvas) return;
 
     updateSourcePanel(sourceValue);
     updateSourceCheckboxes(sourceValue);
-}
+    toggleScenarioVisibility(sourceValue);
 
-<<<<<<< Updated upstream
-function loadCsv(filePath, callback) {
-    Papa.parse(filePath, {
-        download: true,
-        header: true,
-        skipEmptyLines: true,
-        complete: function(results) {
-            callback(results.data);
-        },
-        error: function(error) {
-            console.error("Papa Parse error:", error);
-        }
-    });
+    if (sourceValue === "OpenMeteo") {
+        renderOpenMeteoChart(rangeValue, canvas);
+        return;
+    }
+
+    if (sourceValue === "Google") {
+        renderGoogleChart(rangeValue, canvas);
+        return;
+    }
+
+    renderNahrimChart(rangeValue, scenarioValue, canvas);
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    loadCsv("data/RF_Kedah_Mac_May_2026_AveRCP.csv", function(kedahData) {
-        kedahRows = kedahData;
+    loadCsv("data/RF_Kedah_Mac_May_2026_AveRCP.csv", function (kedahData) {
+        nahrimKedahRows = kedahData;
 
-        loadCsv("data/RF_Slgr_Wlyh_Mac_May_2026_AveRCP.csv", function(selangorData) {
-            selangorRows = selangorData;
-
-            const kedahLocations = getUniqueLocations(kedahRows);
-            const selangorLocations = getUniqueLocations(selangorRows);
-
-            populateLocationDropdown("kedahLocation", kedahLocations);
-            populateLocationDropdown("selangorLocation", selangorLocations);
+        loadCsv("data/RF_Slgr_Wlyh_Mac_May_2026_AveRCP.csv", function (selangorData) {
+            nahrimSelangorRows = selangorData;
 
             renderCombinedChart();
 
-            document.getElementById("kedahLocation").addEventListener("change", renderCombinedChart);
-            document.getElementById("selangorLocation").addEventListener("change", renderCombinedChart);
+            loadCsv(
+                "data/openmeteo.csv",
+                function (openMeteoData) {
+                    openMeteoRows = openMeteoData;
+                },
+                function () {
+                    console.warn("OpenMeteo file could not be loaded.");
+                }
+            );
+
+            loadCsv(
+                "data/google.csv",
+                function (googleData) {
+                    googleRows = googleData;
+                },
+                function () {
+                    console.warn("Google file could not be loaded.");
+                }
+            );
+
             document.getElementById("Source")?.addEventListener("change", renderCombinedChart);
+            document.getElementById("Range")?.addEventListener("change", renderCombinedChart);
+            document.getElementById("Scenario")?.addEventListener("change", renderCombinedChart);
         });
     });
-=======
-async function loadCSV(path) {
-    const response = await fetch(path);
-    const text = await response.text();
-    return parseCSV(text);
-}
-
-document.addEventListener("DOMContentLoaded", async function () {
-    try {
-        kedahRows = await loadCSV("data/RF_Kedah_Mac_May_2026_AveRCP.csv");
-        selangorRows = await loadCSV("data/RF_Slgr_Wlyh_Mac_May_2026_AveRCP.csv");
-
-        const kedahGrouped = groupByLocation(kedahRows);
-        const selangorGrouped = groupByLocation(selangorRows);
-
-        const kedahLocationSelect = document.getElementById("kedahLocation");
-        const selangorLocationSelect = document.getElementById("selangorLocation");
-        const sourceSelect = document.getElementById("Source");
-
-        fillLocationDropdown(kedahLocationSelect, kedahGrouped);
-        fillLocationDropdown(selangorLocationSelect, selangorGrouped);
-
-        renderCombinedChart();
-
-        kedahLocationSelect.addEventListener("change", renderCombinedChart);
-        selangorLocationSelect.addEventListener("change", renderCombinedChart);
-        sourceSelect.addEventListener("change", renderCombinedChart);
-    } catch (error) {
-        console.error("Error loading CSV data:", error);
-
-        const kedahLocationSelect = document.getElementById("kedahLocation");
-        const selangorLocationSelect = document.getElementById("selangorLocation");
-
-        if (kedahLocationSelect) {
-            kedahLocationSelect.innerHTML = "<option>Failed to load Kedah data</option>";
-        }
-
-        if (selangorLocationSelect) {
-            selangorLocationSelect.innerHTML = "<option>Failed to load Selangor data</option>";
-        }
-    }
->>>>>>> Stashed changes
 });

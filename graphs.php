@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Graphs</title>
-    <link rel="stylesheet" href="css/style.css?v=22">
+    <link rel="stylesheet" href="css/style.css?v=31">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
 </head>
@@ -90,6 +90,8 @@ function getUniqueLocations(rows) {
 
 function populateLocationDropdown(selectId, locations) {
     const select = document.getElementById(selectId);
+    if (!select) return;
+
     select.innerHTML = "";
 
     locations.forEach(loc => {
@@ -192,21 +194,26 @@ function loadCsv(filePath, callback) {
         skipEmptyLines: true,
         complete: function(results) {
             callback(results.data);
+        },
+        error: function(error) {
+            console.error("Papa Parse error:", error);
         }
     });
 }
 
-loadCsv("data/RF_Kedah_Mac_May_2026_AveRCP.csv", function(data) {
-    kedahRows = data;
+document.addEventListener("DOMContentLoaded", function () {
+    loadCsv("data/RF_Kedah_Mac_May_2026_AveRCP.csv", function(data) {
+        kedahRows = data;
 
-    loadCsv("data/RF_Slgr_Wlyh_Mac_May_2026_AveRCP.csv", function(data2) {
-        selangorRows = data2;
+        loadCsv("data/RF_Slgr_Wlyh_Mac_May_2026_AveRCP.csv", function(data2) {
+            selangorRows = data2;
 
-        refreshLocationsAndChart();
+            refreshLocationsAndChart();
 
-        document.getElementById("graphState").addEventListener("change", refreshLocationsAndChart);
-        document.getElementById("graphLocation").addEventListener("change", renderGraphsPageChart);
-        document.getElementById("graphScenario").addEventListener("change", renderGraphsPageChart);
+            document.getElementById("graphState")?.addEventListener("change", refreshLocationsAndChart);
+            document.getElementById("graphLocation")?.addEventListener("change", renderGraphsPageChart);
+            document.getElementById("graphScenario")?.addEventListener("change", renderGraphsPageChart);
+        });
     });
 });
 </script>
