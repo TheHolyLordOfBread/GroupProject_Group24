@@ -45,31 +45,31 @@
     <h4>Rainfall (mm) Today</h4> 
     <div style="display: flex; flex-direction: column;"> 
       <div style="display: flex; align-items: center; margin-bottom: 5px;"> 
-        <div style="width: 20px; height: 20px; background-color: #0000ff;"></div><span>0 - 10</span> 
+        <div style="width: 20px; height: 20px; background-color: #0000ff;"></div><span>0 - 15</span> 
       </div> 
       <div style="display: flex; align-items: center; margin-bottom: 5px;"> 
-        <div style="width: 20px; height: 20px; background-color: #0088ff;"></div><span>10-20</span> 
+        <div style="width: 20px; height: 20px; background-color: #0088ff;"></div><span>15-30</span> 
       </div> 
       <div style="display: flex; align-items: center; margin-bottom: 5px;"> 
-        <div style="width: 20px; height: 20px; background-color: #00ffff;"></div><span>20-30</span> 
+        <div style="width: 20px; height: 20px; background-color: #00ffff;"></div><span>30-45</span> 
       </div> 
       <div style="display: flex; align-items: center; margin-bottom: 5px;"> 
-        <div style="width: 20px; height: 20px; background-color: #00ff88;"></div><span>30-40</span> 
+        <div style="width: 20px; height: 20px; background-color: #00ff88;"></div><span>45-60</span> 
       </div> 
       <div style="display: flex; align-items: center; margin-bottom: 5px;"> 
-        <div style="width: 20px; height: 20px; background-color: #00ff00;"></div><span>40-50</span> 
+        <div style="width: 20px; height: 20px; background-color: #00ff00;"></div><span>60-75</span> 
       </div> 
       <div style="display: flex; align-items: center; margin-bottom: 5px;"> 
-        <div style="width: 20px; height: 20px; background-color: #88ff00;"></div><span>50-60</span> 
+        <div style="width: 20px; height: 20px; background-color: #88ff00;"></div><span>75-90</span> 
       </div> 
       <div style="display: flex; align-items: center; margin-bottom: 5px;"> 
-        <div style="width: 20px; height: 20px; background-color: #ffff00;"></div><span>60-80</span> 
+        <div style="width: 20px; height: 20px; background-color: #ffff00;"></div><span>90-120</span> 
       </div> 
       <div style="display: flex; align-items: center; margin-bottom: 5px;"> 
-        <div style="width: 20px; height: 20px; background-color: #ff8800;"></div><span>80-100</span> 
+        <div style="width: 20px; height: 20px; background-color: #ff8800;"></div><span>120-150</span> 
       </div>       
       <div style="display: flex; align-items: center; margin-bottom: 5px;"> 
-        <div style="width: 20px; height: 20px; background-color: #ff0000;"></div><span>100+</span> 
+        <div style="width: 20px; height: 20px; background-color: #ff0000;"></div><span>150+</span> 
       </div> 
     </div> 
   </div> 
@@ -109,7 +109,7 @@
       fetch('nahrim_data.json?v=' + Date.now()) 
         .then(res => res.json()) 
         .then(data => { 
-          const maxRainfall = 100
+          const maxRainfall = 150
           const heatData = data.map(point => [ 
             point.LATITUDE, 
             point.LONGITUDE, 
