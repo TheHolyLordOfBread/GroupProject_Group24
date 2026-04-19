@@ -30,9 +30,9 @@
     <button id="refresh" style="margin-left:10px;">Refresh Data</button> 
   </div> 
 
-  <div id="legend"> 
+  <div id="legend" style="z-index: 10"> 
     <h4>Rainfall (mm) Today</h4> 
-    <div style="display: flex; flex-direction: column; z-index: 10;"> 
+    <div style="display: flex; flex-direction: column;"> 
       <div style="display: flex; align-items: center; margin-bottom: 5px;"> 
         <div style="width: 20px; height: 20px; background-color: #0000ff;"></div><span>0 - 10</span> 
       </div> 
@@ -50,7 +50,7 @@
       </div> 
     </div> 
   </div> 
-  <div id="map" style="z-index: -1;"></div> 
+  <div id="map"></div> 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script> 
   <script src="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.js"></script> 
   <script> 
