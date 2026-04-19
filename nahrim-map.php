@@ -9,7 +9,18 @@
     body { font-family: Arial, sans-serif; background-color: #f0f0f0; margin: 0; padding: 20px; } 
     h1 { text-align: center; color: #333; } 
     #map { height: 600px; width: 80%; margin: 20px auto; } 
-    #legend { position: absolute; top: 100px; right: 20px; background-color: #fff; padding: 10px; border: 1px solid #ccc; border-radius: 5px; } 
+   
+#legend {
+  position: absolute;
+  top: 100px;
+  right: 20px;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
   </style> 
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" /> 
   <link rel="stylesheet" href="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.css" /> 
@@ -50,7 +61,7 @@
       </div> 
     </div> 
   </div> 
-  <div id="map" style="z-index: -1;"></div> 
+  <div id="map"></div> 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script> 
   <script src="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.js"></script> 
   <script> 
