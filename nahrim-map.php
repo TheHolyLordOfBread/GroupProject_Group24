@@ -27,7 +27,7 @@
   <link rel="stylesheet" href="css/style.css?v=1" /> 
 </head> 
 <body> 
-  <?php include 'navbar.php'; ?> 
+  <?php include 'navbar.php'; include 'BottomBar.php'; ?> 
   <h1>Nahrim Weather Map</h1> 
   <h2>Rainfall Data for Malaysia</h2> 
   <select id="rcp-select" style="margin: 0 auto; display: block;"> 
