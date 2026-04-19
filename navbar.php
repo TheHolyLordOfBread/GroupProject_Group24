@@ -8,7 +8,7 @@
             <option value="http://localhost/GROUPPROJECT_GROUP24/Index.php">Combined Graphs</option>
             <option value="http://localhost/GROUPPROJECT_GROUP24/nahrim-map.php">Nahrim Map</option>
             <option value="http://localhost/GROUPPROJECT_GROUP24/open_meteo.php">Open Meteo Map</option>
-            <option value="">Google</option>
+            <option value="http://localhost/GROUPPROJECT_GROUP24/google.php">Google</option>
           </select>
     </label>
 

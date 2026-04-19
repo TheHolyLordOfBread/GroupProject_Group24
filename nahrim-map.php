@@ -28,7 +28,7 @@
 </head> 
 <body> 
   <?php include 'navbar.php'; ?> 
-  <h1>Nahrim Hospital Weather Map</h1> 
+  <h1>Nahrim Weather Map</h1> 
   <h2>Rainfall Data for Malaysia</h2> 
   <select id="rcp-select" style="margin: 0 auto; display: block;"> 
     <option value="Ave_RCP2.6">RCP 2.6</option> 
@@ -41,9 +41,9 @@
     <button id="refresh" style="margin-left:10px;">Refresh Data</button> 
   </div> 
 
-  <div id="legend"> 
+  <div id="legend" style="z-index: 10"> 
     <h4>Rainfall (mm) Today</h4> 
-    <div style="display: flex; flex-direction: column; z-index: 10;"> 
+    <div style="display: flex; flex-direction: column;"> 
       <div style="display: flex; align-items: center; margin-bottom: 5px;"> 
         <div style="width: 20px; height: 20px; background-color: #0000ff;"></div><span>0 - 10</span> 
       </div> 
