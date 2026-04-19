@@ -3,36 +3,16 @@
   "WorkspaceRootPath": "D:\\software\\Xampp\\htdocs\\GroupProject_Group24\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\software\\Xampp\\htdocs\\GroupProject_Group24\\data.py||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:data.py||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\software\\Xampp\\htdocs\\GroupProject_Group24\\google.py||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:google.py||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\software\\Xampp\\htdocs\\GroupProject_Group24\\data.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:data.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\software\\Xampp\\htdocs\\GroupProject_Group24\\live_rainfall.py||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:live_rainfall.py||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\software\\Xampp\\htdocs\\GroupProject_Group24\\google_live_rainfall.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:google_live_rainfall.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\software\\Xampp\\htdocs\\GroupProject_Group24\\google.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:google.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\software\\Xampp\\htdocs\\GroupProject_Group24\\google.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:google.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\software\\Xampp\\htdocs\\GroupProject_Group24\\navbar.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:navbar.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\software\\Xampp\\htdocs\\GroupProject_Group24\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\software\\Xampp\\htdocs\\GroupProject_Group24\\Index.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Index.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,110 +22,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.php",
+              "DocumentMoniker": "D:\\software\\Xampp\\htdocs\\GroupProject_Group24\\Index.php",
+              "RelativeDocumentMoniker": "Index.php",
+              "ToolTip": "D:\\software\\Xampp\\htdocs\\GroupProject_Group24\\Index.php",
+              "RelativeToolTip": "Index.php",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAAAKgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002338|",
+              "WhenOpened": "2026-04-18T20:30:39.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "data.py",
-              "DocumentMoniker": "D:\\software\\Xampp\\htdocs\\GroupProject_Group24\\data.py",
-              "RelativeDocumentMoniker": "data.py",
-              "ToolTip": "D:\\software\\Xampp\\htdocs\\GroupProject_Group24\\data.py",
-              "RelativeToolTip": "data.py",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2026-04-18T13:14:13.998Z",
+              "Title": "navbar.php",
+              "DocumentMoniker": "D:\\software\\Xampp\\htdocs\\GroupProject_Group24\\navbar.php",
+              "RelativeDocumentMoniker": "navbar.php",
+              "ToolTip": "D:\\software\\Xampp\\htdocs\\GroupProject_Group24\\navbar.php",
+              "RelativeToolTip": "navbar.php",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002338|",
+              "WhenOpened": "2026-04-18T20:30:37.853Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "google.py",
-              "DocumentMoniker": "D:\\software\\Xampp\\htdocs\\GroupProject_Group24\\google.py",
-              "RelativeDocumentMoniker": "google.py",
-              "ToolTip": "D:\\software\\Xampp\\htdocs\\GroupProject_Group24\\google.py",
-              "RelativeToolTip": "google.py",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2026-04-18T18:47:51.929Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "data.json",
-              "DocumentMoniker": "D:\\software\\Xampp\\htdocs\\GroupProject_Group24\\data.json",
-              "RelativeDocumentMoniker": "data.json",
-              "ToolTip": "D:\\software\\Xampp\\htdocs\\GroupProject_Group24\\data.json",
-              "RelativeToolTip": "data.json",
-              "ViewState": "AgIAAG8FAAAAAAAAAAAYwKMFAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-04-18T19:26:29.105Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "google_live_rainfall.json",
-              "DocumentMoniker": "D:\\software\\Xampp\\htdocs\\GroupProject_Group24\\google_live_rainfall.json",
-              "RelativeDocumentMoniker": "google_live_rainfall.json",
-              "ToolTip": "D:\\software\\Xampp\\htdocs\\GroupProject_Group24\\google_live_rainfall.json",
-              "RelativeToolTip": "google_live_rainfall.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAK8LAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-04-18T19:47:29.748Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "live_rainfall.py",
-              "DocumentMoniker": "D:\\software\\Xampp\\htdocs\\GroupProject_Group24\\live_rainfall.py",
-              "RelativeDocumentMoniker": "live_rainfall.py",
-              "ToolTip": "D:\\software\\Xampp\\htdocs\\GroupProject_Group24\\live_rainfall.py",
-              "RelativeToolTip": "live_rainfall.py",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2026-04-18T19:31:11.086Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "google.php",
-              "DocumentMoniker": "D:\\software\\Xampp\\htdocs\\GroupProject_Group24\\google.php",
-              "RelativeDocumentMoniker": "google.php",
-              "ToolTip": "D:\\software\\Xampp\\htdocs\\GroupProject_Group24\\google.php",
-              "RelativeToolTip": "google.php",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002338|",
-              "WhenOpened": "2026-04-18T19:17:56.89Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "google.json",
-              "DocumentMoniker": "D:\\software\\Xampp\\htdocs\\GroupProject_Group24\\google.json",
-              "RelativeDocumentMoniker": "google.json",
-              "ToolTip": "D:\\software\\Xampp\\htdocs\\GroupProject_Group24\\google.json",
-              "RelativeToolTip": "google.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-04-18T13:14:41.232Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "style.css",
               "DocumentMoniker": "D:\\software\\Xampp\\htdocs\\GroupProject_Group24\\css\\style.css",
               "RelativeDocumentMoniker": "css\\style.css",
               "ToolTip": "D:\\software\\Xampp\\htdocs\\GroupProject_Group24\\css\\style.css",
               "RelativeToolTip": "css\\style.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAHcAAAAAAAAAAAArwJIAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-04-18T13:11:57.699Z"
+              "WhenOpened": "2026-04-18T13:11:57.699Z",
+              "EditorCaption": ""
             }
           ]
         }
