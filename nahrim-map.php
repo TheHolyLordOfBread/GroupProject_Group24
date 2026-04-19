@@ -45,19 +45,31 @@
     <h4>Rainfall (mm) Today</h4> 
     <div style="display: flex; flex-direction: column;"> 
       <div style="display: flex; align-items: center; margin-bottom: 5px;"> 
-        <div style="width: 20px; height: 20px; background-color: #0000ff;"></div><span>0 - 10</span> 
+        <div style="width: 20px; height: 20px; background-color: #0000ff;"></div><span>0 - 15</span> 
       </div> 
       <div style="display: flex; align-items: center; margin-bottom: 5px;"> 
-        <div style="width: 20px; height: 20px; background-color: #00ffff;"></div><span>10 - 20</span> 
+        <div style="width: 20px; height: 20px; background-color: #0088ff;"></div><span>15-30</span> 
       </div> 
       <div style="display: flex; align-items: center; margin-bottom: 5px;"> 
-        <div style="width: 20px; height: 20px; background-color: #00ff00;"></div><span>20 - 30</span> 
+        <div style="width: 20px; height: 20px; background-color: #00ffff;"></div><span>30-45</span> 
       </div> 
       <div style="display: flex; align-items: center; margin-bottom: 5px;"> 
-        <div style="width: 20px; height: 20px; background-color: #ffff00;"></div><span>30 - 40</span> 
+        <div style="width: 20px; height: 20px; background-color: #00ff88;"></div><span>45-60</span> 
       </div> 
       <div style="display: flex; align-items: center; margin-bottom: 5px;"> 
-        <div style="width: 20px; height: 20px; background-color: #ff0000;"></div><span>40+</span> 
+        <div style="width: 20px; height: 20px; background-color: #00ff00;"></div><span>60-75</span> 
+      </div> 
+      <div style="display: flex; align-items: center; margin-bottom: 5px;"> 
+        <div style="width: 20px; height: 20px; background-color: #88ff00;"></div><span>75-90</span> 
+      </div> 
+      <div style="display: flex; align-items: center; margin-bottom: 5px;"> 
+        <div style="width: 20px; height: 20px; background-color: #ffff00;"></div><span>90-129</span> 
+      </div> 
+      <div style="display: flex; align-items: center; margin-bottom: 5px;"> 
+        <div style="width: 20px; height: 20px; background-color: #ff8800;"></div><span>120-150</span> 
+      </div>       
+      <div style="display: flex; align-items: center; margin-bottom: 5px;"> 
+        <div style="width: 20px; height: 20px; background-color: #ff0000;"></div><span>150+</span> 
       </div> 
     </div> 
   </div> 
@@ -97,32 +109,14 @@
       fetch('nahrim_data.json?v=' + Date.now()) 
         .then(res => res.json()) 
         .then(data => { 
-          const maxRainfall = Math.max(...data.map(p => p[selectedRCP])); 
+          const maxRainfall = 150
           const heatData = data.map(point => [ 
             point.LATITUDE, 
             point.LONGITUDE, 
             point[selectedRCP] / maxRainfall 
           ]); 
-          document.getElementById('legend').innerHTML = ` 
-<h4>Rainfall (mm) - ${selectedRCP}</h4> 
-<div style="display: flex; flex-direction: column;"> 
-  <div style="display: flex; align-items: center; margin-bottom: 5px;"> 
-    <div style="width: 20px; height: 20px; background-color: #0000ff;"></div><span>0 - ${(maxRainfall * 0.2).toFixed(1)}</span> 
-  </div> 
-  <div style="display: flex; align-items: center; margin-bottom: 5px;"> 
-    <div style="width: 20px; height: 20px; background-color: #00ffff;"></div><span>${(maxRainfall * 0.2).toFixed(1)} - ${(maxRainfall * 0.4).toFixed(1)}</span> 
-  </div> 
-  <div style="display: flex; align-items: center; margin-bottom: 5px;"> 
-    <div style="width: 20px; height: 20px; background-color: #00ff00;"></div><span>${(maxRainfall * 0.4).toFixed(1)} - ${(maxRainfall * 0.6).toFixed(1)}</span> 
-  </div> 
-  <div style="display: flex; align-items: center; margin-bottom: 5px;"> 
-    <div style="width: 20px; height: 20px; background-color: #ffff00;"></div><span>${(maxRainfall * 0.6).toFixed(1)} - ${(maxRainfall * 0.8).toFixed(1)}</span> 
-  </div> 
-  <div style="display: flex; align-items: center; margin-bottom: 5px;"> 
-    <div style="width: 20px; height: 20px; background-color: #ff0000;"></div><span>${(maxRainfall * 0.8).toFixed(1)}+</span> 
-  </div> 
-</div>
-          `; 
+
+          ; 
           if (heatmapLayer) map.removeLayer(heatmapLayer); 
           heatmapLayer = L.heatLayer(heatData, { 
             radius: 25, 
@@ -130,10 +124,14 @@
             maxZoom: 10, 
             gradient: { 
               0.0: '#0000ff', 
-              0.2: '#00ffff', 
-              0.4: '#00ff00', 
-              0.6: '#ffff00', 
-              1.0: '#ff0000' 
+              0.1: '#0088ff',
+              0.2: '#00ffff',
+              0.3: '#00ff88',
+              0.4: '#00ff00',
+              0.5: '#88ff00',
+              0.6: '#ffff00',
+              0.8: '#ff8800', 
+              1.0: '#ff0000', 
             } 
           }).addTo(map); 
           console.log(`Heatmap updated: ${data.length} points, max ${maxRainfall.toFixed(1)}mm`); 
