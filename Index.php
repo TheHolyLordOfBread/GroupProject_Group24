@@ -74,7 +74,7 @@
             </div>
         </div>
 
-        <div class="Map" id="map" style="height: 600px; width: 100%;"></div>
+        <div class="Map" id="map" style="height: 350px; width: 100%;"></div>
     </div>
 
     <div class="box-row">

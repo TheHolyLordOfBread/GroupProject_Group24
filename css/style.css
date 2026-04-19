@@ -144,7 +144,7 @@ body {
         "NAHRIM Sources"
         "Map Map";
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 280px 610px;
+    grid-template-rows: 240px 350px;
     background-color: #1e88e5;
     padding: 10px;
     width: 62%;
@@ -202,13 +202,14 @@ body {
     vertical-align: middle;
 }
 
-.grid .Map {
-    grid-area: Map;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-}
+    .grid .Map {
+        grid-area: Map;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+
+    }
 
 /* RIGHT SIDE */
 .box-row {
@@ -280,7 +281,7 @@ body {
 .BottomNavbar {
     background-color: #14448E;
     border-top: 1px solid #ddd;
-    padding: 15px 30px;
+    left: 0;
     bottom: 0;
     width: 100%;
     position: fixed;
