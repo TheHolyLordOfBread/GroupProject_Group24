@@ -16,6 +16,8 @@
 
 
       <script>
+
+
 window.onload = function() {
     const storedPage = localStorage.getItem('page');
     const dropdown = document.getElementById('redirectDropdown');
