@@ -144,7 +144,7 @@ body {
         "NAHRIM Sources"
         "Map Map";
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 280px 520px;
+    grid-template-rows: 280px 610px;
     background-color: #1e88e5;
     padding: 10px;
     width: 62%;
