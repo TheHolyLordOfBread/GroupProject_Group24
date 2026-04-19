@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Graphs</title>
-  <link rel="stylesheet" href="css/style.css?v=22">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphs</title>
+    <link rel="stylesheet" href="css/style.css?v=31">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
 </head>
 <body>
   <?php include 'navbar.php'; ?>
@@ -71,9 +71,16 @@
         if (!map.has(key)) {
           map.set(key, { lat, lon });
         }
-      });
-      return Array.from(map.values());
-    }
+    });
+
+    return Array.from(map.values());
+}
+
+function populateLocationDropdown(selectId, locations) {
+    const select = document.getElementById(selectId);
+    if (!select) return;
+
+    select.innerHTML = "";
 
     function populateLocationDropdown(selectId, locations) {
       const select = document.getElementById(selectId);
@@ -164,23 +171,27 @@
         header: true,
         skipEmptyLines: true,
         complete: function(results) {
-          callback(results.data);
+            callback(results.data);
         },
-        error: function(err) {
-          console.error('Error loading CSV:', err);
+        error: function(error) {
+            console.error("Papa Parse error:", error);
         }
-      });
-    }
+    });
+}
 
+document.addEventListener("DOMContentLoaded", function () {
     loadCsv("data/RF_Kedah_Mac_May_2026_AveRCP.csv", function(data) {
-      kedahRows = data;
-      loadCsv("data/RF_Slgr_Wlyh_Mac_May_2026_AveRCP.csv", function(data2) {
-        selangorRows = data2;
-        refreshLocationsAndChart();
-        document.getElementById("graphState").addEventListener("change", refreshLocationsAndChart);
-        document.getElementById("graphLocation").addEventListener("change", renderGraphsPageChart);
-        document.getElementById("graphScenario").addEventListener("change", renderGraphsPageChart);
-      });
+        kedahRows = data;
+
+        loadCsv("data/RF_Slgr_Wlyh_Mac_May_2026_AveRCP.csv", function(data2) {
+            selangorRows = data2;
+
+            refreshLocationsAndChart();
+
+            document.getElementById("graphState")?.addEventListener("change", refreshLocationsAndChart);
+            document.getElementById("graphLocation")?.addEventListener("change", renderGraphsPageChart);
+            document.getElementById("graphScenario")?.addEventListener("change", renderGraphsPageChart);
+        });
     });
   </script>
 </body>

@@ -1,0 +1,761 @@
+year,month,day,hospital,State,Rainfall  (mm)
+2026,4,19,Sultanah  Bahiyah  Hospital,KEDAH,10.36
+2026,4,20,Sultanah  Bahiyah  Hospital,KEDAH,0.46
+2026,4,21,Sultanah  Bahiyah  Hospital,KEDAH,0.63
+2026,4,22,Sultanah  Bahiyah  Hospital,KEDAH,4.73
+2026,4,23,Sultanah  Bahiyah  Hospital,KEDAH,2.74
+2026,4,24,Sultanah  Bahiyah  Hospital,KEDAH,0.47
+2026,4,25,Sultanah  Bahiyah  Hospital,KEDAH,4.74
+2026,4,26,Sultanah  Bahiyah  Hospital,KEDAH,2.28
+2026,4,27,Sultanah  Bahiyah  Hospital,KEDAH,5.11
+2026,4,28,Sultanah  Bahiyah  Hospital,KEDAH,5.25
+2026,4,19,Sultan  Abdul  Halim  Hospital,KEDAH,12.46
+2026,4,20,Sultan  Abdul  Halim  Hospital,KEDAH,3.3
+2026,4,21,Sultan  Abdul  Halim  Hospital,KEDAH,1.5
+2026,4,22,Sultan  Abdul  Halim  Hospital,KEDAH,3.34
+2026,4,23,Sultan  Abdul  Halim  Hospital,KEDAH,2.18
+2026,4,24,Sultan  Abdul  Halim  Hospital,KEDAH,1.97
+2026,4,25,Sultan  Abdul  Halim  Hospital,KEDAH,9.03
+2026,4,26,Sultan  Abdul  Halim  Hospital,KEDAH,4.92
+2026,4,27,Sultan  Abdul  Halim  Hospital,KEDAH,6.57
+2026,4,28,Sultan  Abdul  Halim  Hospital,KEDAH,2.54
+2026,4,19,Pendang  Hospital,KEDAH,6.34
+2026,4,20,Pendang  Hospital,KEDAH,0.4
+2026,4,21,Pendang  Hospital,KEDAH,0.25
+2026,4,22,Pendang  Hospital,KEDAH,4.75
+2026,4,23,Pendang  Hospital,KEDAH,2.28
+2026,4,24,Pendang  Hospital,KEDAH,0.45
+2026,4,25,Pendang  Hospital,KEDAH,2.79
+2026,4,26,Pendang  Hospital,KEDAH,2.46
+2026,4,27,Pendang  Hospital,KEDAH,6.79
+2026,4,28,Pendang  Hospital,KEDAH,3.17
+2026,4,19,Kulim  Hospital,KEDAH,3.21
+2026,4,20,Kulim  Hospital,KEDAH,3.41
+2026,4,21,Kulim  Hospital,KEDAH,0.32
+2026,4,22,Kulim  Hospital,KEDAH,3.25
+2026,4,23,Kulim  Hospital,KEDAH,2.05
+2026,4,24,Kulim  Hospital,KEDAH,3.92
+2026,4,25,Kulim  Hospital,KEDAH,2.79
+2026,4,26,Kulim  Hospital,KEDAH,2.73
+2026,4,27,Kulim  Hospital,KEDAH,6.12
+2026,4,28,Kulim  Hospital,KEDAH,7.8
+2026,4,19,Baling  Hospital,KEDAH,1.58
+2026,4,20,Baling  Hospital,KEDAH,0.51
+2026,4,21,Baling  Hospital,KEDAH,0.75
+2026,4,22,Baling  Hospital,KEDAH,0.43
+2026,4,23,Baling  Hospital,KEDAH,1.55
+2026,4,24,Baling  Hospital,KEDAH,0.73
+2026,4,25,Baling  Hospital,KEDAH,2.67
+2026,4,26,Baling  Hospital,KEDAH,3.21
+2026,4,27,Baling  Hospital,KEDAH,13.83
+2026,4,28,Baling  Hospital,KEDAH,6.69
+2026,4,19,Sik  Hospital,KEDAH,10.04
+2026,4,20,Sik  Hospital,KEDAH,3.39
+2026,4,21,Sik  Hospital,KEDAH,0.55
+2026,4,22,Sik  Hospital,KEDAH,0.49
+2026,4,23,Sik  Hospital,KEDAH,4.2
+2026,4,24,Sik  Hospital,KEDAH,2.81
+2026,4,25,Sik  Hospital,KEDAH,2.57
+2026,4,26,Sik  Hospital,KEDAH,6.4
+2026,4,27,Sik  Hospital,KEDAH,10.68
+2026,4,28,Sik  Hospital,KEDAH,5.31
+2026,4,19,Hospital  Sultanah  Maliha,KEDAH,7.49
+2026,4,20,Hospital  Sultanah  Maliha,KEDAH,0.76
+2026,4,21,Hospital  Sultanah  Maliha,KEDAH,0.16
+2026,4,22,Hospital  Sultanah  Maliha,KEDAH,1.59
+2026,4,23,Hospital  Sultanah  Maliha,KEDAH,1.77
+2026,4,24,Hospital  Sultanah  Maliha,KEDAH,2.76
+2026,4,25,Hospital  Sultanah  Maliha,KEDAH,1.89
+2026,4,26,Hospital  Sultanah  Maliha,KEDAH,4.18
+2026,4,27,Hospital  Sultanah  Maliha,KEDAH,4.89
+2026,4,28,Hospital  Sultanah  Maliha,KEDAH,6.32
+2026,4,19,Hospital  Yan,KEDAH,11.79
+2026,4,20,Hospital  Yan,KEDAH,0.87
+2026,4,21,Hospital  Yan,KEDAH,1.29
+2026,4,22,Hospital  Yan,KEDAH,2.36
+2026,4,23,Hospital  Yan,KEDAH,2.37
+2026,4,24,Hospital  Yan,KEDAH,1.28
+2026,4,25,Hospital  Yan,KEDAH,7.89
+2026,4,26,Hospital  Yan,KEDAH,4.89
+2026,4,27,Hospital  Yan,KEDAH,2.57
+2026,4,28,Hospital  Yan,KEDAH,4.49
+2026,4,19,Hospital  Jitra,KEDAH,13.27
+2026,4,20,Hospital  Jitra,KEDAH,0.44
+2026,4,21,Hospital  Jitra,KEDAH,0.38
+2026,4,22,Hospital  Jitra,KEDAH,6.62
+2026,4,23,Hospital  Jitra,KEDAH,3.23
+2026,4,24,Hospital  Jitra,KEDAH,0.93
+2026,4,25,Hospital  Jitra,KEDAH,3.72
+2026,4,26,Hospital  Jitra,KEDAH,1.23
+2026,4,27,Hospital  Jitra,KEDAH,10.12
+2026,4,28,Hospital  Jitra,KEDAH,6.19
+2026,4,19,Hospital  Kuala  Nerang,KEDAH,6.31
+2026,4,20,Hospital  Kuala  Nerang,KEDAH,0.25
+2026,4,21,Hospital  Kuala  Nerang,KEDAH,0.18
+2026,4,22,Hospital  Kuala  Nerang,KEDAH,0.68
+2026,4,23,Hospital  Kuala  Nerang,KEDAH,1.22
+2026,4,24,Hospital  Kuala  Nerang,KEDAH,0.75
+2026,4,25,Hospital  Kuala  Nerang,KEDAH,0.78
+2026,4,26,Hospital  Kuala  Nerang,KEDAH,2.58
+2026,4,27,Hospital  Kuala  Nerang,KEDAH,5.97
+2026,4,28,Hospital  Kuala  Nerang,KEDAH,3.63
+2026,4,19,Putra  Medical  Centre,KEDAH,10.36
+2026,4,20,Putra  Medical  Centre,KEDAH,0.46
+2026,4,21,Putra  Medical  Centre,KEDAH,0.63
+2026,4,22,Putra  Medical  Centre,KEDAH,4.73
+2026,4,23,Putra  Medical  Centre,KEDAH,2.74
+2026,4,24,Putra  Medical  Centre,KEDAH,0.47
+2026,4,25,Putra  Medical  Centre,KEDAH,4.74
+2026,4,26,Putra  Medical  Centre,KEDAH,2.28
+2026,4,27,Putra  Medical  Centre,KEDAH,5.11
+2026,4,28,Putra  Medical  Centre,KEDAH,5.25
+2026,4,19,Kedah  Medical  Centre,KEDAH,10.36
+2026,4,20,Kedah  Medical  Centre,KEDAH,0.46
+2026,4,21,Kedah  Medical  Centre,KEDAH,0.63
+2026,4,22,Kedah  Medical  Centre,KEDAH,4.73
+2026,4,23,Kedah  Medical  Centre,KEDAH,2.74
+2026,4,24,Kedah  Medical  Centre,KEDAH,0.47
+2026,4,25,Kedah  Medical  Centre,KEDAH,4.74
+2026,4,26,Kedah  Medical  Centre,KEDAH,2.28
+2026,4,27,Kedah  Medical  Centre,KEDAH,5.11
+2026,4,28,Kedah  Medical  Centre,KEDAH,5.25
+2026,4,19,Metro  Specialist  Hospital,KEDAH,12.46
+2026,4,20,Metro  Specialist  Hospital,KEDAH,3.3
+2026,4,21,Metro  Specialist  Hospital,KEDAH,1.5
+2026,4,22,Metro  Specialist  Hospital,KEDAH,3.34
+2026,4,23,Metro  Specialist  Hospital,KEDAH,2.18
+2026,4,24,Metro  Specialist  Hospital,KEDAH,1.97
+2026,4,25,Metro  Specialist  Hospital,KEDAH,9.03
+2026,4,26,Metro  Specialist  Hospital,KEDAH,4.92
+2026,4,27,Metro  Specialist  Hospital,KEDAH,6.57
+2026,4,28,Metro  Specialist  Hospital,KEDAH,2.54
+2026,4,19,Pantai  Hospital  Sungai  Petani,KEDAH,12.46
+2026,4,20,Pantai  Hospital  Sungai  Petani,KEDAH,3.3
+2026,4,21,Pantai  Hospital  Sungai  Petani,KEDAH,1.5
+2026,4,22,Pantai  Hospital  Sungai  Petani,KEDAH,3.34
+2026,4,23,Pantai  Hospital  Sungai  Petani,KEDAH,2.18
+2026,4,24,Pantai  Hospital  Sungai  Petani,KEDAH,1.97
+2026,4,25,Pantai  Hospital  Sungai  Petani,KEDAH,9.03
+2026,4,26,Pantai  Hospital  Sungai  Petani,KEDAH,4.92
+2026,4,27,Pantai  Hospital  Sungai  Petani,KEDAH,6.57
+2026,4,28,Pantai  Hospital  Sungai  Petani,KEDAH,2.54
+2026,4,19,Pantai  Hospital  Laguna  Merbok,KEDAH,12.46
+2026,4,20,Pantai  Hospital  Laguna  Merbok,KEDAH,3.3
+2026,4,21,Pantai  Hospital  Laguna  Merbok,KEDAH,1.5
+2026,4,22,Pantai  Hospital  Laguna  Merbok,KEDAH,3.34
+2026,4,23,Pantai  Hospital  Laguna  Merbok,KEDAH,2.18
+2026,4,24,Pantai  Hospital  Laguna  Merbok,KEDAH,1.97
+2026,4,25,Pantai  Hospital  Laguna  Merbok,KEDAH,9.03
+2026,4,26,Pantai  Hospital  Laguna  Merbok,KEDAH,4.92
+2026,4,27,Pantai  Hospital  Laguna  Merbok,KEDAH,6.57
+2026,4,28,Pantai  Hospital  Laguna  Merbok,KEDAH,2.54
+2026,4,19,Hospital  Shah  Alam,SELANGOR,13.61
+2026,4,20,Hospital  Shah  Alam,SELANGOR,11.2
+2026,4,21,Hospital  Shah  Alam,SELANGOR,14.43
+2026,4,22,Hospital  Shah  Alam,SELANGOR,1.61
+2026,4,23,Hospital  Shah  Alam,SELANGOR,4.01
+2026,4,24,Hospital  Shah  Alam,SELANGOR,5.89
+2026,4,25,Hospital  Shah  Alam,SELANGOR,2.55
+2026,4,26,Hospital  Shah  Alam,SELANGOR,3.55
+2026,4,27,Hospital  Shah  Alam,SELANGOR,3.21
+2026,4,28,Hospital  Shah  Alam,SELANGOR,4.04
+2026,4,19,Hospital  Ampang,SELANGOR,16.51
+2026,4,20,Hospital  Ampang,SELANGOR,10.39
+2026,4,21,Hospital  Ampang,SELANGOR,6.67
+2026,4,22,Hospital  Ampang,SELANGOR,1.06
+2026,4,23,Hospital  Ampang,SELANGOR,4.15
+2026,4,24,Hospital  Ampang,SELANGOR,9.4
+2026,4,25,Hospital  Ampang,SELANGOR,2.85
+2026,4,26,Hospital  Ampang,SELANGOR,0.69
+2026,4,27,Hospital  Ampang,SELANGOR,1.32
+2026,4,28,Hospital  Ampang,SELANGOR,5.4
+2026,4,19,Hospital  Banting,SELANGOR,18.12
+2026,4,20,Hospital  Banting,SELANGOR,10.68
+2026,4,21,Hospital  Banting,SELANGOR,9.32
+2026,4,22,Hospital  Banting,SELANGOR,2.37
+2026,4,23,Hospital  Banting,SELANGOR,5.05
+2026,4,24,Hospital  Banting,SELANGOR,4.23
+2026,4,25,Hospital  Banting,SELANGOR,1.26
+2026,4,26,Hospital  Banting,SELANGOR,2.69
+2026,4,27,Hospital  Banting,SELANGOR,3.37
+2026,4,28,Hospital  Banting,SELANGOR,6.87
+2026,4,19,Tengku  Permaisuri  Norashikin  Hospital,SELANGOR,11.22
+2026,4,20,Tengku  Permaisuri  Norashikin  Hospital,SELANGOR,8.91
+2026,4,21,Tengku  Permaisuri  Norashikin  Hospital,SELANGOR,5.89
+2026,4,22,Tengku  Permaisuri  Norashikin  Hospital,SELANGOR,0.98
+2026,4,23,Tengku  Permaisuri  Norashikin  Hospital,SELANGOR,4.04
+2026,4,24,Tengku  Permaisuri  Norashikin  Hospital,SELANGOR,3.49
+2026,4,25,Tengku  Permaisuri  Norashikin  Hospital,SELANGOR,5.58
+2026,4,26,Tengku  Permaisuri  Norashikin  Hospital,SELANGOR,0.64
+2026,4,27,Tengku  Permaisuri  Norashikin  Hospital,SELANGOR,1.28
+2026,4,28,Tengku  Permaisuri  Norashikin  Hospital,SELANGOR,4.5
+2026,4,19,Hospital  Kuala  Kubu  Bharu,SELANGOR,10.01
+2026,4,20,Hospital  Kuala  Kubu  Bharu,SELANGOR,17.43
+2026,4,21,Hospital  Kuala  Kubu  Bharu,SELANGOR,9.11
+2026,4,22,Hospital  Kuala  Kubu  Bharu,SELANGOR,3.41
+2026,4,23,Hospital  Kuala  Kubu  Bharu,SELANGOR,3.38
+2026,4,24,Hospital  Kuala  Kubu  Bharu,SELANGOR,3.96
+2026,4,25,Hospital  Kuala  Kubu  Bharu,SELANGOR,3.54
+2026,4,26,Hospital  Kuala  Kubu  Bharu,SELANGOR,2.31
+2026,4,27,Hospital  Kuala  Kubu  Bharu,SELANGOR,3.24
+2026,4,28,Hospital  Kuala  Kubu  Bharu,SELANGOR,3.67
+2026,4,19,Hospital  Selayang,SELANGOR,7.25
+2026,4,20,Hospital  Selayang,SELANGOR,15.37
+2026,4,21,Hospital  Selayang,SELANGOR,11.09
+2026,4,22,Hospital  Selayang,SELANGOR,2.03
+2026,4,23,Hospital  Selayang,SELANGOR,1.3
+2026,4,24,Hospital  Selayang,SELANGOR,5.36
+2026,4,25,Hospital  Selayang,SELANGOR,1.17
+2026,4,26,Hospital  Selayang,SELANGOR,1.09
+2026,4,27,Hospital  Selayang,SELANGOR,2.69
+2026,4,28,Hospital  Selayang,SELANGOR,5.4
+2026,4,19,Sultan  Idris  Shah  Serdang  Hospital,SELANGOR,11.22
+2026,4,20,Sultan  Idris  Shah  Serdang  Hospital,SELANGOR,8.66
+2026,4,21,Sultan  Idris  Shah  Serdang  Hospital,SELANGOR,5.89
+2026,4,22,Sultan  Idris  Shah  Serdang  Hospital,SELANGOR,0.98
+2026,4,23,Sultan  Idris  Shah  Serdang  Hospital,SELANGOR,4.04
+2026,4,24,Sultan  Idris  Shah  Serdang  Hospital,SELANGOR,3.49
+2026,4,25,Sultan  Idris  Shah  Serdang  Hospital,SELANGOR,5.58
+2026,4,26,Sultan  Idris  Shah  Serdang  Hospital,SELANGOR,0.64
+2026,4,27,Sultan  Idris  Shah  Serdang  Hospital,SELANGOR,1.28
+2026,4,28,Sultan  Idris  Shah  Serdang  Hospital,SELANGOR,4.5
+2026,4,19,Sungai  Buloh  Hospital,SELANGOR,7.25
+2026,4,20,Sungai  Buloh  Hospital,SELANGOR,14.97
+2026,4,21,Sungai  Buloh  Hospital,SELANGOR,11.09
+2026,4,22,Sungai  Buloh  Hospital,SELANGOR,2.03
+2026,4,23,Sungai  Buloh  Hospital,SELANGOR,1.3
+2026,4,24,Sungai  Buloh  Hospital,SELANGOR,5.36
+2026,4,25,Sungai  Buloh  Hospital,SELANGOR,1.17
+2026,4,26,Sungai  Buloh  Hospital,SELANGOR,1.09
+2026,4,27,Sungai  Buloh  Hospital,SELANGOR,2.69
+2026,4,28,Sungai  Buloh  Hospital,SELANGOR,5.4
+2026,4,19,Hospital  Tanjung  Karang,SELANGOR,5.37
+2026,4,20,Hospital  Tanjung  Karang,SELANGOR,14.02
+2026,4,21,Hospital  Tanjung  Karang,SELANGOR,2.85
+2026,4,22,Hospital  Tanjung  Karang,SELANGOR,2.45
+2026,4,23,Hospital  Tanjung  Karang,SELANGOR,2.95
+2026,4,24,Hospital  Tanjung  Karang,SELANGOR,3.85
+2026,4,25,Hospital  Tanjung  Karang,SELANGOR,7.52
+2026,4,26,Hospital  Tanjung  Karang,SELANGOR,2.5
+2026,4,27,Hospital  Tanjung  Karang,SELANGOR,2.48
+2026,4,28,Hospital  Tanjung  Karang,SELANGOR,2.41
+2026,4,19,Hospital  Tengku  Ampuan  Jemaah,SELANGOR,14.06
+2026,4,20,Hospital  Tengku  Ampuan  Jemaah,SELANGOR,11.41
+2026,4,21,Hospital  Tengku  Ampuan  Jemaah,SELANGOR,4.81
+2026,4,22,Hospital  Tengku  Ampuan  Jemaah,SELANGOR,2.63
+2026,4,23,Hospital  Tengku  Ampuan  Jemaah,SELANGOR,5.23
+2026,4,24,Hospital  Tengku  Ampuan  Jemaah,SELANGOR,5.39
+2026,4,25,Hospital  Tengku  Ampuan  Jemaah,SELANGOR,5.55
+2026,4,26,Hospital  Tengku  Ampuan  Jemaah,SELANGOR,1.69
+2026,4,27,Hospital  Tengku  Ampuan  Jemaah,SELANGOR,3.05
+2026,4,28,Hospital  Tengku  Ampuan  Jemaah,SELANGOR,6.06
+2026,4,19,Tengku  Ampuan  Rahimah  Hospital,SELANGOR,11.79
+2026,4,20,Tengku  Ampuan  Rahimah  Hospital,SELANGOR,8.0
+2026,4,21,Tengku  Ampuan  Rahimah  Hospital,SELANGOR,12.17
+2026,4,22,Tengku  Ampuan  Rahimah  Hospital,SELANGOR,2.93
+2026,4,23,Tengku  Ampuan  Rahimah  Hospital,SELANGOR,1.94
+2026,4,24,Tengku  Ampuan  Rahimah  Hospital,SELANGOR,8.32
+2026,4,25,Tengku  Ampuan  Rahimah  Hospital,SELANGOR,1.14
+2026,4,26,Tengku  Ampuan  Rahimah  Hospital,SELANGOR,1.25
+2026,4,27,Tengku  Ampuan  Rahimah  Hospital,SELANGOR,2.55
+2026,4,28,Tengku  Ampuan  Rahimah  Hospital,SELANGOR,3.34
+2026,4,19,Sultan  Abdul  Aziz  Shah  Hospital,SELANGOR,11.22
+2026,4,20,Sultan  Abdul  Aziz  Shah  Hospital,SELANGOR,8.66
+2026,4,21,Sultan  Abdul  Aziz  Shah  Hospital,SELANGOR,5.89
+2026,4,22,Sultan  Abdul  Aziz  Shah  Hospital,SELANGOR,0.98
+2026,4,23,Sultan  Abdul  Aziz  Shah  Hospital,SELANGOR,4.04
+2026,4,24,Sultan  Abdul  Aziz  Shah  Hospital,SELANGOR,3.49
+2026,4,25,Sultan  Abdul  Aziz  Shah  Hospital,SELANGOR,5.58
+2026,4,26,Sultan  Abdul  Aziz  Shah  Hospital,SELANGOR,0.64
+2026,4,27,Sultan  Abdul  Aziz  Shah  Hospital,SELANGOR,1.28
+2026,4,28,Sultan  Abdul  Aziz  Shah  Hospital,SELANGOR,4.5
+2026,4,19,Al-Sultan  Abdullah  Hospital,SELANGOR,14.18
+2026,4,20,Al-Sultan  Abdullah  Hospital,SELANGOR,9.91
+2026,4,21,Al-Sultan  Abdullah  Hospital,SELANGOR,9.46
+2026,4,22,Al-Sultan  Abdullah  Hospital,SELANGOR,1.93
+2026,4,23,Al-Sultan  Abdullah  Hospital,SELANGOR,3.72
+2026,4,24,Al-Sultan  Abdullah  Hospital,SELANGOR,5.85
+2026,4,25,Al-Sultan  Abdullah  Hospital,SELANGOR,3.84
+2026,4,26,Al-Sultan  Abdullah  Hospital,SELANGOR,1.18
+2026,4,27,Al-Sultan  Abdullah  Hospital,SELANGOR,1.88
+2026,4,28,Al-Sultan  Abdullah  Hospital,SELANGOR,3.69
+2026,4,19,Cyberjaya  Hospital,SELANGOR,10.42
+2026,4,20,Cyberjaya  Hospital,SELANGOR,11.07
+2026,4,21,Cyberjaya  Hospital,SELANGOR,9.95
+2026,4,22,Cyberjaya  Hospital,SELANGOR,2.03
+2026,4,23,Cyberjaya  Hospital,SELANGOR,3.58
+2026,4,24,Cyberjaya  Hospital,SELANGOR,8.05
+2026,4,25,Cyberjaya  Hospital,SELANGOR,0.57
+2026,4,26,Cyberjaya  Hospital,SELANGOR,0.61
+2026,4,27,Cyberjaya  Hospital,SELANGOR,2.09
+2026,4,28,Cyberjaya  Hospital,SELANGOR,3.92
+2026,4,19,Andalas  Medical  Centre,SELANGOR,11.79
+2026,4,20,Andalas  Medical  Centre,SELANGOR,8.0
+2026,4,21,Andalas  Medical  Centre,SELANGOR,12.17
+2026,4,22,Andalas  Medical  Centre,SELANGOR,2.93
+2026,4,23,Andalas  Medical  Centre,SELANGOR,1.94
+2026,4,24,Andalas  Medical  Centre,SELANGOR,8.32
+2026,4,25,Andalas  Medical  Centre,SELANGOR,1.14
+2026,4,26,Andalas  Medical  Centre,SELANGOR,1.25
+2026,4,27,Andalas  Medical  Centre,SELANGOR,2.55
+2026,4,28,Andalas  Medical  Centre,SELANGOR,3.34
+2026,4,19,ANDORRA  Women  and  Children  Hospital,SELANGOR,9.9
+2026,4,20,ANDORRA  Women  and  Children  Hospital,SELANGOR,9.13
+2026,4,21,ANDORRA  Women  and  Children  Hospital,SELANGOR,9.03
+2026,4,22,ANDORRA  Women  and  Children  Hospital,SELANGOR,2.37
+2026,4,23,ANDORRA  Women  and  Children  Hospital,SELANGOR,2.48
+2026,4,24,ANDORRA  Women  and  Children  Hospital,SELANGOR,6.13
+2026,4,25,ANDORRA  Women  and  Children  Hospital,SELANGOR,1.86
+2026,4,26,ANDORRA  Women  and  Children  Hospital,SELANGOR,1.76
+2026,4,27,ANDORRA  Women  and  Children  Hospital,SELANGOR,1.72
+2026,4,28,ANDORRA  Women  and  Children  Hospital,SELANGOR,4.14
+2026,4,19,AXON  Medical  Ambulatory  Centre,SELANGOR,13.98
+2026,4,20,AXON  Medical  Ambulatory  Centre,SELANGOR,7.59
+2026,4,21,AXON  Medical  Ambulatory  Centre,SELANGOR,10.85
+2026,4,22,AXON  Medical  Ambulatory  Centre,SELANGOR,1.54
+2026,4,23,AXON  Medical  Ambulatory  Centre,SELANGOR,1.57
+2026,4,24,AXON  Medical  Ambulatory  Centre,SELANGOR,8.89
+2026,4,25,AXON  Medical  Ambulatory  Centre,SELANGOR,2.52
+2026,4,26,AXON  Medical  Ambulatory  Centre,SELANGOR,0.93
+2026,4,27,AXON  Medical  Ambulatory  Centre,SELANGOR,1.68
+2026,4,28,AXON  Medical  Ambulatory  Centre,SELANGOR,4.02
+2026,4,19,Ara  Damansara  Medical  Centre  (ADMC),SELANGOR,13.98
+2026,4,20,Ara  Damansara  Medical  Centre  (ADMC),SELANGOR,7.44
+2026,4,21,Ara  Damansara  Medical  Centre  (ADMC),SELANGOR,10.85
+2026,4,22,Ara  Damansara  Medical  Centre  (ADMC),SELANGOR,1.54
+2026,4,23,Ara  Damansara  Medical  Centre  (ADMC),SELANGOR,1.57
+2026,4,24,Ara  Damansara  Medical  Centre  (ADMC),SELANGOR,8.89
+2026,4,25,Ara  Damansara  Medical  Centre  (ADMC),SELANGOR,2.52
+2026,4,26,Ara  Damansara  Medical  Centre  (ADMC),SELANGOR,0.93
+2026,4,27,Ara  Damansara  Medical  Centre  (ADMC),SELANGOR,1.68
+2026,4,28,Ara  Damansara  Medical  Centre  (ADMC),SELANGOR,4.02
+2026,4,19,Assunta  Hospital,SELANGOR,13.98
+2026,4,20,Assunta  Hospital,SELANGOR,7.59
+2026,4,21,Assunta  Hospital,SELANGOR,10.85
+2026,4,22,Assunta  Hospital,SELANGOR,1.54
+2026,4,23,Assunta  Hospital,SELANGOR,1.57
+2026,4,24,Assunta  Hospital,SELANGOR,8.89
+2026,4,25,Assunta  Hospital,SELANGOR,2.52
+2026,4,26,Assunta  Hospital,SELANGOR,0.93
+2026,4,27,Assunta  Hospital,SELANGOR,1.68
+2026,4,28,Assunta  Hospital,SELANGOR,4.02
+2026,4,19,Avisena  Specialist  Hospital,SELANGOR,13.61
+2026,4,20,Avisena  Specialist  Hospital,SELANGOR,11.2
+2026,4,21,Avisena  Specialist  Hospital,SELANGOR,14.43
+2026,4,22,Avisena  Specialist  Hospital,SELANGOR,1.61
+2026,4,23,Avisena  Specialist  Hospital,SELANGOR,4.01
+2026,4,24,Avisena  Specialist  Hospital,SELANGOR,5.89
+2026,4,25,Avisena  Specialist  Hospital,SELANGOR,2.55
+2026,4,26,Avisena  Specialist  Hospital,SELANGOR,3.55
+2026,4,27,Avisena  Specialist  Hospital,SELANGOR,3.21
+2026,4,28,Avisena  Specialist  Hospital,SELANGOR,4.04
+2026,4,19,Avisena  Women's  &  Children's  Specialist  Hospital,SELANGOR,13.61
+2026,4,20,Avisena  Women's  &  Children's  Specialist  Hospital,SELANGOR,11.2
+2026,4,21,Avisena  Women's  &  Children's  Specialist  Hospital,SELANGOR,14.43
+2026,4,22,Avisena  Women's  &  Children's  Specialist  Hospital,SELANGOR,1.61
+2026,4,23,Avisena  Women's  &  Children's  Specialist  Hospital,SELANGOR,4.01
+2026,4,24,Avisena  Women's  &  Children's  Specialist  Hospital,SELANGOR,5.89
+2026,4,25,Avisena  Women's  &  Children's  Specialist  Hospital,SELANGOR,2.55
+2026,4,26,Avisena  Women's  &  Children's  Specialist  Hospital,SELANGOR,3.55
+2026,4,27,Avisena  Women's  &  Children's  Specialist  Hospital,SELANGOR,3.21
+2026,4,28,Avisena  Women's  &  Children's  Specialist  Hospital,SELANGOR,4.04
+2026,4,19,Beacon  Hospital,SELANGOR,13.98
+2026,4,20,Beacon  Hospital,SELANGOR,7.59
+2026,4,21,Beacon  Hospital,SELANGOR,10.85
+2026,4,22,Beacon  Hospital,SELANGOR,1.54
+2026,4,23,Beacon  Hospital,SELANGOR,1.57
+2026,4,24,Beacon  Hospital,SELANGOR,8.89
+2026,4,25,Beacon  Hospital,SELANGOR,2.52
+2026,4,26,Beacon  Hospital,SELANGOR,0.93
+2026,4,27,Beacon  Hospital,SELANGOR,1.68
+2026,4,28,Beacon  Hospital,SELANGOR,4.02
+2026,4,19,BP  Healthcare  Taman  Megah,SELANGOR,13.98
+2026,4,20,BP  Healthcare  Taman  Megah,SELANGOR,7.79
+2026,4,21,BP  Healthcare  Taman  Megah,SELANGOR,10.85
+2026,4,22,BP  Healthcare  Taman  Megah,SELANGOR,1.54
+2026,4,23,BP  Healthcare  Taman  Megah,SELANGOR,1.57
+2026,4,24,BP  Healthcare  Taman  Megah,SELANGOR,8.89
+2026,4,25,BP  Healthcare  Taman  Megah,SELANGOR,2.52
+2026,4,26,BP  Healthcare  Taman  Megah,SELANGOR,0.93
+2026,4,27,BP  Healthcare  Taman  Megah,SELANGOR,1.68
+2026,4,28,BP  Healthcare  Taman  Megah,SELANGOR,4.02
+2026,4,19,Bukit  Tinggi  Medical  Centre  (BTMC),SELANGOR,15.42
+2026,4,20,Bukit  Tinggi  Medical  Centre  (BTMC),SELANGOR,4.48
+2026,4,21,Bukit  Tinggi  Medical  Centre  (BTMC),SELANGOR,9.31
+2026,4,22,Bukit  Tinggi  Medical  Centre  (BTMC),SELANGOR,2.2
+2026,4,23,Bukit  Tinggi  Medical  Centre  (BTMC),SELANGOR,2.42
+2026,4,24,Bukit  Tinggi  Medical  Centre  (BTMC),SELANGOR,3.63
+2026,4,25,Bukit  Tinggi  Medical  Centre  (BTMC),SELANGOR,2.37
+2026,4,26,Bukit  Tinggi  Medical  Centre  (BTMC),SELANGOR,4.09
+2026,4,27,Bukit  Tinggi  Medical  Centre  (BTMC),SELANGOR,4.0
+2026,4,28,Bukit  Tinggi  Medical  Centre  (BTMC),SELANGOR,6.23
+2026,4,19,Columbia  Asia  Hospital  (Klang),SELANGOR,13.61
+2026,4,20,Columbia  Asia  Hospital  (Klang),SELANGOR,11.2
+2026,4,21,Columbia  Asia  Hospital  (Klang),SELANGOR,14.43
+2026,4,22,Columbia  Asia  Hospital  (Klang),SELANGOR,1.61
+2026,4,23,Columbia  Asia  Hospital  (Klang),SELANGOR,4.01
+2026,4,24,Columbia  Asia  Hospital  (Klang),SELANGOR,5.89
+2026,4,25,Columbia  Asia  Hospital  (Klang),SELANGOR,2.55
+2026,4,26,Columbia  Asia  Hospital  (Klang),SELANGOR,3.55
+2026,4,27,Columbia  Asia  Hospital  (Klang),SELANGOR,3.21
+2026,4,28,Columbia  Asia  Hospital  (Klang),SELANGOR,4.04
+2026,4,19,Columbia  Asia  Hospital  (Cheras),SELANGOR,11.22
+2026,4,20,Columbia  Asia  Hospital  (Cheras),SELANGOR,9.11
+2026,4,21,Columbia  Asia  Hospital  (Cheras),SELANGOR,5.89
+2026,4,22,Columbia  Asia  Hospital  (Cheras),SELANGOR,0.98
+2026,4,23,Columbia  Asia  Hospital  (Cheras),SELANGOR,4.04
+2026,4,24,Columbia  Asia  Hospital  (Cheras),SELANGOR,3.49
+2026,4,25,Columbia  Asia  Hospital  (Cheras),SELANGOR,5.58
+2026,4,26,Columbia  Asia  Hospital  (Cheras),SELANGOR,0.64
+2026,4,27,Columbia  Asia  Hospital  (Cheras),SELANGOR,1.28
+2026,4,28,Columbia  Asia  Hospital  (Cheras),SELANGOR,4.5
+2026,4,19,Columbia  Asia  Hospital  (Puchong),SELANGOR,9.8
+2026,4,20,Columbia  Asia  Hospital  (Puchong),SELANGOR,8.44
+2026,4,21,Columbia  Asia  Hospital  (Puchong),SELANGOR,9.03
+2026,4,22,Columbia  Asia  Hospital  (Puchong),SELANGOR,2.37
+2026,4,23,Columbia  Asia  Hospital  (Puchong),SELANGOR,2.48
+2026,4,24,Columbia  Asia  Hospital  (Puchong),SELANGOR,6.13
+2026,4,25,Columbia  Asia  Hospital  (Puchong),SELANGOR,1.86
+2026,4,26,Columbia  Asia  Hospital  (Puchong),SELANGOR,1.76
+2026,4,27,Columbia  Asia  Hospital  (Puchong),SELANGOR,1.72
+2026,4,28,Columbia  Asia  Hospital  (Puchong),SELANGOR,4.14
+2026,4,19,Columbia  Asia  Hospital  (Bukit  Rimau),SELANGOR,11.79
+2026,4,20,Columbia  Asia  Hospital  (Bukit  Rimau),SELANGOR,8.0
+2026,4,21,Columbia  Asia  Hospital  (Bukit  Rimau),SELANGOR,12.17
+2026,4,22,Columbia  Asia  Hospital  (Bukit  Rimau),SELANGOR,2.93
+2026,4,23,Columbia  Asia  Hospital  (Bukit  Rimau),SELANGOR,1.94
+2026,4,24,Columbia  Asia  Hospital  (Bukit  Rimau),SELANGOR,8.32
+2026,4,25,Columbia  Asia  Hospital  (Bukit  Rimau),SELANGOR,1.14
+2026,4,26,Columbia  Asia  Hospital  (Bukit  Rimau),SELANGOR,1.25
+2026,4,27,Columbia  Asia  Hospital  (Bukit  Rimau),SELANGOR,2.55
+2026,4,28,Columbia  Asia  Hospital  (Bukit  Rimau),SELANGOR,3.34
+2026,4,19,Columbia  Asia  Hospital  (Petaling  Jaya),SELANGOR,13.98
+2026,4,20,Columbia  Asia  Hospital  (Petaling  Jaya),SELANGOR,7.79
+2026,4,21,Columbia  Asia  Hospital  (Petaling  Jaya),SELANGOR,10.85
+2026,4,22,Columbia  Asia  Hospital  (Petaling  Jaya),SELANGOR,1.54
+2026,4,23,Columbia  Asia  Hospital  (Petaling  Jaya),SELANGOR,1.57
+2026,4,24,Columbia  Asia  Hospital  (Petaling  Jaya),SELANGOR,8.89
+2026,4,25,Columbia  Asia  Hospital  (Petaling  Jaya),SELANGOR,2.52
+2026,4,26,Columbia  Asia  Hospital  (Petaling  Jaya),SELANGOR,0.93
+2026,4,27,Columbia  Asia  Hospital  (Petaling  Jaya),SELANGOR,1.68
+2026,4,28,Columbia  Asia  Hospital  (Petaling  Jaya),SELANGOR,4.02
+2026,4,19,Columbia  Asia  Extended  Care  Hospital  (Shah  Alam),SELANGOR,11.79
+2026,4,20,Columbia  Asia  Extended  Care  Hospital  (Shah  Alam),SELANGOR,8.0
+2026,4,21,Columbia  Asia  Extended  Care  Hospital  (Shah  Alam),SELANGOR,12.17
+2026,4,22,Columbia  Asia  Extended  Care  Hospital  (Shah  Alam),SELANGOR,2.93
+2026,4,23,Columbia  Asia  Extended  Care  Hospital  (Shah  Alam),SELANGOR,1.94
+2026,4,24,Columbia  Asia  Extended  Care  Hospital  (Shah  Alam),SELANGOR,8.32
+2026,4,25,Columbia  Asia  Extended  Care  Hospital  (Shah  Alam),SELANGOR,1.14
+2026,4,26,Columbia  Asia  Extended  Care  Hospital  (Shah  Alam),SELANGOR,1.25
+2026,4,27,Columbia  Asia  Extended  Care  Hospital  (Shah  Alam),SELANGOR,2.55
+2026,4,28,Columbia  Asia  Extended  Care  Hospital  (Shah  Alam),SELANGOR,3.34
+2026,4,19,JMC  Specialist  Medical  Centre,SELANGOR,11.79
+2026,4,20,JMC  Specialist  Medical  Centre,SELANGOR,8.0
+2026,4,21,JMC  Specialist  Medical  Centre,SELANGOR,12.17
+2026,4,22,JMC  Specialist  Medical  Centre,SELANGOR,2.93
+2026,4,23,JMC  Specialist  Medical  Centre,SELANGOR,1.94
+2026,4,24,JMC  Specialist  Medical  Centre,SELANGOR,8.32
+2026,4,25,JMC  Specialist  Medical  Centre,SELANGOR,1.14
+2026,4,26,JMC  Specialist  Medical  Centre,SELANGOR,1.25
+2026,4,27,JMC  Specialist  Medical  Centre,SELANGOR,2.55
+2026,4,28,JMC  Specialist  Medical  Centre,SELANGOR,3.34
+2026,4,19,Hospital  UMRA,SELANGOR,13.61
+2026,4,20,Hospital  UMRA,SELANGOR,11.2
+2026,4,21,Hospital  UMRA,SELANGOR,14.43
+2026,4,22,Hospital  UMRA,SELANGOR,1.61
+2026,4,23,Hospital  UMRA,SELANGOR,4.01
+2026,4,24,Hospital  UMRA,SELANGOR,5.89
+2026,4,25,Hospital  UMRA,SELANGOR,2.55
+2026,4,26,Hospital  UMRA,SELANGOR,3.55
+2026,4,27,Hospital  UMRA,SELANGOR,3.21
+2026,4,28,Hospital  UMRA,SELANGOR,4.04
+2026,4,19,Hospital  Wanita  Metro  (Banting),SELANGOR,12.81
+2026,4,20,Hospital  Wanita  Metro  (Banting),SELANGOR,10.73
+2026,4,21,Hospital  Wanita  Metro  (Banting),SELANGOR,9.06
+2026,4,22,Hospital  Wanita  Metro  (Banting),SELANGOR,2.1
+2026,4,23,Hospital  Wanita  Metro  (Banting),SELANGOR,3.45
+2026,4,24,Hospital  Wanita  Metro  (Banting),SELANGOR,8.35
+2026,4,25,Hospital  Wanita  Metro  (Banting),SELANGOR,1.08
+2026,4,26,Hospital  Wanita  Metro  (Banting),SELANGOR,1.9
+2026,4,27,Hospital  Wanita  Metro  (Banting),SELANGOR,2.63
+2026,4,28,Hospital  Wanita  Metro  (Banting),SELANGOR,3.16
+2026,4,19,Hospital  Wanita  Metro  (Klang),SELANGOR,11.79
+2026,4,20,Hospital  Wanita  Metro  (Klang),SELANGOR,8.0
+2026,4,21,Hospital  Wanita  Metro  (Klang),SELANGOR,12.17
+2026,4,22,Hospital  Wanita  Metro  (Klang),SELANGOR,2.93
+2026,4,23,Hospital  Wanita  Metro  (Klang),SELANGOR,1.94
+2026,4,24,Hospital  Wanita  Metro  (Klang),SELANGOR,8.32
+2026,4,25,Hospital  Wanita  Metro  (Klang),SELANGOR,1.14
+2026,4,26,Hospital  Wanita  Metro  (Klang),SELANGOR,1.25
+2026,4,27,Hospital  Wanita  Metro  (Klang),SELANGOR,2.55
+2026,4,28,Hospital  Wanita  Metro  (Klang),SELANGOR,3.34
+2026,4,19,Hospital  Wanita  Metro  (Kuala  Selangor),SELANGOR,5.37
+2026,4,20,Hospital  Wanita  Metro  (Kuala  Selangor),SELANGOR,14.02
+2026,4,21,Hospital  Wanita  Metro  (Kuala  Selangor),SELANGOR,2.85
+2026,4,22,Hospital  Wanita  Metro  (Kuala  Selangor),SELANGOR,2.45
+2026,4,23,Hospital  Wanita  Metro  (Kuala  Selangor),SELANGOR,2.95
+2026,4,24,Hospital  Wanita  Metro  (Kuala  Selangor),SELANGOR,3.85
+2026,4,25,Hospital  Wanita  Metro  (Kuala  Selangor),SELANGOR,7.52
+2026,4,26,Hospital  Wanita  Metro  (Kuala  Selangor),SELANGOR,2.5
+2026,4,27,Hospital  Wanita  Metro  (Kuala  Selangor),SELANGOR,2.48
+2026,4,28,Hospital  Wanita  Metro  (Kuala  Selangor),SELANGOR,2.41
+2026,4,19,Kajang  Specialist  Maternity  &  Surgery,SELANGOR,11.22
+2026,4,20,Kajang  Specialist  Maternity  &  Surgery,SELANGOR,8.91
+2026,4,21,Kajang  Specialist  Maternity  &  Surgery,SELANGOR,5.89
+2026,4,22,Kajang  Specialist  Maternity  &  Surgery,SELANGOR,0.98
+2026,4,23,Kajang  Specialist  Maternity  &  Surgery,SELANGOR,4.04
+2026,4,24,Kajang  Specialist  Maternity  &  Surgery,SELANGOR,3.49
+2026,4,25,Kajang  Specialist  Maternity  &  Surgery,SELANGOR,5.58
+2026,4,26,Kajang  Specialist  Maternity  &  Surgery,SELANGOR,0.64
+2026,4,27,Kajang  Specialist  Maternity  &  Surgery,SELANGOR,1.28
+2026,4,28,Kajang  Specialist  Maternity  &  Surgery,SELANGOR,4.5
+2026,4,19,KMI  Kelana  Jaya  Medical  Centre,SELANGOR,13.98
+2026,4,20,KMI  Kelana  Jaya  Medical  Centre,SELANGOR,7.44
+2026,4,21,KMI  Kelana  Jaya  Medical  Centre,SELANGOR,10.85
+2026,4,22,KMI  Kelana  Jaya  Medical  Centre,SELANGOR,1.54
+2026,4,23,KMI  Kelana  Jaya  Medical  Centre,SELANGOR,1.57
+2026,4,24,KMI  Kelana  Jaya  Medical  Centre,SELANGOR,8.89
+2026,4,25,KMI  Kelana  Jaya  Medical  Centre,SELANGOR,2.52
+2026,4,26,KMI  Kelana  Jaya  Medical  Centre,SELANGOR,0.93
+2026,4,27,KMI  Kelana  Jaya  Medical  Centre,SELANGOR,1.68
+2026,4,28,KMI  Kelana  Jaya  Medical  Centre,SELANGOR,4.02
+2026,4,19,KPJ  Ampang  Puteri  Specialist  Hospital,SELANGOR,16.51
+2026,4,20,KPJ  Ampang  Puteri  Specialist  Hospital,SELANGOR,10.49
+2026,4,21,KPJ  Ampang  Puteri  Specialist  Hospital,SELANGOR,6.67
+2026,4,22,KPJ  Ampang  Puteri  Specialist  Hospital,SELANGOR,1.06
+2026,4,23,KPJ  Ampang  Puteri  Specialist  Hospital,SELANGOR,4.15
+2026,4,24,KPJ  Ampang  Puteri  Specialist  Hospital,SELANGOR,9.4
+2026,4,25,KPJ  Ampang  Puteri  Specialist  Hospital,SELANGOR,2.85
+2026,4,26,KPJ  Ampang  Puteri  Specialist  Hospital,SELANGOR,0.69
+2026,4,27,KPJ  Ampang  Puteri  Specialist  Hospital,SELANGOR,1.32
+2026,4,28,KPJ  Ampang  Puteri  Specialist  Hospital,SELANGOR,5.4
+2026,4,19,KPJ  Damansara  Specialist  Hospital,SELANGOR,13.98
+2026,4,20,KPJ  Damansara  Specialist  Hospital,SELANGOR,7.79
+2026,4,21,KPJ  Damansara  Specialist  Hospital,SELANGOR,10.85
+2026,4,22,KPJ  Damansara  Specialist  Hospital,SELANGOR,1.54
+2026,4,23,KPJ  Damansara  Specialist  Hospital,SELANGOR,1.57
+2026,4,24,KPJ  Damansara  Specialist  Hospital,SELANGOR,8.89
+2026,4,25,KPJ  Damansara  Specialist  Hospital,SELANGOR,2.52
+2026,4,26,KPJ  Damansara  Specialist  Hospital,SELANGOR,0.93
+2026,4,27,KPJ  Damansara  Specialist  Hospital,SELANGOR,1.68
+2026,4,28,KPJ  Damansara  Specialist  Hospital,SELANGOR,4.02
+2026,4,19,KPJ  Damansara  Specialist  Hospital  2,SELANGOR,13.98
+2026,4,20,KPJ  Damansara  Specialist  Hospital  2,SELANGOR,7.94
+2026,4,21,KPJ  Damansara  Specialist  Hospital  2,SELANGOR,10.85
+2026,4,22,KPJ  Damansara  Specialist  Hospital  2,SELANGOR,1.54
+2026,4,23,KPJ  Damansara  Specialist  Hospital  2,SELANGOR,1.57
+2026,4,24,KPJ  Damansara  Specialist  Hospital  2,SELANGOR,8.89
+2026,4,25,KPJ  Damansara  Specialist  Hospital  2,SELANGOR,2.52
+2026,4,26,KPJ  Damansara  Specialist  Hospital  2,SELANGOR,0.93
+2026,4,27,KPJ  Damansara  Specialist  Hospital  2,SELANGOR,1.68
+2026,4,28,KPJ  Damansara  Specialist  Hospital  2,SELANGOR,4.02
+2026,4,19,KPJ  Kajang  Specialist  Hospital,SELANGOR,11.22
+2026,4,20,KPJ  Kajang  Specialist  Hospital,SELANGOR,8.91
+2026,4,21,KPJ  Kajang  Specialist  Hospital,SELANGOR,5.89
+2026,4,22,KPJ  Kajang  Specialist  Hospital,SELANGOR,0.98
+2026,4,23,KPJ  Kajang  Specialist  Hospital,SELANGOR,4.04
+2026,4,24,KPJ  Kajang  Specialist  Hospital,SELANGOR,3.49
+2026,4,25,KPJ  Kajang  Specialist  Hospital,SELANGOR,5.58
+2026,4,26,KPJ  Kajang  Specialist  Hospital,SELANGOR,0.64
+2026,4,27,KPJ  Kajang  Specialist  Hospital,SELANGOR,1.28
+2026,4,28,KPJ  Kajang  Specialist  Hospital,SELANGOR,4.5
+2026,4,19,KPJ  Rawang  Specialist  Hospital,SELANGOR,9.35
+2026,4,20,KPJ  Rawang  Specialist  Hospital,SELANGOR,14.08
+2026,4,21,KPJ  Rawang  Specialist  Hospital,SELANGOR,13.76
+2026,4,22,KPJ  Rawang  Specialist  Hospital,SELANGOR,2.22
+2026,4,23,KPJ  Rawang  Specialist  Hospital,SELANGOR,3.43
+2026,4,24,KPJ  Rawang  Specialist  Hospital,SELANGOR,7.75
+2026,4,25,KPJ  Rawang  Specialist  Hospital,SELANGOR,3.45
+2026,4,26,KPJ  Rawang  Specialist  Hospital,SELANGOR,4.72
+2026,4,27,KPJ  Rawang  Specialist  Hospital,SELANGOR,2.9
+2026,4,28,KPJ  Rawang  Specialist  Hospital,SELANGOR,4.96
+2026,4,19,KPJ  Selangor  Specialist  Hospital,SELANGOR,11.79
+2026,4,20,KPJ  Selangor  Specialist  Hospital,SELANGOR,8.0
+2026,4,21,KPJ  Selangor  Specialist  Hospital,SELANGOR,12.17
+2026,4,22,KPJ  Selangor  Specialist  Hospital,SELANGOR,2.93
+2026,4,23,KPJ  Selangor  Specialist  Hospital,SELANGOR,1.94
+2026,4,24,KPJ  Selangor  Specialist  Hospital,SELANGOR,8.32
+2026,4,25,KPJ  Selangor  Specialist  Hospital,SELANGOR,1.14
+2026,4,26,KPJ  Selangor  Specialist  Hospital,SELANGOR,1.25
+2026,4,27,KPJ  Selangor  Specialist  Hospital,SELANGOR,2.55
+2026,4,28,KPJ  Selangor  Specialist  Hospital,SELANGOR,3.34
+2026,4,19,Kajang  Plaza  Medical  Centre,SELANGOR,11.22
+2026,4,20,Kajang  Plaza  Medical  Centre,SELANGOR,8.91
+2026,4,21,Kajang  Plaza  Medical  Centre,SELANGOR,5.89
+2026,4,22,Kajang  Plaza  Medical  Centre,SELANGOR,0.98
+2026,4,23,Kajang  Plaza  Medical  Centre,SELANGOR,4.04
+2026,4,24,Kajang  Plaza  Medical  Centre,SELANGOR,3.49
+2026,4,25,Kajang  Plaza  Medical  Centre,SELANGOR,5.58
+2026,4,26,Kajang  Plaza  Medical  Centre,SELANGOR,0.64
+2026,4,27,Kajang  Plaza  Medical  Centre,SELANGOR,1.28
+2026,4,28,Kajang  Plaza  Medical  Centre,SELANGOR,4.5
+2026,4,19,KPMC  Puchong  Specialist  Centre,SELANGOR,9.8
+2026,4,20,KPMC  Puchong  Specialist  Centre,SELANGOR,8.44
+2026,4,21,KPMC  Puchong  Specialist  Centre,SELANGOR,9.03
+2026,4,22,KPMC  Puchong  Specialist  Centre,SELANGOR,2.37
+2026,4,23,KPMC  Puchong  Specialist  Centre,SELANGOR,2.48
+2026,4,24,KPMC  Puchong  Specialist  Centre,SELANGOR,6.13
+2026,4,25,KPMC  Puchong  Specialist  Centre,SELANGOR,1.86
+2026,4,26,KPMC  Puchong  Specialist  Centre,SELANGOR,1.76
+2026,4,27,KPMC  Puchong  Specialist  Centre,SELANGOR,1.72
+2026,4,28,KPMC  Puchong  Specialist  Centre,SELANGOR,4.14
+2026,4,19,MSU  Medical  Centre,SELANGOR,13.61
+2026,4,20,MSU  Medical  Centre,SELANGOR,11.2
+2026,4,21,MSU  Medical  Centre,SELANGOR,14.43
+2026,4,22,MSU  Medical  Centre,SELANGOR,1.61
+2026,4,23,MSU  Medical  Centre,SELANGOR,4.01
+2026,4,24,MSU  Medical  Centre,SELANGOR,5.89
+2026,4,25,MSU  Medical  Centre,SELANGOR,2.55
+2026,4,26,MSU  Medical  Centre,SELANGOR,3.55
+2026,4,27,MSU  Medical  Centre,SELANGOR,3.21
+2026,4,28,MSU  Medical  Centre,SELANGOR,4.04
+2026,4,19,Putra  Medical  Centre,SELANGOR,14.09
+2026,4,20,Putra  Medical  Centre,SELANGOR,9.5
+2026,4,21,Putra  Medical  Centre,SELANGOR,9.46
+2026,4,22,Putra  Medical  Centre,SELANGOR,1.93
+2026,4,23,Putra  Medical  Centre,SELANGOR,3.72
+2026,4,24,Putra  Medical  Centre,SELANGOR,5.85
+2026,4,25,Putra  Medical  Centre,SELANGOR,3.84
+2026,4,26,Putra  Medical  Centre,SELANGOR,1.18
+2026,4,27,Putra  Medical  Centre,SELANGOR,1.88
+2026,4,28,Putra  Medical  Centre,SELANGOR,3.69
+2026,4,19,Pantai  Hospital  Klang,SELANGOR,15.42
+2026,4,20,Pantai  Hospital  Klang,SELANGOR,4.48
+2026,4,21,Pantai  Hospital  Klang,SELANGOR,9.31
+2026,4,22,Pantai  Hospital  Klang,SELANGOR,2.2
+2026,4,23,Pantai  Hospital  Klang,SELANGOR,2.42
+2026,4,24,Pantai  Hospital  Klang,SELANGOR,3.63
+2026,4,25,Pantai  Hospital  Klang,SELANGOR,2.37
+2026,4,26,Pantai  Hospital  Klang,SELANGOR,4.09
+2026,4,27,Pantai  Hospital  Klang,SELANGOR,4.0
+2026,4,28,Pantai  Hospital  Klang,SELANGOR,6.23
+2026,4,19,Pantai  Hospital  Cheras,SELANGOR,16.51
+2026,4,20,Pantai  Hospital  Cheras,SELANGOR,9.89
+2026,4,21,Pantai  Hospital  Cheras,SELANGOR,6.67
+2026,4,22,Pantai  Hospital  Cheras,SELANGOR,1.06
+2026,4,23,Pantai  Hospital  Cheras,SELANGOR,4.15
+2026,4,24,Pantai  Hospital  Cheras,SELANGOR,9.4
+2026,4,25,Pantai  Hospital  Cheras,SELANGOR,2.85
+2026,4,26,Pantai  Hospital  Cheras,SELANGOR,0.69
+2026,4,27,Pantai  Hospital  Cheras,SELANGOR,1.32
+2026,4,28,Pantai  Hospital  Cheras,SELANGOR,5.4
+2026,4,19,Sungai  Long  Specialist  Hospital,SELANGOR,11.22
+2026,4,20,Sungai  Long  Specialist  Hospital,SELANGOR,9.11
+2026,4,21,Sungai  Long  Specialist  Hospital,SELANGOR,5.89
+2026,4,22,Sungai  Long  Specialist  Hospital,SELANGOR,0.98
+2026,4,23,Sungai  Long  Specialist  Hospital,SELANGOR,4.04
+2026,4,24,Sungai  Long  Specialist  Hospital,SELANGOR,3.49
+2026,4,25,Sungai  Long  Specialist  Hospital,SELANGOR,5.58
+2026,4,26,Sungai  Long  Specialist  Hospital,SELANGOR,0.64
+2026,4,27,Sungai  Long  Specialist  Hospital,SELANGOR,1.28
+2026,4,28,Sungai  Long  Specialist  Hospital,SELANGOR,4.5
+2026,4,19,Subang  Jaya  Medical  Centre  (SJMC),SELANGOR,14.04
+2026,4,20,Subang  Jaya  Medical  Centre  (SJMC),SELANGOR,8.15
+2026,4,21,Subang  Jaya  Medical  Centre  (SJMC),SELANGOR,10.85
+2026,4,22,Subang  Jaya  Medical  Centre  (SJMC),SELANGOR,1.54
+2026,4,23,Subang  Jaya  Medical  Centre  (SJMC),SELANGOR,1.57
+2026,4,24,Subang  Jaya  Medical  Centre  (SJMC),SELANGOR,8.89
+2026,4,25,Subang  Jaya  Medical  Centre  (SJMC),SELANGOR,2.52
+2026,4,26,Subang  Jaya  Medical  Centre  (SJMC),SELANGOR,0.93
+2026,4,27,Subang  Jaya  Medical  Centre  (SJMC),SELANGOR,1.68
+2026,4,28,Subang  Jaya  Medical  Centre  (SJMC),SELANGOR,4.02
+2026,4,19,Sunway  Specialist  Centre,SELANGOR,13.98
+2026,4,20,Sunway  Specialist  Centre,SELANGOR,7.59
+2026,4,21,Sunway  Specialist  Centre,SELANGOR,10.85
+2026,4,22,Sunway  Specialist  Centre,SELANGOR,1.54
+2026,4,23,Sunway  Specialist  Centre,SELANGOR,1.57
+2026,4,24,Sunway  Specialist  Centre,SELANGOR,8.89
+2026,4,25,Sunway  Specialist  Centre,SELANGOR,2.52
+2026,4,26,Sunway  Specialist  Centre,SELANGOR,0.93
+2026,4,27,Sunway  Specialist  Centre,SELANGOR,1.68
+2026,4,28,Sunway  Specialist  Centre,SELANGOR,4.02
+2026,4,19,Salam  Specialist  Hospital,SELANGOR,11.79
+2026,4,20,Salam  Specialist  Hospital,SELANGOR,8.0
+2026,4,21,Salam  Specialist  Hospital,SELANGOR,12.17
+2026,4,22,Salam  Specialist  Hospital,SELANGOR,2.93
+2026,4,23,Salam  Specialist  Hospital,SELANGOR,1.94
+2026,4,24,Salam  Specialist  Hospital,SELANGOR,8.32
+2026,4,25,Salam  Specialist  Hospital,SELANGOR,1.14
+2026,4,26,Salam  Specialist  Hospital,SELANGOR,1.25
+2026,4,27,Salam  Specialist  Hospital,SELANGOR,2.55
+2026,4,28,Salam  Specialist  Hospital,SELANGOR,3.34
+2026,4,19,Sentosa  Specialist  Hospital,SELANGOR,11.79
+2026,4,20,Sentosa  Specialist  Hospital,SELANGOR,8.0
+2026,4,21,Sentosa  Specialist  Hospital,SELANGOR,12.17
+2026,4,22,Sentosa  Specialist  Hospital,SELANGOR,2.93
+2026,4,23,Sentosa  Specialist  Hospital,SELANGOR,1.94
+2026,4,24,Sentosa  Specialist  Hospital,SELANGOR,8.32
+2026,4,25,Sentosa  Specialist  Hospital,SELANGOR,1.14
+2026,4,26,Sentosa  Specialist  Hospital,SELANGOR,1.25
+2026,4,27,Sentosa  Specialist  Hospital,SELANGOR,2.55
+2026,4,28,Sentosa  Specialist  Hospital,SELANGOR,3.34
+2026,4,19,Sheela  Women  Specialist  Centre,SELANGOR,11.79
+2026,4,20,Sheela  Women  Specialist  Centre,SELANGOR,8.0
+2026,4,21,Sheela  Women  Specialist  Centre,SELANGOR,12.17
+2026,4,22,Sheela  Women  Specialist  Centre,SELANGOR,2.93
+2026,4,23,Sheela  Women  Specialist  Centre,SELANGOR,1.94
+2026,4,24,Sheela  Women  Specialist  Centre,SELANGOR,8.32
+2026,4,25,Sheela  Women  Specialist  Centre,SELANGOR,1.14
+2026,4,26,Sheela  Women  Specialist  Centre,SELANGOR,1.25
+2026,4,27,Sheela  Women  Specialist  Centre,SELANGOR,2.55
+2026,4,28,Sheela  Women  Specialist  Centre,SELANGOR,3.34
+2026,4,19,Sri  Kota  Specialist  Medical  Centre,SELANGOR,11.79
+2026,4,20,Sri  Kota  Specialist  Medical  Centre,SELANGOR,8.0
+2026,4,21,Sri  Kota  Specialist  Medical  Centre,SELANGOR,12.17
+2026,4,22,Sri  Kota  Specialist  Medical  Centre,SELANGOR,2.93
+2026,4,23,Sri  Kota  Specialist  Medical  Centre,SELANGOR,1.94
+2026,4,24,Sri  Kota  Specialist  Medical  Centre,SELANGOR,8.32
+2026,4,25,Sri  Kota  Specialist  Medical  Centre,SELANGOR,1.14
+2026,4,26,Sri  Kota  Specialist  Medical  Centre,SELANGOR,1.25
+2026,4,27,Sri  Kota  Specialist  Medical  Centre,SELANGOR,2.55
+2026,4,28,Sri  Kota  Specialist  Medical  Centre,SELANGOR,3.34
+2026,4,19,Sunway  Medical  Centre,SELANGOR,13.98
+2026,4,20,Sunway  Medical  Centre,SELANGOR,7.59
+2026,4,21,Sunway  Medical  Centre,SELANGOR,10.85
+2026,4,22,Sunway  Medical  Centre,SELANGOR,1.54
+2026,4,23,Sunway  Medical  Centre,SELANGOR,1.57
+2026,4,24,Sunway  Medical  Centre,SELANGOR,8.89
+2026,4,25,Sunway  Medical  Centre,SELANGOR,2.52
+2026,4,26,Sunway  Medical  Centre,SELANGOR,0.93
+2026,4,27,Sunway  Medical  Centre,SELANGOR,1.68
+2026,4,28,Sunway  Medical  Centre,SELANGOR,4.02
+2026,4,19,Thomson  Hospital,SELANGOR,13.98
+2026,4,20,Thomson  Hospital,SELANGOR,7.44
+2026,4,21,Thomson  Hospital,SELANGOR,10.85
+2026,4,22,Thomson  Hospital,SELANGOR,1.54
+2026,4,23,Thomson  Hospital,SELANGOR,1.57
+2026,4,24,Thomson  Hospital,SELANGOR,8.89
+2026,4,25,Thomson  Hospital,SELANGOR,2.52
+2026,4,26,Thomson  Hospital,SELANGOR,0.93
+2026,4,27,Thomson  Hospital,SELANGOR,1.68
+2026,4,28,Thomson  Hospital,SELANGOR,4.02
+2026,4,19,UiTM  Private  Specialist  Centre,SELANGOR,7.25
+2026,4,20,UiTM  Private  Specialist  Centre,SELANGOR,14.97
+2026,4,21,UiTM  Private  Specialist  Centre,SELANGOR,11.09
+2026,4,22,UiTM  Private  Specialist  Centre,SELANGOR,2.03
+2026,4,23,UiTM  Private  Specialist  Centre,SELANGOR,1.3
+2026,4,24,UiTM  Private  Specialist  Centre,SELANGOR,5.36
+2026,4,25,UiTM  Private  Specialist  Centre,SELANGOR,1.17
+2026,4,26,UiTM  Private  Specialist  Centre,SELANGOR,1.09
+2026,4,27,UiTM  Private  Specialist  Centre,SELANGOR,2.69
+2026,4,28,UiTM  Private  Specialist  Centre,SELANGOR,5.4
+2026,4,19,Universiti  Malaya  Medical  Centre,SELANGOR,13.98
+2026,4,20,Universiti  Malaya  Medical  Centre,SELANGOR,7.99
+2026,4,21,Universiti  Malaya  Medical  Centre,SELANGOR,10.85
+2026,4,22,Universiti  Malaya  Medical  Centre,SELANGOR,1.54
+2026,4,23,Universiti  Malaya  Medical  Centre,SELANGOR,1.57
+2026,4,24,Universiti  Malaya  Medical  Centre,SELANGOR,8.89
+2026,4,25,Universiti  Malaya  Medical  Centre,SELANGOR,2.52
+2026,4,26,Universiti  Malaya  Medical  Centre,SELANGOR,0.93
+2026,4,27,Universiti  Malaya  Medical  Centre,SELANGOR,1.68
+2026,4,28,Universiti  Malaya  Medical  Centre,SELANGOR,4.02
+2026,4,19,QHC  Medical  Centre,SELANGOR,9.9
+2026,4,20,QHC  Medical  Centre,SELANGOR,9.13
+2026,4,21,QHC  Medical  Centre,SELANGOR,9.03
+2026,4,22,QHC  Medical  Centre,SELANGOR,2.37
+2026,4,23,QHC  Medical  Centre,SELANGOR,2.48
+2026,4,24,QHC  Medical  Centre,SELANGOR,6.13
+2026,4,25,QHC  Medical  Centre,SELANGOR,1.86
+2026,4,26,QHC  Medical  Centre,SELANGOR,1.76
+2026,4,27,QHC  Medical  Centre,SELANGOR,1.72
+2026,4,28,QHC  Medical  Centre,SELANGOR,4.14
