@@ -95,7 +95,6 @@
                 <canvas id="combinedRainfallChart"></canvas>
             </div>
         </div>
-    </div>
 </div>
 
 <?php include 'BottomBar.php'; ?>
