@@ -24,12 +24,13 @@
     <option value="Ave_RCP8.5">RCP 8.5</option>
   </select>
   <script>
-       window.onload = function()
+        let rcpselect
+        let RCP
+        window.onload = function()
         {
           rcpselect = document.getElementById("rcp-select");
           RCP = rcpselect.value;
         }
-
 
 
         function selectRedirect() {
@@ -100,26 +101,37 @@ fetch('map_data.json')
     });
   });
 
-
+  document.getElementById("rcp-select").addEventListener("change", function () {
+  RCP = this.value;
+  updateHeatmap();
+  });
 
     
-    function updateHeatmap(RCP) {
-      var rcp = RCP;
-      fetch('nahrim_data.json?v=' + Date.now()) 
+    function updateHeatmap() {
+      fetch('nahrim_data.json') 
        .then(res => res.json())
        .then(data => {
+          console.log("Loaded data:", data);
           const maxRainfall = 50
           const heatData = data.map(point => [
-            point.LATITUDE,
-            point.LONGITUDE,
-            switch(rcp)
-            {
-              case "Ave_RCP2.6": point.Ave_RCP26 / maxRainfall; break;
-              case "Ave_RCP4.5": point.Ave_RCP45 / maxRainfall; break;
-              case "Ave_RCP6.0": point.Ave_RCP60 / maxRainfall; break;              
-              case "Ave_RCP8.5": point.Ave_RCP85 / maxRainfall; break;
-              default; break;
+            let value = 0;
+            switch (RCP) {
+              case "Ave_RCP2.6":
+                value = point.Ave_RCP26;
+                break;
+              case "Ave_RCP4.5":
+                value = point.Ave_RCP45;
+                break;
+              case "Ave_RCP6.0":
+                value = point.Ave_RCP60;
+                break;
+              case "Ave_RCP8.5":
+                value = point.Ave_RCP85;
+                break;
+              default:
+                value = 0;
             }
+            raturn [parseFloat(point.LATITUDE), parseFloat(point.LONGITUDE), value / maxRainfall]
           ]);
 
           if (heatmapLayer) map.removeLayer(heatmapLayer);
@@ -137,10 +149,10 @@ fetch('map_data.json')
           }).addTo(map);
           console.log(`Heatmap updated: ${data.length} points, max ${maxRainfall.toFixed(1)}mm`);
         })
-       .catch(err => console.log('Error loading live_rainfall.json:', err));
+       .catch(err => console.log('Error loading nahrim_data.json:', err));
     }
 
-    updateHeatmap(RCP);
+    updateHeatmap();
 
     showPinsCheckbox.addEventListener('change', (e) => {
       if (e.target.checked) {
