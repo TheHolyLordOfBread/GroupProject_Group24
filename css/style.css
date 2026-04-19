@@ -144,7 +144,7 @@ body {
         "NAHRIM Sources"
         "Map Map";
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 280px 520px;
+    grid-template-rows: 280px 610px;
     background-color: #1e88e5;
     padding: 10px;
     width: 62%;
@@ -261,7 +261,6 @@ body {
     cursor: pointer;
 }
 
-/* CHART AREA */
 .chart-container {
     width: 100%;
     height: 380px;
@@ -418,4 +417,3 @@ body {
         grid-template-columns: 1fr;
     }
 }
-
