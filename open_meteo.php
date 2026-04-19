@@ -28,7 +28,6 @@
 <body>
   <?php include 'navbar.php'; include 'BottomBar.php';?>
   <h1>Open Meteo Weather Map</h1>
-  <h2>Rainfall Data for Malaysia</h2>
   <div style="margin: 0 auto; display: block; text-align: center;">
     <label><input type="checkbox" id="show-pins" checked> Show Hospital Pins</label>
     <button id="refresh" style="margin-left:10px;">Refresh Data</button>
