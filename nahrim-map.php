@@ -17,7 +17,7 @@
 </head> 
 <body> 
   <?php include 'navbar.php'; ?> 
-  <h1>Nahrim Hospital Weather Map</h1> 
+  <h1>Nahrim Weather Map</h1> 
   <h2>Rainfall Data for Malaysia</h2> 
   <select id="rcp-select" style="margin: 0 auto; display: block;"> 
     <option value="Ave_RCP2.6">RCP 2.6</option> 

@@ -16,14 +16,8 @@
 </head>
 <body>
   <?php include 'navbar.php'; ?>
-  <h1>Hospital Weather Map</h1>
+  <h1>Google Weather Map</h1>
   <h2>Rainfall Data for Malaysia</h2>
-  <select id="rpc-select" style="margin: 0 auto; display: block;">
-    <option value="Ave_RCP2.6">RCP 2.6</option>
-    <option value="Ave_RCP4.5">RCP 4.5</option>
-    <option value="Ave_RCP6.0">RCP 6.0</option>
-    <option value="Ave_RCP8.5">RCP 8.5</option>
-  </select>
   <div style="margin: 0 auto; display: block; text-align: center;">
     <label><input type="checkbox" id="show-pins" checked> Show Hospital Pins</label>
     <button id="refresh" style="margin-left:10px;">Refresh Data</button>
