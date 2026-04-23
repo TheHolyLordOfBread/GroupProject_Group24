@@ -1,71 +1,72 @@
 import csv
-import json
 import sqlite3
-import urllib.request
+import requests
 from datetime import datetime, timedelta
-try:
-    import requests
-except ImportError:
-    requests = None
+import urllib3
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+from datetime import datetime, timedelta
 
 DB_FILE = "DatabaseForGroupProject.db"
 HOSPITAL_TABLE = "HOSPITAL"
 
 def fetch_hospital_data():
     try:
+        print("Connecting to database...")
         conn = sqlite3.connect(DB_FILE)
         cursor = conn.cursor()
         cursor.execute(f"SELECT HOSPITAL_ID, NAME, STATE, LATITUDE, LONGITUDE FROM {HOSPITAL_TABLE}")
         hospitals = cursor.fetchall()
         conn.close()
+        print(f"Fetched {len(hospitals)} hospitals from database")
         return hospitals
     except sqlite3.Error as e:
         print(f"Error fetching hospital data: {e}")
         return []
 
 def fetch_rainfall_data(hospitals):
-    yesterday = (datetime.now() - timedelta(days=1)).strftime('%Y-%m-%d')
+    start_date = datetime.today().date()
+    end_date = start_date + timedelta(days=13)
     data = {}
     state_map = {0: 'KEDAH', 1: 'SELANGOR'}
-    import urllib3
-    urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+
+    rows = []
     for h_id, name, state, lat, lon in hospitals:
-        url = f"https://archive-api.open-meteo.com/v1/archive?latitude={lat}&longitude={lon}&start_date={yesterday}&end_date={yesterday}&hourly=precipitation&timezone=Asia/Singapore"
+        url = f"https://api.open-meteo.com/v1/forecast?latitude={lat}&longitude={lon}&daily=precipitation_sum&start_date={start_date}&end_date={end_date}&timezone=auto"
         try:
-            if requests is not None:
-                res = requests.get(url, verify=False).json()
-            else:
-                with urllib.request.urlopen(url) as response:
-                    res = json.load(response)
+            print(f"Fetching rainfall data for Hospital {name} (ID: {h_id})...")
+            res = requests.get(url, verify=False).json()
             state_name = state_map.get(state, 'Unknown')
-            daily_rainfall_mm = sum(res["hourly"]["precipitation"])
-            data[(name, state_name)] = {
-                'Year': yesterday.split('-')[0],
-                'Month': yesterday.split('-')[1],
-                'Day': yesterday.split('-')[2],
-                'Hospital': name,
-                'State': state_name,
-                'Rainfall (mm)': daily_rainfall_mm
-            }
+            daily = res.get("daily", {})
+            dates = daily.get("time", [])
+            rainfall = daily.get("precipitation_sum", [])
+            for i in range(len(dates)):
+                date_parts = dates[i].split('-')
+                rows.append({
+                    'Year': date_parts[0],
+                    'Month': date_parts[1],
+                    'Day': date_parts[2],
+                    'Hospital': name,
+                    'State': state_name,
+                    'Rainfall (mm)': rainfall[i]
+                })
+            print(f"Fetched rainfall data for Hospital {name} (ID: {h_id})")
         except Exception as e:
             print(f"Error fetching data for Hospital {name} (ID: {h_id}): {e}")
-    return list(data.values())
+    print(f"Fetched rainfall data for {len(rows)} days")
+    return rows
 
 def write_to_csv(rows):
     fieldnames = ['Year', 'Month', 'Day', 'Hospital', 'State', 'Rainfall (mm)']
     import os
-    file_exists = os.path.isfile('daily_rainfall_data.csv')
-    try:
-        with open('daily_rainfall_data.csv', 'a', newline='') as csvfile:
-            writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-            if not file_exists:
-                writer.writeheader()
-            writer.writerows(rows)
-    except Exception as e:
-        print(f"Error writing data to CSV: {e}")
+    file_exists = os.path.isfile('openmeteo.csv')
+    with open('openmeteo.csv', 'a', newline='') as csvfile:
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+        if not file_exists:
+            writer.writeheader()
+        writer.writerows(rows)
+    print(f"Wrote data to openmeteo.csv")
 
-if __name__ == "__main__":
-    hospitals = fetch_hospital_data()
-    data = fetch_rainfall_data(hospitals)
-    write_to_csv(data)
-    print("Wrote data to daily_rainfall_data.csv")
+hospitals = fetch_hospital_data()
+rainfall_data = fetch_rainfall_data(hospitals)
+write_to_csv(rainfall_data)
+print("Done!")
