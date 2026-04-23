@@ -27,7 +27,7 @@ def get_hospital_data():
 def fetch_rainfall_data(hospitals):
     state_map = {0: 'KEDAH', 1: 'SELANGOR'}
 
-    output_File = "daily_rainfall_data_Google.csv"
+    output_File = "google.csv"
 
     with open(output_File, 'w', newline='') as c:
         writer = csv.writer(c, delimiter=',', quoting=csv.QUOTE_NONE, escapechar=' ')
@@ -75,6 +75,6 @@ if __name__ == "__main__":
     hospital_list = get_hospital_data()
     if hospital_list:
         fetch_rainfall_data(hospital_list)
-        print("\nSuccessfully wrote to daily_rainfall_data_Google.csv")
+        print("\nSuccessfully wrote to google.csv")
     else:
         print("finished all hospitals.")
