@@ -14,7 +14,6 @@
 
 <?php include 'navbar.php'; ?>
 
-<!-- ACTION BAR -->
 <div class="actionbar">
     <div class="imageBox" style="display: inline-flex;">
         <img src="images/nahrim-banner.png" alt="NAHRIM Banner">
@@ -31,7 +30,6 @@
     </form>
 </div>
 
-<!-- PAGE -->
 <div class="compare-page">
     
     <h1 class="graphs-title">Rainfall Comparison Dashboard</h1>
