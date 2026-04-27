@@ -1,4 +1,4 @@
-name: Daily Python Script
+name: Daily Python Script (JSON)
 permissions:
   contents: write
 
