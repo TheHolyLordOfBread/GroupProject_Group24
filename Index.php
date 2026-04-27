@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NAHRIM Dashboard</title>
 
-    <link rel="stylesheet" href="css/style.css?v=40">
+    <link rel="stylesheet" href="css/style.css?v=70">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <script defer src="js/index.js?v=40"></script>
+    <script defer src="js/index.js?v=1000"></script>
 </head>
 <body>
 
@@ -82,7 +82,7 @@
             <h2 id="chartBoxTitle">NAHRIM</h2>
 
             <div class="chart-controls">
-                <label for="Scenario">Scenario:</label>
+                <label for="Scenario" id="scenarioLabel">Scenario:</label>
                 <select id="Scenario">
                     <option value="Ave_RCP2.6">RCP 2.6</option>
                     <option value="Ave_RCP4.5" selected>RCP 4.5</option>
@@ -95,6 +95,7 @@
                 <canvas id="combinedRainfallChart"></canvas>
             </div>
         </div>
+    </div>
 </div>
 
 <?php include 'BottomBar.php'; ?>
@@ -116,7 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const showPinsCheckbox = document.getElementById('show-pins');
     const refreshBtn = document.getElementById('refresh');
 
-    fetch('map_data.json')
+    fetch('map_data.json?v=70')
         .then(res => res.json())
         .then(data => {
             data.forEach(h => {
