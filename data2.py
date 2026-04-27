@@ -71,10 +71,17 @@ async def fetch_rainfall_data(hospitals):
             
             await asyncio.sleep(0.1)
 
-if __name__ == "__main__":
-    hospital_list = get_hospital_data()
+
+
+
+
+async def main():
+    hospital_list = await get_hospital_data()
     if hospital_list:
-        asyncio.run(fetch_rainfall_data(hospital_list))
+        await fetch_rainfall_data(hospital_list)
         print("\nSuccessfully wrote to google.csv")
     else:
         print("finished all hospitals.")
+
+if __name__ == "__main__":
+    asyncio.run(main())
