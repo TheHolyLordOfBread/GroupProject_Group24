@@ -12,7 +12,7 @@ HOSPITAL = "HOSPITAL"
 API_KEY = "AIzaSyA_RFhMBhSY8pwXjZTIZ9hhrF9c6atOmKU" 
 API_URL = "https://weather.googleapis.com/v1/forecast/days:lookup"
 
-def get_hospital_data():
+async def get_hospital_data():
         conn = sqlite3.connect(DB)
 
         db_cursor = conn.cursor()
@@ -74,7 +74,7 @@ async def fetch_rainfall_data(hospitals):
 if __name__ == "__main__":
     hospital_list = get_hospital_data()
     if hospital_list:
-        fetch_rainfall_data(hospital_list)
+        asyncio.run(fetch_rainfall_data(hospital_list))
         print("\nSuccessfully wrote to google.csv")
     else:
         print("finished all hospitals.")
