@@ -1,4 +1,4 @@
-import time
+import asyncio
 import requests
 import sqlite3
 import json
@@ -24,7 +24,7 @@ def get_hospital_data():
         return hospitals
 
 
-def fetch_rainfall_data(hospitals):
+async def fetch_rainfall_data(hospitals):
     state_map = {0: 'KEDAH', 1: 'SELANGOR'}
 
     output_File = "google.csv"
@@ -43,7 +43,7 @@ def fetch_rainfall_data(hospitals):
                 "location.longitude": lon,
                 "days": 10,
                 "pageSize": 10
-            } #malaysia doesnt support 10 days by default
+            } 
 
             try:
                 get = requests.get(API_URL, params=params, timeout=10)
@@ -69,7 +69,7 @@ def fetch_rainfall_data(hospitals):
             except requests.RequestException as e:
                 print(f"Request failed for {name}:{e}")  
             
-            time.sleep(0.1)
+            await asyncio.sleep(0.1)
 
 if __name__ == "__main__":
     hospital_list = get_hospital_data()
