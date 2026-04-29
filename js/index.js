@@ -5,10 +5,13 @@ let nahrimSelangorRows = [];
 let openMeteoRows = [];
 let googleRows = [];
 
-const fixedStartDate = "2026-04-24";
-
 function formatDate(year, month, day) {
     return `${year}-${String(month).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
+}
+
+function getTodayDate() {
+    const today = new Date();
+    return today.toISOString().split("T")[0];
 }
 
 function loadCsv(filePath) {
@@ -26,6 +29,22 @@ function loadCsv(filePath) {
             }
         });
     });
+}
+
+function filterFromTodayForward(series, days) {
+    const today = getTodayDate();
+    const startIndex = series.labels.indexOf(today);
+
+    if (startIndex === -1) {
+        return { labels: [], values: [] };
+    }
+
+    const endIndex = startIndex + days;
+
+    return {
+        labels: series.labels.slice(startIndex, endIndex),
+        values: series.values.slice(startIndex, endIndex)
+    };
 }
 
 function updateSourcePanel(sourceValue) {
@@ -50,21 +69,6 @@ function toggleScenarioVisibility(sourceValue) {
         scenarioSelect.style.display = "none";
         scenarioLabel.style.display = "none";
     }
-}
-
-function filterFromFixedStartDate(series, days) {
-    const startIndex = series.labels.indexOf(fixedStartDate);
-
-    if (startIndex === -1) {
-        return { labels: [], values: [] };
-    }
-
-    const endIndex = startIndex + days;
-
-    return {
-        labels: series.labels.slice(startIndex, endIndex),
-        values: series.values.slice(startIndex, endIndex)
-    };
 }
 
 function buildNahrimRegionalAverageSeries(rows, scenarioColumn) {
@@ -122,7 +126,10 @@ function buildGoogleRegionalAverageSeries(rows, targetState) {
 
     rows.forEach(row => {
         const state = String(row.State || "").trim().toUpperCase();
-        const rainfall = parseFloat(row["Rainfall  (mm)"] || row["Rainfall (mm)"]);
+        const rainfall =
+            parseFloat(row["Rainfall  (mm)"]) ||
+            parseFloat(row["Rainfall (mm)"]) ||
+            parseFloat(row["rainfall_mm"]);
 
         if (state !== targetState || isNaN(rainfall)) return;
 
@@ -164,13 +171,8 @@ function buildChartOptions(titleText) {
         responsive: true,
         maintainAspectRatio: false,
         plugins: {
-            title: {
-                display: true,
-                text: titleText
-            },
-            legend: {
-                display: true
-            }
+            title: { display: true, text: titleText },
+            legend: { display: true }
         },
         scales: {
             x: {
@@ -182,10 +184,7 @@ function buildChartOptions(titleText) {
             },
             y: {
                 beginAtZero: true,
-                title: {
-                    display: true,
-                    text: "Rainfall (mm)"
-                }
+                title: { display: true, text: "Rainfall (mm)" }
             }
         }
     };
@@ -254,8 +253,8 @@ function renderCombinedChart() {
         selangorFull = buildNahrimRegionalAverageSeries(nahrimSelangorRows, scenarioValue);
     }
 
-    const kedahSeries = filterFromFixedStartDate(kedahFull, rangeValue);
-    const selangorSeries = filterFromFixedStartDate(selangorFull, rangeValue);
+    const kedahSeries = filterFromTodayForward(kedahFull, rangeValue);
+    const selangorSeries = filterFromTodayForward(selangorFull, rangeValue);
 
     drawCombinedChart(
         canvas,
@@ -267,10 +266,10 @@ function renderCombinedChart() {
 }
 
 document.addEventListener("DOMContentLoaded", async function () {
-    nahrimKedahRows = await loadCsv("data/RF_Kedah_Mac_May_2026_AveRCP.csv");
-    nahrimSelangorRows = await loadCsv("data/RF_Slgr_Wlyh_Mac_May_2026_AveRCP.csv");
-    openMeteoRows = await loadCsv("data/openmeteo.csv");
-    googleRows = await loadCsv("data/daily_rainfall_data_Google.csv?v=1000");
+    nahrimKedahRows = await loadCsv("data/RF_Kedah_Mac_May_2026_AveRCP.csv?v=999999");
+    nahrimSelangorRows = await loadCsv("data/RF_Slgr_Wlyh_Mac_May_2026_AveRCP.csv?v=999999");
+    openMeteoRows = await loadCsv("data/openmeteo.csv?v=999999");
+    googleRows = await loadCsv("data/daily_rainfall_data_Google.csv?v=999999");
 
     renderCombinedChart();
 
