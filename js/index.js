@@ -5,10 +5,19 @@ let nahrimSelangorRows = [];
 let openMeteoRows = [];
 let googleRows = [];
 
-const fixedStartDate = "2026-04-24";
-
 function formatDate(year, month, day) {
     return `${year}-${String(month).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
+}
+
+function getTodayDate() {
+    const today = new Date();
+    return today.toISOString().split("T")[0];
+}
+
+function getStartDateFromToday(days) {
+    const today = new Date();
+    today.setDate(today.getDate() - (days - 1));
+    return today.toISOString().split("T")[0];
 }
 
 function loadCsv(filePath) {
@@ -52,19 +61,21 @@ function toggleScenarioVisibility(sourceValue) {
     }
 }
 
-function filterFromFixedStartDate(series, days) {
-    const startIndex = series.labels.indexOf(fixedStartDate);
+function filterFromTodayRange(series, days) {
+    const startDate = getStartDateFromToday(days);
+    const endDate = getTodayDate();
 
-    if (startIndex === -1) {
-        return { labels: [], values: [] };
-    }
+    const labels = [];
+    const values = [];
 
-    const endIndex = startIndex + days;
+    series.labels.forEach((date, index) => {
+        if (date >= startDate && date <= endDate) {
+            labels.push(date);
+            values.push(series.values[index]);
+        }
+    });
 
-    return {
-        labels: series.labels.slice(startIndex, endIndex),
-        values: series.values.slice(startIndex, endIndex)
-    };
+    return { labels, values };
 }
 
 function buildNahrimRegionalAverageSeries(rows, scenarioColumn) {
@@ -122,7 +133,7 @@ function buildGoogleRegionalAverageSeries(rows, targetState) {
 
     rows.forEach(row => {
         const state = String(row.State || "").trim().toUpperCase();
-        const rainfall = parseFloat(row["Rainfall  (mm)"] || row["Rainfall (mm)"]);
+        const rainfall = parseFloat(row["Rainfall  (mm)"] || row["Rainfall (mm)"] || row["rainfall_mm"]);
 
         if (state !== targetState || isNaN(rainfall)) return;
 
@@ -254,8 +265,8 @@ function renderCombinedChart() {
         selangorFull = buildNahrimRegionalAverageSeries(nahrimSelangorRows, scenarioValue);
     }
 
-    const kedahSeries = filterFromFixedStartDate(kedahFull, rangeValue);
-    const selangorSeries = filterFromFixedStartDate(selangorFull, rangeValue);
+    const kedahSeries = filterFromTodayRange(kedahFull, rangeValue);
+    const selangorSeries = filterFromTodayRange(selangorFull, rangeValue);
 
     drawCombinedChart(
         canvas,
@@ -267,10 +278,10 @@ function renderCombinedChart() {
 }
 
 document.addEventListener("DOMContentLoaded", async function () {
-    nahrimKedahRows = await loadCsv("data/RF_Kedah_Mac_May_2026_AveRCP.csv");
-    nahrimSelangorRows = await loadCsv("data/RF_Slgr_Wlyh_Mac_May_2026_AveRCP.csv");
-    openMeteoRows = await loadCsv("data/openmeteo.csv");
-    googleRows = await loadCsv("data/daily_rainfall_data_Google.csv?v=1000");
+    nahrimKedahRows = await loadCsv("data/RF_Kedah_Mac_May_2026_AveRCP.csv?v=2000");
+    nahrimSelangorRows = await loadCsv("data/RF_Slgr_Wlyh_Mac_May_2026_AveRCP.csv?v=2000");
+    openMeteoRows = await loadCsv("data/openmeteo.csv?v=2000");
+    googleRows = await loadCsv("data/daily_rainfall_data_Google.csv?v=2000");
 
     renderCombinedChart();
 

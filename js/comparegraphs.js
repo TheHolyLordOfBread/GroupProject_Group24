@@ -7,10 +7,19 @@ let nahrimSelangorRows = [];
 let openMeteoRows = [];
 let googleRows = [];
 
-const fixedStartDate = "2026-04-24";
-
 function formatDate(year, month, day) {
     return `${year}-${String(month).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
+}
+
+function getTodayDate() {
+    const today = new Date();
+    return today.toISOString().split("T")[0];
+}
+
+function getStartDateFromToday(days) {
+    const today = new Date();
+    today.setDate(today.getDate() - (days - 1));
+    return today.toISOString().split("T")[0];
 }
 
 function loadCsv(filePath, callback) {
@@ -23,23 +32,26 @@ function loadCsv(filePath, callback) {
         },
         error: function (error) {
             console.error("Papa Parse error:", error);
+            callback([]);
         }
     });
 }
 
-function filterFromFixedStartDate(series, days, startDate) {
-    const startIndex = series.labels.indexOf(startDate);
+function filterFromTodayRange(series, days) {
+    const startDate = getStartDateFromToday(days);
+    const endDate = getTodayDate();
 
-    if (startIndex === -1) {
-        return { labels: [], values: [] };
-    }
+    const labels = [];
+    const values = [];
 
-    const endIndex = startIndex + days;
+    series.labels.forEach((date, index) => {
+        if (date >= startDate && date <= endDate) {
+            labels.push(date);
+            values.push(series.values[index]);
+        }
+    });
 
-    return {
-        labels: series.labels.slice(startIndex, endIndex),
-        values: series.values.slice(startIndex, endIndex)
-    };
+    return { labels, values };
 }
 
 function buildNahrimRegionalAverageSeries(rows, scenarioColumn) {
@@ -127,16 +139,28 @@ function buildChartOptions(titleText) {
         responsive: true,
         maintainAspectRatio: false,
         plugins: {
-            title: { display: true, text: titleText },
-            legend: { display: true }
+            title: {
+                display: true,
+                text: titleText
+            },
+            legend: {
+                display: true
+            }
         },
         scales: {
             x: {
-                ticks: { maxRotation: 45, minRotation: 45 }
+                ticks: {
+                    autoSkip: false,
+                    maxRotation: 45,
+                    minRotation: 45
+                }
             },
             y: {
                 beginAtZero: true,
-                title: { display: true, text: "Rainfall (mm)" }
+                title: {
+                    display: true,
+                    text: "Rainfall (mm)"
+                }
             }
         }
     };
@@ -159,13 +183,17 @@ function drawChart(canvasId, oldChart, title, labels, kedahValues, selangorValue
                     label: `${title} Kedah`,
                     data: kedahValues,
                     borderWidth: 2,
-                    tension: 0.2
+                    tension: 0.2,
+                    fill: false,
+                    pointRadius: 3
                 },
                 {
                     label: `${title} Selangor`,
                     data: selangorValues,
                     borderWidth: 2,
-                    tension: 0.2
+                    tension: 0.2,
+                    fill: false,
+                    pointRadius: 3
                 }
             ]
         },
@@ -177,40 +205,34 @@ function renderCompareCharts() {
     const rangeValue = parseInt(document.getElementById("compareRange").value, 10);
     const scenarioValue = document.getElementById("compareScenario").value;
 
-    const nahrimKedah = filterFromFixedStartDate(
+    const nahrimKedah = filterFromTodayRange(
         buildNahrimRegionalAverageSeries(nahrimKedahRows, scenarioValue),
-        rangeValue,
-        fixedStartDate
+        rangeValue
     );
 
-    const nahrimSelangor = filterFromFixedStartDate(
+    const nahrimSelangor = filterFromTodayRange(
         buildNahrimRegionalAverageSeries(nahrimSelangorRows, scenarioValue),
-        rangeValue,
-        fixedStartDate
+        rangeValue
     );
 
-    const openKedah = filterFromFixedStartDate(
+    const openKedah = filterFromTodayRange(
         buildOpenMeteoRegionalAverageSeries(openMeteoRows, "KEDAH"),
-        rangeValue,
-        fixedStartDate
+        rangeValue
     );
 
-    const openSelangor = filterFromFixedStartDate(
+    const openSelangor = filterFromTodayRange(
         buildOpenMeteoRegionalAverageSeries(openMeteoRows, "SELANGOR"),
-        rangeValue,
-        fixedStartDate
+        rangeValue
     );
 
-    const googleKedah = filterFromFixedStartDate(
+    const googleKedah = filterFromTodayRange(
         buildGoogleRegionalAverageSeries(googleRows, "KEDAH"),
-        rangeValue,
-        fixedStartDate
+        rangeValue
     );
 
-    const googleSelangor = filterFromFixedStartDate(
+    const googleSelangor = filterFromTodayRange(
         buildGoogleRegionalAverageSeries(googleRows, "SELANGOR"),
-        rangeValue,
-        fixedStartDate
+        rangeValue
     );
 
     compareNahrimChart = drawChart(
@@ -242,16 +264,16 @@ function renderCompareCharts() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    loadCsv("data/RF_Kedah_Mac_May_2026_AveRCP.csv?v=1000", function (kedahData) {
+    loadCsv("data/RF_Kedah_Mac_May_2026_AveRCP.csv?v=2000", function (kedahData) {
         nahrimKedahRows = kedahData;
 
-        loadCsv("data/RF_Slgr_Wlyh_Mac_May_2026_AveRCP.csv?v=1000", function (selangorData) {
+        loadCsv("data/RF_Slgr_Wlyh_Mac_May_2026_AveRCP.csv?v=2000", function (selangorData) {
             nahrimSelangorRows = selangorData;
 
-            loadCsv("data/openmeteo.csv?v=1000", function (openData) {
+            loadCsv("data/openmeteo.csv?v=2000", function (openData) {
                 openMeteoRows = openData;
 
-                loadCsv("data/daily_rainfall_data_Google.csv?v=1000", function (googleData) {
+                loadCsv("data/daily_rainfall_data_Google.csv?v=2000", function (googleData) {
                     googleRows = googleData;
 
                     renderCompareCharts();
