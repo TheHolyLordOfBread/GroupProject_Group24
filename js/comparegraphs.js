@@ -12,8 +12,7 @@ function formatDate(year, month, day) {
 }
 
 function getTodayDate() {
-    const today = new Date();
-    return today.toISOString().split("T")[0];
+    return "2026-04-29";
 }
 
 function loadCsv(filePath, callback) {
@@ -33,17 +32,20 @@ function loadCsv(filePath, callback) {
 
 function filterFromTodayForward(series, days) {
     const today = getTodayDate();
-    const startIndex = series.labels.indexOf(today);
+
+    let startIndex = series.labels.indexOf(today);
 
     if (startIndex === -1) {
-        return { labels: [], values: [] };
+        startIndex = series.labels.findIndex(date => date >= today);
     }
 
-    const endIndex = startIndex + days;
+    if (startIndex === -1) {
+        startIndex = 0;
+    }
 
     return {
-        labels: series.labels.slice(startIndex, endIndex),
-        values: series.values.slice(startIndex, endIndex)
+        labels: series.labels.slice(startIndex, startIndex + days),
+        values: series.values.slice(startIndex, startIndex + days)
     };
 }
 
@@ -255,10 +257,10 @@ document.addEventListener("DOMContentLoaded", function () {
         loadCsv("data/RF_Slgr_Wlyh_Mac_May_2026_AveRCP.csv?v=999999", function (selangorData) {
             nahrimSelangorRows = selangorData;
 
-            loadCsv("data/openmeteo.csv?v=999999", function (openData) {
+            loadCsv("data/openmeteo.csv?v=2000000", function (openData) {
                 openMeteoRows = openData;
 
-                loadCsv("data/daily_rainfall_data_Google.csv?v=999999", function (googleData) {
+                loadCsv("data/google.csv?v=999999", function (googleData) {
                     googleRows = googleData;
 
                     renderCompareCharts();

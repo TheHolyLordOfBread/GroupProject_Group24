@@ -10,8 +10,7 @@ function formatDate(year, month, day) {
 }
 
 function getTodayDate() {
-    const today = new Date();
-    return today.toISOString().split("T")[0];
+    return "2026-04-29";
 }
 
 function loadCsv(filePath) {
@@ -33,17 +32,20 @@ function loadCsv(filePath) {
 
 function filterFromTodayForward(series, days) {
     const today = getTodayDate();
-    const startIndex = series.labels.indexOf(today);
+
+    let startIndex = series.labels.indexOf(today);
 
     if (startIndex === -1) {
-        return { labels: [], values: [] };
+        startIndex = series.labels.findIndex(date => date >= today);
     }
 
-    const endIndex = startIndex + days;
+    if (startIndex === -1) {
+        startIndex = 0;
+    }
 
     return {
-        labels: series.labels.slice(startIndex, endIndex),
-        values: series.values.slice(startIndex, endIndex)
+        labels: series.labels.slice(startIndex, startIndex + days),
+        values: series.values.slice(startIndex, startIndex + days)
     };
 }
 
@@ -126,6 +128,7 @@ function buildGoogleRegionalAverageSeries(rows, targetState) {
 
     rows.forEach(row => {
         const state = String(row.State || "").trim().toUpperCase();
+
         const rainfall =
             parseFloat(row["Rainfall  (mm)"]) ||
             parseFloat(row["Rainfall (mm)"]) ||
@@ -268,8 +271,8 @@ function renderCombinedChart() {
 document.addEventListener("DOMContentLoaded", async function () {
     nahrimKedahRows = await loadCsv("data/RF_Kedah_Mac_May_2026_AveRCP.csv?v=999999");
     nahrimSelangorRows = await loadCsv("data/RF_Slgr_Wlyh_Mac_May_2026_AveRCP.csv?v=999999");
-    openMeteoRows = await loadCsv("data/openmeteo.csv?v=999999");
-    googleRows = await loadCsv("data/daily_rainfall_data_Google.csv?v=999999");
+    openMeteoRows = await loadCsv("data/openmeteo.csv?v=2000000");
+    googleRows = await loadCsv("data/google.csv?v=999999");
 
     renderCombinedChart();
 

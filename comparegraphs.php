@@ -9,7 +9,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
-    <script defer src="js/comparegraphs.js?v=999999"></script>
+    <script defer src="js/comparegraphs.js?v=2000000"></script>
 </head>
 
 <body>
@@ -25,8 +25,8 @@
         <label for="compareRange">Select Range:</label>
         <select id="compareRange">
             <option value="3">3 days</option>
-            <option value="7" selected>7 days</option>
-            <option value="14">14 days</option>
+            <option value="7">7 days</option>
+<option value="14" selected>14 days</option>
         </select>
     </form>
 </div>
