@@ -33,7 +33,7 @@
     <button id="refresh" style="margin-left:10px;">Refresh Data</button>
   </div>
   <div id="map"></div>
-  <div id="legend" style="z-index: 10;">
+  <div id="legend" style="z-index: 10000;">
     <h4>Rainfall (mm) Today</h4>
     <div style="display: flex; flex-direction: column;">
       <div style="display: flex; align-items: center; margin-bottom: 5px;"> 
