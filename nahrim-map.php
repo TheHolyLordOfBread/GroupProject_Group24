@@ -40,28 +40,9 @@
     <button id="refresh" style="margin-left:10px;">Refresh Data</button>
   </div>
 
-  <div id="legend" style="z-index: 10">
-    <h4>Rainfall (mm) Today</h4>
-    <div style="display: flex; flex-direction: column;">
-      <div style="display: flex; align-items: center; margin-bottom: 5px;">
-        <div style="width: 20px; height: 20px; background-color: #0000ff;"></div><span>0 - 10</span>
-      </div>
-      <div style="display: flex; align-items: center; margin-bottom: 5px;">
-        <div style="width: 20px; height: 20px; background-color: #00ffff;"></div><span>10 - 20</span>
-      </div>
-      <div style="display: flex; align-items: center; margin-bottom: 5px;">
-        <div style="width: 20px; height: 20px; background-color: #00ff00;"></div><span>20 - 30</span>
-      </div>
-      <div style="display: flex; align-items: center; margin-bottom: 5px;">
-        <div style="width: 20px; height: 20px; background-color: #ffff00;"></div><span>30 - 40</span>
-      </div>
-      <div style="display: flex; align-items: center; margin-bottom: 5px;">
-        <div style="width: 20px; height: 20px; background-color: #ff0000;"></div><span>40+</span>
-      </div>
-    </div>
-  </div>
 
-  <div id="legend" style="z-index: 10"> 
+
+  <div id="legend" style="z-index: 10000;"> 
     <h4>Rainfall (mm) Today</h4> 
     <div style="display: flex; flex-direction: column;"> 
       <div style="display: flex; align-items: center; margin-bottom: 5px;"> 

@@ -7,10 +7,12 @@ let nahrimSelangorRows = [];
 let openMeteoRows = [];
 let googleRows = [];
 
-const fixedStartDate = "2026-04-24";
-
 function formatDate(year, month, day) {
     return `${year}-${String(month).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
+}
+
+function getTodayDate() {
+    return "2026-04-29";
 }
 
 function loadCsv(filePath, callback) {
@@ -23,22 +25,27 @@ function loadCsv(filePath, callback) {
         },
         error: function (error) {
             console.error("Papa Parse error:", error);
+            callback([]);
         }
     });
 }
 
-function filterFromFixedStartDate(series, days, startDate) {
-    const startIndex = series.labels.indexOf(startDate);
+function filterFromTodayForward(series, days) {
+    const today = getTodayDate();
+
+    let startIndex = series.labels.indexOf(today);
 
     if (startIndex === -1) {
-        return { labels: [], values: [] };
+        startIndex = series.labels.findIndex(date => date >= today);
     }
 
-    const endIndex = startIndex + days;
+    if (startIndex === -1) {
+        startIndex = 0;
+    }
 
     return {
-        labels: series.labels.slice(startIndex, endIndex),
-        values: series.values.slice(startIndex, endIndex)
+        labels: series.labels.slice(startIndex, startIndex + days),
+        values: series.values.slice(startIndex, startIndex + days)
     };
 }
 
@@ -132,7 +139,11 @@ function buildChartOptions(titleText) {
         },
         scales: {
             x: {
-                ticks: { maxRotation: 45, minRotation: 45 }
+                ticks: {
+                    autoSkip: false,
+                    maxRotation: 45,
+                    minRotation: 45
+                }
             },
             y: {
                 beginAtZero: true,
@@ -159,13 +170,17 @@ function drawChart(canvasId, oldChart, title, labels, kedahValues, selangorValue
                     label: `${title} Kedah`,
                     data: kedahValues,
                     borderWidth: 2,
-                    tension: 0.2
+                    tension: 0.2,
+                    fill: false,
+                    pointRadius: 3
                 },
                 {
                     label: `${title} Selangor`,
                     data: selangorValues,
                     borderWidth: 2,
-                    tension: 0.2
+                    tension: 0.2,
+                    fill: false,
+                    pointRadius: 3
                 }
             ]
         },
@@ -177,40 +192,34 @@ function renderCompareCharts() {
     const rangeValue = parseInt(document.getElementById("compareRange").value, 10);
     const scenarioValue = document.getElementById("compareScenario").value;
 
-    const nahrimKedah = filterFromFixedStartDate(
+    const nahrimKedah = filterFromTodayForward(
         buildNahrimRegionalAverageSeries(nahrimKedahRows, scenarioValue),
-        rangeValue,
-        fixedStartDate
+        rangeValue
     );
 
-    const nahrimSelangor = filterFromFixedStartDate(
+    const nahrimSelangor = filterFromTodayForward(
         buildNahrimRegionalAverageSeries(nahrimSelangorRows, scenarioValue),
-        rangeValue,
-        fixedStartDate
+        rangeValue
     );
 
-    const openKedah = filterFromFixedStartDate(
+    const openKedah = filterFromTodayForward(
         buildOpenMeteoRegionalAverageSeries(openMeteoRows, "KEDAH"),
-        rangeValue,
-        fixedStartDate
+        rangeValue
     );
 
-    const openSelangor = filterFromFixedStartDate(
+    const openSelangor = filterFromTodayForward(
         buildOpenMeteoRegionalAverageSeries(openMeteoRows, "SELANGOR"),
-        rangeValue,
-        fixedStartDate
+        rangeValue
     );
 
-    const googleKedah = filterFromFixedStartDate(
+    const googleKedah = filterFromTodayForward(
         buildGoogleRegionalAverageSeries(googleRows, "KEDAH"),
-        rangeValue,
-        fixedStartDate
+        rangeValue
     );
 
-    const googleSelangor = filterFromFixedStartDate(
+    const googleSelangor = filterFromTodayForward(
         buildGoogleRegionalAverageSeries(googleRows, "SELANGOR"),
-        rangeValue,
-        fixedStartDate
+        rangeValue
     );
 
     compareNahrimChart = drawChart(
@@ -242,16 +251,16 @@ function renderCompareCharts() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    loadCsv("data/RF_Kedah_Mac_May_2026_AveRCP.csv?v=1000", function (kedahData) {
+    loadCsv("data/RF_Kedah_Mac_May_2026_AveRCP.csv?v=999999", function (kedahData) {
         nahrimKedahRows = kedahData;
 
-        loadCsv("data/RF_Slgr_Wlyh_Mac_May_2026_AveRCP.csv?v=1000", function (selangorData) {
+        loadCsv("data/RF_Slgr_Wlyh_Mac_May_2026_AveRCP.csv?v=999999", function (selangorData) {
             nahrimSelangorRows = selangorData;
 
-            loadCsv("data/openmeteo.csv?v=1000", function (openData) {
+            loadCsv("data/openmeteo.csv?v=2000000", function (openData) {
                 openMeteoRows = openData;
 
-                loadCsv("data/daily_rainfall_data_Google.csv?v=1000", function (googleData) {
+                loadCsv("data/google.csv?v=999999", function (googleData) {
                     googleRows = googleData;
 
                     renderCompareCharts();
